@@ -1,0 +1,63 @@
+# DeFiLlama Fees Overview Data Structure
+
+- `totalDataChart`: `list`
+- `totalDataChartBreakdown`: `list`
+- `breakdown24h`: `NoneType`
+- `breakdown30d`: `NoneType`
+- `chain`: `NoneType`
+- `allChains`: `list`
+  - Type: `list` (contains `str` elements)
+- `total24h`: `int`
+- `total48hto24h`: `int`
+- `total7d`: `int`
+- `total14dto7d`: `int`
+- `total60dto30d`: `int`
+- `total30d`: `int`
+- `total1y`: `int`
+- `change_1d`: `float`
+- `change_7d`: `float`
+- `change_1m`: `float`
+- `change_7dover7d`: `float`
+- `change_30dover30d`: `float`
+- `total7DaysAgo`: `int`
+- `total30DaysAgo`: `int`
+- `totalAllTime`: `int`
+- `protocols`: `list`
+  - Type: `list` (contains `dict` elements)
+    - Type: `dict`
+    - `total24h`: `int`
+    - `total48hto24h`: `int`
+    - `total7d`: `int`
+    - `total14dto7d`: `int`
+    - `total60dto30d`: `int`
+    - `total30d`: `int`
+    - `total1y`: `int`
+    - `totalAllTime`: `int`
+    - `average1y`: `float`
+    - `change_30dover30d`: `int`
+    - `breakdown24h`: `dict`
+      - Type: `dict`
+      - `ethereum`: `dict`
+        - Type: `dict`
+        - `WBTC`: `int`
+    - `breakdown30d`: `dict`
+      - Type: `dict`
+      - `ethereum`: `dict`
+        - Type: `dict`
+        - `WBTC`: `int`
+    - `total7DaysAgo`: `int`
+    - `total30DaysAgo`: `int`
+    - `defillamaId`: `str`
+    - `name`: `str`
+    - `displayName`: `str`
+    - `module`: `str`
+    - `category`: `str`
+    - `logo`: `str`
+    - `chains`: `list`
+      - Type: `list` (contains `str` elements)
+    - `protocolType`: `str`
+    - `methodologyURL`: `str`
+    - `methodology`: `dict`
+    - `latestFetchIsOk`: `bool`
+    - `slug`: `str`
+    - `id`: `str`
