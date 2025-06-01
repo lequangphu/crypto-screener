@@ -1,2 +1,7 @@
-# crypto-screener
-find undervalued crypto projects by combining data of defillama and coinmarketcap.
+# Crypto Screener
+
+A web-based crypto projects screener application.
+
+## Setup
+
+More instructions coming soon.

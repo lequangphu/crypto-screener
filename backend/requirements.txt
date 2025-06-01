@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+requests
+python-dotenv
+duckdb
+polars
+requests_cache
+pytest
+requests_mock
+httpx 
