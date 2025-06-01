@@ -1,7 +1,0 @@
-# It's generally good practice not to specify exact versions for all packages
-# unless there's a specific reason (e.g., known compatibility issues).
-# This allows for minor updates and reduces dependency conflicts.
-requests
-python-dotenv
-pandas
-pyarrow
