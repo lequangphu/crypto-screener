@@ -18,7 +18,7 @@
 - `change_7d`: `float`
 - `change_1m`: `float`
 - `change_7dover7d`: `float`
-- `change_30dover30d`: `float`
+- `change_30dover30d`: `int`
 - `total7DaysAgo`: `int`
 - `total30DaysAgo`: `int`
 - `totalAllTime`: `int`

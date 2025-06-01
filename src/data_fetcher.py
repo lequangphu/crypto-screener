@@ -3,6 +3,8 @@ import json
 import os
 from datetime import datetime
 from dotenv import load_dotenv
+import pandas as pd # Import pandas
+import pyarrow # Import pyarrow (for parquet support)
 
 # Get the directory of the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -49,6 +51,44 @@ def save_raw_data(data, filename_prefix):
         json.dump(data, f, indent=4)
     print(f"Raw data saved to {filepath}")
     return filepath
+
+def save_as_parquet(data, filename_prefix):
+    """Saves data to a Parquet file in the DATA_DIR."""
+    os.makedirs(DATA_DIR, exist_ok=True)
+    filepath = os.path.join(DATA_DIR, f"{filename_prefix}.parquet")
+
+    df = None
+    try:
+        # Handle CoinMarketCap data specifically
+        if filename_prefix == "coinmarketcap_listings_latest" and isinstance(data, dict) and "data" in data:
+            df = pd.json_normalize(data["data"])
+        elif isinstance(data, list) and data and isinstance(data[0], dict):
+            df = pd.json_normalize(data)
+        elif isinstance(data, dict):
+            df = pd.json_normalize(data)
+        else:
+            print(f"Warning: Data for {filename_prefix} is not in a recognized format (list of dicts or dict) for Parquet conversion. Attempting to save as a single-column DataFrame.")
+            df = pd.DataFrame([json.dumps(data)], columns=['raw_json'])
+            
+        if df is not None:
+            # Convert all columns to string type to avoid type conversion issues with parquet
+            for col in df.columns:
+                df[col] = df[col].astype(str)
+            df.to_parquet(filepath, index=False)
+            print(f"Data saved to Parquet: {filepath}")
+            return filepath
+
+    except Exception as e:
+        print(f"Error saving data to Parquet for {filename_prefix}: {e}")
+        # Fallback: if normalization fails, save the raw JSON as a string in a single column
+        try:
+            df = pd.DataFrame([json.dumps(data)], columns=['raw_json'])
+            df.to_parquet(filepath, index=False)
+            print(f"Data saved to Parquet as raw_json column: {filepath}")
+            return filepath
+        except Exception as inner_e:
+            print(f"Critical Error: Could not save any form of Parquet for {filename_prefix}: {inner_e}")
+            return None
 
 def describe_columns(data, endpoint_name, level=0):
     """Generates a markdown string describing the columns of the data in a tree-like structure."""
@@ -100,6 +140,7 @@ def process_endpoint(url, filename_prefix, endpoint_name, headers=None, params=N
 
     if data:
         save_raw_data(data, filename_prefix)
+        save_as_parquet(data, filename_prefix) # Save as parquet after saving as JSON
         markdown_content = describe_columns(data, endpoint_name)
         generate_markdown_file(markdown_content, filename_prefix)
     else:

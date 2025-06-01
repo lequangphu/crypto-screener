@@ -27,36 +27,36 @@
   - `tvl`: `float`
   - `chainTvls`: `dict`
     - Type: `dict`
-    - `Algorand`: `float`
     - `Hedera`: `float`
-    - `Ripple`: `float`
     - `Sui`: `float`
+    - `Base`: `float`
+    - `Ripple`: `float`
+    - `Algorand`: `float`
+    - `zkSync Era`: `float`
+    - `Sonic`: `float`
     - `Starknet`: `float`
     - `Manta`: `float`
-    - `Aptos`: `float`
+    - `Op_Bnb`: `float`
     - `Near`: `float`
+    - `Avalanche`: `float`
     - `Chiliz`: `float`
     - `Litecoin`: `float`
-    - `zkSync Era`: `float`
-    - `Optimism`: `float`
-    - `Arbitrum`: `float`
-    - `Stellar`: `float`
+    - `Aptos`: `float`
     - `Scroll`: `float`
-    - `Ronin`: `float`
-    - `Sonic`: `float`
+    - `Optimism`: `float`
+    - `Stellar`: `float`
     - `Celo`: `float`
-    - `Ethereum`: `float`
-    - `Base`: `float`
+    - `Ronin`: `float`
+    - `Arbitrum`: `float`
     - `Binance`: `float`
-    - `Avalanche`: `float`
-    - `Op_Bnb`: `float`
-    - `Polygon`: `float`
+    - `Ethereum`: `float`
     - `Tron`: `float`
+    - `Polygon`: `float`
     - `Polkadot`: `float`
-    - `TON`: `float`
-    - `Bitcoin`: `float`
-    - `Doge`: `float`
     - `Solana`: `float`
+    - `Bitcoin`: `float`
+    - `TON`: `float`
+    - `Doge`: `float`
   - `change_1h`: `float`
   - `change_1d`: `float`
   - `change_7d`: `float`
