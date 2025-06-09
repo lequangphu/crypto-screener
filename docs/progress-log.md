@@ -40,9 +40,10 @@ This document summarizes the development progress of the Crypto Projects Screene
   - **Resolution**: Added `__init__.py` files and updated imports to use relative imports.
   - **Status**: Fixed. All imports now use relative paths correctly.
 
-- **Backend Data Processing**: The Polars DataFrame creation for `protocols_data` failed due to mixed data types.
+- **Backend Data Processing**: The Polars DataFrame creation for `protocols_data` initially failed due to mixed data types and later due to inconsistent schemas during inference.
   - **Resolution**: Implemented proper type casting and null handling in `data_process.py`.
-  - **Status**: Fixed. Data processing now handles mixed data types correctly.
+  - **Resolution**: Ensured Polars DataFrame creation handles mixed data types by setting `strict=False` and, critically, by defining an explicit schema for the `protocols_df` to prevent type inference issues.
+  - **Status**: Fixed. Data processing now handles mixed data types and schema inconsistencies correctly. The `/protocols` endpoint is now functional.
 
 ## Next Steps
 
