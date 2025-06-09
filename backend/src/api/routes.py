@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from backend.src.services.data_fetch import fetch_defillama_protocols, fetch_defillama_fees_overview, fetch_defillama_revenue_overview, fetch_coinmarketcap_listings
-from backend.src.services.data_process import process_data
-from backend.src.api.models import Protocol, Filter
+from ..services.data_fetch import fetch_defillama_protocols, fetch_defillama_fees_overview, fetch_defillama_revenue_overview, fetch_coinmarketcap_listings
+from ..services.data_process import process_data
+from .models import Protocol, Filter
 
 router = APIRouter()
 
