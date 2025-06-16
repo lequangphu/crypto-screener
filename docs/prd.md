@@ -39,13 +39,13 @@ The application will integrate with the following APIs:
         }
     },
     "coinmarketcap": {
-        "listings_latest": {
-            "endpoint": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
-            "description": "Returns latest cryptocurrency market data",
+        "quotes_latest": {
+            "endpoint": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest",
+            "description": "Returns latest cryptocurrency market data for specific IDs",
             "required_headers": {
                 "X-CMC_PRO_API_KEY": "Your API key"
             },
-            "response_format": "JSON object with cryptocurrency listings"
+            "response_format": "JSON object with cryptocurrency quotes"
         }
     }
 }
