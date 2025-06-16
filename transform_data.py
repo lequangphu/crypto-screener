@@ -1,5 +1,4 @@
 import duckdb
-import pandas as pd
 
 DUCKDB_DATABASE_PATH = "data/crypto.duckdb"
 
