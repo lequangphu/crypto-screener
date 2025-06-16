@@ -1,3 +1,0 @@
-"""
-Crypto Screener Backend Package
-""" 
