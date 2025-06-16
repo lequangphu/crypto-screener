@@ -66,8 +66,8 @@ def main():
     if protocols_data:
         try:
             df_protocols = pd.DataFrame(protocols_data)
-            con.execute("DROP TABLE IF EXISTS protocols;") # Drop if exists to ensure fresh data
-            con.execute("CREATE TABLE protocols AS SELECT * FROM df_protocols")
+            con.execute("DROP TABLE IF EXISTS protocols_staging;") # Drop if exists to ensure fresh data
+            con.execute("CREATE TABLE protocols_staging AS SELECT * FROM df_protocols")
             print("Protocols data ingested into DuckDB.")
         except Exception as e:
             print(f"Error ingesting protocols data into DuckDB: {e}")
@@ -75,8 +75,8 @@ def main():
     if fees_overview_data and 'protocols' in fees_overview_data:
         try:
             df_fees_overview = pd.DataFrame(fees_overview_data['protocols'])
-            con.execute("DROP TABLE IF EXISTS fees_overview;")
-            con.execute("CREATE TABLE fees_overview AS SELECT * FROM df_fees_overview")
+            con.execute("DROP TABLE IF EXISTS fees_overview_staging;")
+            con.execute("CREATE TABLE fees_overview_staging AS SELECT * FROM df_fees_overview")
             print("Fees Overview data ingested into DuckDB.")
         except Exception as e:
             print(f"Error ingesting fees_overview data into DuckDB: {e}")
@@ -84,8 +84,8 @@ def main():
     if revenue_overview_data and 'protocols' in revenue_overview_data:
         try:
             df_revenue_overview = pd.DataFrame(revenue_overview_data['protocols'])
-            con.execute("DROP TABLE IF EXISTS revenue_overview;")
-            con.execute("CREATE TABLE revenue_overview AS SELECT * FROM df_revenue_overview")
+            con.execute("DROP TABLE IF EXISTS revenue_overview_staging;")
+            con.execute("CREATE TABLE revenue_overview_staging AS SELECT * FROM df_revenue_overview")
             print("Revenue Overview data ingested into DuckDB.")
         except Exception as e:
             print(f"Error ingesting revenue_overview data into DuckDB: {e}")
@@ -93,8 +93,8 @@ def main():
     if coinmarketcap_data and 'data' in coinmarketcap_data:
         try:
             df_coinmarketcap = pd.DataFrame(coinmarketcap_data['data'])
-            con.execute("DROP TABLE IF EXISTS coinmarketcap;")
-            con.execute("CREATE TABLE coinmarketcap AS SELECT * FROM df_coinmarketcap")
+            con.execute("DROP TABLE IF EXISTS coinmarketcap_staging;")
+            con.execute("CREATE TABLE coinmarketcap_staging AS SELECT * FROM df_coinmarketcap")
             print("CoinMarketCap data ingested into DuckDB.")
         except Exception as e:
             print(f"Error ingesting coinmarketcap data into DuckDB: {e}")
