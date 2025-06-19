@@ -3,17 +3,17 @@
 ## Task Tracking Checklist
 
 ### Phase 1: Refactor ETL Scripts for Modularity, Logging, and Error Handling
-- [ ] **Ingestion Layer (`ingest_data.py`)**
-  - [ ] Refactor API client(s) into separate functions/modules
-  - [ ] Refactor data normalization into its own function/module
-  - [ ] Refactor DB loading into its own function/module
-  - [ ] Add logging at each step (start, success, error)
-  - [ ] Implement retry logic for API calls (3 attempts, exponential backoff)
+- [x] **Ingestion Layer (`ingest_data.py`)**
+  - [x] Refactor API client(s) into separate functions/modules
+  - [x] Refactor data normalization into its own function/module
+  - [x] Refactor DB loading into its own function/module
+  - [x] Add logging at each step (start, success, error)
+  - [x] Implement retry logic for API calls (3 attempts, exponential backoff)
   - [ ] Parameterize for partial/full refreshes (optional)
-- [ ] **Transformation Layer (`transform_data.py`)**
-  - [ ] Refactor each transformation step into a modular function
-  - [ ] Add logging for each transformation step (row counts, summaries)
-  - [ ] Add validation: ensure `revenue` and `fees` fields in revenue table are non-null (log error if not)
+- [x] **Transformation Layer (`transform_data.py`)**
+  - [x] Refactor each transformation step into a modular function
+  - [x] Add logging for each transformation step (row counts, summaries)
+  - [x] Add validation: ensure `revenue` and `fees` fields in revenue table are non-null (log error if not)
 
 ### Phase 2: Implement Data Export to JSON for Dashboard Use
 - [ ] **Export Logic**
