@@ -16,11 +16,11 @@
   - [x] Add validation: ensure `revenue` and `fees` fields in revenue table are non-null (log error if not)
 
 ### Phase 2: Implement Data Export to JSON for Dashboard Use
-- [ ] **Export Logic**
-  - [ ] Export each relevant table as a separate JSON file to `data/exports/`
-  - [ ] Only include columns needed for the dashboard
-- [ ] **Directory Management**
-  - [ ] Ensure `data/exports/` exists or create it if missing
+- [x] **Export Logic**
+  - [x] Export each relevant table as a separate JSON file to `data/exports/`
+  - [x] Only include columns needed for the dashboard
+- [x] **Directory Management**
+  - [x] Ensure `data/exports/` exists or create it if missing
 
 ### Phase 3: Set Up React Dashboard to Fetch and Visualize Exported Data
 - [ ] **If React app is in this repo:**
