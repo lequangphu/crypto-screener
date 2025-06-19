@@ -1,23 +1,35 @@
 import duckdb
+import pandas as pd
+import os
+import logging
 
-def analyze_protocols():
+def analyze_and_export():
     """
     Connects to the DuckDB database, calculates valuation metrics for protocols,
-    and prints the results.
+    and exports the results as a JSON file for dashboard use.
     """
     db_path = "data/crypto.duckdb"
+    export_dir = "data/exports"
+    export_path = os.path.join(export_dir, "analysis.json")
+
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
+
+    if not os.path.exists(export_dir):
+        os.makedirs(export_dir)
+        logging.info(f"Created export directory: {export_dir}")
 
     try:
         con = duckdb.connect(database=db_path, read_only=True)
-        print(f"Successfully connected to {db_path}")
+        logging.info(f"Successfully connected to {db_path}")
 
         query = """
         SELECT
+            f.total30d,
+            f.total1y,
+            f.change_30dover30d,
             f.name,
             f.category,
-            f.fully_diluted_market_cap AS fd_market_cap,
-            f.total1y AS total_fees_1y,
-            r.total1y AS total_revenue_1y,
+            f.fully_diluted_market_cap,
             (f.total30d * 12) AS fees_forward_1y,
             (r.total30d * 12) AS revenue_forward_1y,
             CASE
@@ -55,15 +67,15 @@ def analyze_protocols():
         """
 
         result = con.execute(query).fetchdf()
-        print("\nUndervalued Protocols (based on Annualized 30-day P/F and P/R ratios, then 1-year ratios):\n")
-        print(result.to_string())
+        result.to_json(export_path, orient='records', indent=2)
+        logging.info(f"Exported {len(result)} rows to {export_path}")
 
     except Exception as e:
-        print(f"An error occurred: {e}")
+        logging.error(f"An error occurred: {e}")
     finally:
         if 'con' in locals() and con:
             con.close()
-            print("Database connection closed.")
+            logging.info("Database connection closed.")
 
 if __name__ == "__main__":
-    analyze_protocols() 
+    analyze_and_export() 
