@@ -6,11 +6,12 @@ import logging
 def analyze_and_export():
     """
     Connects to the DuckDB database, calculates valuation metrics for protocols,
-    and exports the results as a JSON file for dashboard use.
+    and exports the results as two JSON files: one for fees, one for revenue.
     """
     db_path = "data/crypto.duckdb"
     export_dir = "data/exports"
-    export_path = os.path.join(export_dir, "analysis.json")
+    fees_export_path = os.path.join(export_dir, "fees_analysis.json")
+    revenue_export_path = os.path.join(export_dir, "revenue_analysis.json")
 
     logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
 
@@ -22,53 +23,69 @@ def analyze_and_export():
         con = duckdb.connect(database=db_path, read_only=True)
         logging.info(f"Successfully connected to {db_path}")
 
-        query = """
+        # Fees Table
+        fees_query = """
         SELECT
-            f.total30d,
-            f.total1y,
-            f.change_30dover30d,
-            f.name,
-            f.category,
-            f.fully_diluted_market_cap,
+            f.name AS protocol_name,
+            f.category AS category,
+            f.fully_diluted_market_cap AS market_cap,
+            f.total30d AS fees_30d,
+            f.total1y AS fees_1y,
+            f.change_30dover30d AS fees_30d_change,
             (f.total30d * 12) AS fees_forward_1y,
-            (r.total30d * 12) AS revenue_forward_1y,
             CASE
                 WHEN f.total1y > 0 THEN f.fully_diluted_market_cap / f.total1y
                 ELSE NULL
             END AS pf_ratio_1y,
             CASE
+                WHEN (f.total30d * 12) > 0 THEN f.fully_diluted_market_cap / (f.total30d * 12)
+                ELSE NULL
+            END AS pf_ratio_forward_1y
+        FROM
+            fees_transformed f
+        WHERE
+            f.fully_diluted_market_cap IS NOT NULL
+            AND f.fully_diluted_market_cap > 0
+            AND (f.total1y > 0 OR f.total30d > 0)
+        ORDER BY
+            pf_ratio_forward_1y ASC NULLS LAST,
+            pf_ratio_1y ASC NULLS LAST;
+        """
+        fees_result = con.execute(fees_query).fetchdf()
+        fees_result.to_json(fees_export_path, orient='records', indent=2)
+        logging.info(f"Exported {len(fees_result)} rows to {fees_export_path}")
+
+        # Revenue Table
+        revenue_query = """
+        SELECT
+            r.name AS protocol_name,
+            r.category AS category,
+            r.fully_diluted_market_cap AS market_cap,
+            r.total30d AS revenue_30d,
+            r.total1y AS revenue_1y,
+            r.change_30dover30d AS revenue_30d_change,
+            (r.total30d * 12) AS revenue_forward_1y,
+            CASE
                 WHEN r.total1y > 0 THEN r.fully_diluted_market_cap / r.total1y
                 ELSE NULL
             END AS pr_ratio_1y,
             CASE
-                WHEN (f.total30d * 12) > 0 THEN f.fully_diluted_market_cap / (f.total30d * 12)
-                ELSE NULL
-            END AS pf_ratio_forward_1y,
-            CASE
                 WHEN (r.total30d * 12) > 0 THEN r.fully_diluted_market_cap / (r.total30d * 12)
                 ELSE NULL
-            END AS pr_ratio_forward_1y,
-            f.change_7d AS fees_change_7d,
-            r.change_7d AS revenue_change_7d
+            END AS pr_ratio_forward_1y
         FROM
-            fees_transformed f
-        JOIN
-            revenue_transformed r ON f.defillamaId = r.defillamaId
+            revenue_transformed r
         WHERE
-            f.fully_diluted_market_cap IS NOT NULL
-            AND f.fully_diluted_market_cap > 0
-            AND ((f.total1y > 0 OR r.total1y > 0) OR (f.total30d > 0 OR r.total30d > 0))
+            r.fully_diluted_market_cap IS NOT NULL
+            AND r.fully_diluted_market_cap > 0
+            AND (r.total1y > 0 OR r.total30d > 0)
         ORDER BY
-            pf_ratio_forward_1y ASC NULLS LAST,
             pr_ratio_forward_1y ASC NULLS LAST,
-            pf_ratio_1y ASC NULLS LAST,
-            pr_ratio_1y ASC NULLS LAST
-        LIMIT 20;
+            pr_ratio_1y ASC NULLS LAST;
         """
-
-        result = con.execute(query).fetchdf()
-        result.to_json(export_path, orient='records', indent=2)
-        logging.info(f"Exported {len(result)} rows to {export_path}")
+        revenue_result = con.execute(revenue_query).fetchdf()
+        revenue_result.to_json(revenue_export_path, orient='records', indent=2)
+        logging.info(f"Exported {len(revenue_result)} rows to {revenue_export_path}")
 
     except Exception as e:
         logging.error(f"An error occurred: {e}")
