@@ -5,18 +5,18 @@ import './App.css';
 const FEES_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'fully_diluted_market_cap', label: 'FDV ($)', type: 'currency' },
+  { key: 'fully_diluted_market_cap', label: 'FDV ($M)', type: 'fdv_million' },
   { key: 'fees_30d', label: 'Fees (30d) ($)', type: 'currency' },
   { key: 'fees_30d_change', label: 'Fees 30d Change (%)', type: 'number' },
-  { key: 'pf_ratio_forward_1y', label: 'P/F Ratio (Forward 1y)', type: 'number' },
+  { key: 'pf_ratio_forward_1y', label: 'P/F Ratio (Forward 1y)', type: 'ratio' },
 ];
 const REVENUE_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'fully_diluted_market_cap', label: 'FDV ($)', type: 'currency' },
+  { key: 'fully_diluted_market_cap', label: 'FDV ($M)', type: 'fdv_million' },
   { key: 'revenue_30d', label: 'Revenue (30d) ($)', type: 'currency' },
   { key: 'revenue_30d_change', label: 'Revenue 30d Change (%)', type: 'number' },
-  { key: 'pr_ratio_forward_1y', label: 'P/R Ratio (Forward 1y)', type: 'number' },
+  { key: 'pr_ratio_forward_1y', label: 'P/R Ratio (Forward 1y)', type: 'ratio' },
 ];
 
 function useTableData(url) {
@@ -65,8 +65,8 @@ function Table({ columns, data, title }) {
       if (aVal === null || aVal === undefined) return 1;
       if (bVal === null || bVal === undefined) return -1;
       const col = columns.find(c => c.key === sortConfig.key);
-      if (col && (col.type === 'number' || col.type === 'currency')) {
-        return sortConfig.direction === 'asc' ? aVal - bVal : bVal - aVal;
+      if (col && (col.type === 'number' || col.type === 'currency' || col.type === 'fdv_million' || col.type === 'ratio')) {
+        return sortConfig.direction === 'asc' ? Number(aVal) - Number(bVal) : Number(bVal) - Number(aVal);
       }
       return sortConfig.direction === 'asc'
         ? String(aVal).localeCompare(String(bVal))
@@ -149,13 +149,17 @@ function Table({ columns, data, title }) {
                 {columns.map((col) => (
                   <td
                     key={col.key}
-                    style={{ textAlign: col.type === 'number' || col.type === 'currency' ? 'right' : 'left', whiteSpace: 'nowrap' }}
+                    style={{ textAlign: col.type === 'number' || col.type === 'currency' || col.type === 'fdv_million' || col.type === 'ratio' ? 'right' : 'left', whiteSpace: 'nowrap' }}
                   >
-                    {col.type === 'currency' && row[col.key] != null
-                      ? Number(row[col.key]).toLocaleString(undefined, { style: 'decimal', maximumFractionDigits: 2 })
-                      : row[col.key] != null
-                        ? row[col.key].toString()
-                        : ''}
+                    {col.type === 'fdv_million' && row[col.key] != null
+                      ? Number(row[col.key] / 1_000_000).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+                      : col.type === 'currency' && row[col.key] != null
+                        ? Number(row[col.key]).toLocaleString(undefined, { style: 'decimal', maximumFractionDigits: 2 })
+                        : col.type === 'ratio' && row[col.key] != null
+                          ? Number(row[col.key]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+                          : row[col.key] != null
+                            ? row[col.key].toString()
+                            : ''}
                   </td>
                 ))}
               </tr>

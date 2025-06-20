@@ -1,13 +1,5 @@
 [
   {
-    "protocol_name":"SUITE",
-    "category":"Trading App",
-    "fully_diluted_market_cap":300882.74,
-    "revenue_30d":18466.0,
-    "revenue_30d_change":-60.57,
-    "pr_ratio_forward_1y":1.3578231164
-  },
-  {
     "protocol_name":"Inverse Finance FiRM",
     "category":"CDP",
     "fully_diluted_market_cap":17225527.0100000016,
@@ -40,14 +32,6 @@
     "pr_ratio_forward_1y":4.0793885861
   },
   {
-    "protocol_name":"Valas Finance",
-    "category":"Lending",
-    "fully_diluted_market_cap":403441.17,
-    "revenue_30d":7242.0,
-    "revenue_30d_change":500.5,
-    "pr_ratio_forward_1y":4.642377451
-  },
-  {
     "protocol_name":"Launch Coin on Believe",
     "category":"Launchpad",
     "fully_diluted_market_cap":165893886.0900000036,
@@ -70,14 +54,6 @@
     "revenue_30d":633404.0,
     "revenue_30d_change":-79.05,
     "pr_ratio_forward_1y":5.5144806014
-  },
-  {
-    "protocol_name":"BetSwirl",
-    "category":"Prediction Market",
-    "fully_diluted_market_cap":971167.45,
-    "revenue_30d":14329.0,
-    "revenue_30d_change":7.69,
-    "pr_ratio_forward_1y":5.6480299277
   },
   {
     "protocol_name":"Merkle Trade",
@@ -192,14 +168,6 @@
     "pr_ratio_forward_1y":16.0731123643
   },
   {
-    "protocol_name":"Saber",
-    "category":"Dexs",
-    "fully_diluted_market_cap":146428.1,
-    "revenue_30d":721.0,
-    "revenue_30d_change":-54.02,
-    "pr_ratio_forward_1y":16.9241909385
-  },
-  {
     "protocol_name":"Equilibria",
     "category":"Yield",
     "fully_diluted_market_cap":41761834.6300000027,
@@ -280,14 +248,6 @@
     "pr_ratio_forward_1y":26.4323838044
   },
   {
-    "protocol_name":"Sonne Finance",
-    "category":"Lending",
-    "fully_diluted_market_cap":75078.96,
-    "revenue_30d":213.0,
-    "revenue_30d_change":-21.69,
-    "pr_ratio_forward_1y":29.3736150235
-  },
-  {
     "protocol_name":"Vader AI",
     "category":"AI Agents",
     "fully_diluted_market_cap":62271339.3800000027,
@@ -336,14 +296,6 @@
     "pr_ratio_forward_1y":40.2062946278
   },
   {
-    "protocol_name":"Nerve",
-    "category":"Dexs",
-    "fully_diluted_market_cap":160917.86,
-    "revenue_30d":315.0,
-    "revenue_30d_change":76.97,
-    "pr_ratio_forward_1y":42.5708624339
-  },
-  {
     "protocol_name":"Mendi Finance",
     "category":"Lending",
     "fully_diluted_market_cap":1256782.0600000001,
@@ -374,14 +326,6 @@
     "revenue_30d":386172.0,
     "revenue_30d_change":-0.94,
     "pr_ratio_forward_1y":59.1892176176
-  },
-  {
-    "protocol_name":"Swop",
-    "category":"Dexs",
-    "fully_diluted_market_cap":535649.84,
-    "revenue_30d":723.0,
-    "revenue_30d_change":-13.21,
-    "pr_ratio_forward_1y":61.7392623329
   },
   {
     "protocol_name":"Jupiter Aggregator",
@@ -454,14 +398,6 @@
     "revenue_30d":60782.0,
     "revenue_30d_change":-0.84,
     "pr_ratio_forward_1y":187.9247122366
-  },
-  {
-    "protocol_name":"WigoSwap",
-    "category":"Dexs",
-    "fully_diluted_market_cap":550820.3,
-    "revenue_30d":239.0,
-    "revenue_30d_change":-93.57,
-    "pr_ratio_forward_1y":192.0572873082
   },
   {
     "protocol_name":"Strike",
@@ -558,14 +494,6 @@
     "revenue_30d":5157.0,
     "revenue_30d_change":-126.09,
     "pr_ratio_forward_1y":681.7729922112
-  },
-  {
-    "protocol_name":"Furucombo",
-    "category":"Services",
-    "fully_diluted_market_cap":95334.0,
-    "revenue_30d":11.0,
-    "revenue_30d_change":-62.07,
-    "pr_ratio_forward_1y":722.2272727273
   },
   {
     "protocol_name":"ThalaSwap",
@@ -710,133 +638,5 @@
     "revenue_30d":3.0,
     "revenue_30d_change":-87.5,
     "pr_ratio_forward_1y":107876.815
-  },
-  {
-    "protocol_name":"Reserve Protocol",
-    "category":"Indexes",
-    "fully_diluted_market_cap":683997925.4600000381,
-    "revenue_30d":null,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Illuvium",
-    "category":"Gaming",
-    "fully_diluted_market_cap":111673068.7199999988,
-    "revenue_30d":0.0,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Goldfinch",
-    "category":"RWA Lending",
-    "fully_diluted_market_cap":85203701.099999994,
-    "revenue_30d":0.0,
-    "revenue_30d_change":-100.0,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Gearbox",
-    "category":"Lending",
-    "fully_diluted_market_cap":38680045.049999997,
-    "revenue_30d":0.0,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Synapse",
-    "category":"Cross Chain Bridge",
-    "fully_diluted_market_cap":35417481.7400000021,
-    "revenue_30d":null,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Juice Finance",
-    "category":"Leveraged Farming",
-    "fully_diluted_market_cap":340826.18,
-    "revenue_30d":0.0,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Angle",
-    "category":"CDP",
-    "fully_diluted_market_cap":15523668.2699999996,
-    "revenue_30d":null,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Friend3",
-    "category":"SoFi",
-    "fully_diluted_market_cap":2379081.4100000001,
-    "revenue_30d":0.0,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"X2Y2",
-    "category":"NFT Lending",
-    "fully_diluted_market_cap":1449908.0600000001,
-    "revenue_30d":0.0,
-    "revenue_30d_change":-100.0,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"BaseSwap V2",
-    "category":"Dexs",
-    "fully_diluted_market_cap":969229.54,
-    "revenue_30d":null,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Honeyswap",
-    "category":"Dexs",
-    "fully_diluted_market_cap":50303.59,
-    "revenue_30d":null,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"QiDao",
-    "category":"CDP",
-    "fully_diluted_market_cap":40586.87,
-    "revenue_30d":0.0,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Metavault.Trade",
-    "category":"Derivatives",
-    "fully_diluted_market_cap":193145.86,
-    "revenue_30d":null,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Equilibre",
-    "category":"Dexs",
-    "fully_diluted_market_cap":546.54,
-    "revenue_30d":null,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"KyotoSwap",
-    "category":"Dexs",
-    "fully_diluted_market_cap":38239335.9399999976,
-    "revenue_30d":null,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
-  },
-  {
-    "protocol_name":"Yamfore",
-    "category":"Lending",
-    "fully_diluted_market_cap":1450912.71,
-    "revenue_30d":0.0,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":null
   }
 ]
