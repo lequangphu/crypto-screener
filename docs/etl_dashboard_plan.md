@@ -23,11 +23,11 @@
   - [x] Ensure `data/exports/` exists or create it if missing
 
 ### Phase 3: Set Up React Dashboard to Fetch and Visualize Exported Data
-- [ ] **If React app is in this repo:**
-  - [ ] Create a minimal React dashboard (or stub) that fetches JSON files from `data/exports/`
-  - [ ] Visualize the data (basic table or chart)
-- [ ] **If React app is not in this repo:**
-  - [ ] Document the data contract (JSON structure, file names, sample data) for frontend integration
+- [x] **If React app is in this repo:**
+  - [x] Create a minimal React dashboard (or stub) that fetches JSON files from `data/exports/`
+  - [x] Visualize the data (basic table or chart)
+- [x] **If React app is not in this repo:**
+  - [x] Document the data contract (JSON structure, file names, sample data) for frontend integration
 
 ---
 
