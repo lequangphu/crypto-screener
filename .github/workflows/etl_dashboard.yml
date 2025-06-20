@@ -58,6 +58,11 @@ jobs:
           cd dashboard
           npm run build
 
+      - name: Copy data exports to dashboard build
+        run: |
+          mkdir -p dashboard/dist/data/exports
+          cp -r data/exports/*.json dashboard/dist/data/exports/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
