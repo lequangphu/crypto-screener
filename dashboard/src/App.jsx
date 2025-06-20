@@ -5,23 +5,17 @@ import './App.css';
 const FEES_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'market_cap', label: 'Market Cap', type: 'number' },
-  { key: 'fees_30d', label: 'Fees (30d)', type: 'number' },
-  { key: 'fees_1y', label: 'Fees (1y)', type: 'number' },
+  { key: 'fully_diluted_market_cap', label: 'FDV ($)', type: 'currency' },
+  { key: 'fees_30d', label: 'Fees (30d) ($)', type: 'currency' },
   { key: 'fees_30d_change', label: 'Fees 30d Change (%)', type: 'number' },
-  { key: 'fees_forward_1y', label: 'Fees Forward (1y)', type: 'number' },
-  { key: 'pf_ratio_1y', label: 'P/F Ratio (1y)', type: 'number' },
   { key: 'pf_ratio_forward_1y', label: 'P/F Ratio (Forward 1y)', type: 'number' },
 ];
 const REVENUE_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'market_cap', label: 'Market Cap', type: 'number' },
-  { key: 'revenue_30d', label: 'Revenue (30d)', type: 'number' },
-  { key: 'revenue_1y', label: 'Revenue (1y)', type: 'number' },
+  { key: 'fully_diluted_market_cap', label: 'FDV ($)', type: 'currency' },
+  { key: 'revenue_30d', label: 'Revenue (30d) ($)', type: 'currency' },
   { key: 'revenue_30d_change', label: 'Revenue 30d Change (%)', type: 'number' },
-  { key: 'revenue_forward_1y', label: 'Revenue Forward (1y)', type: 'number' },
-  { key: 'pr_ratio_1y', label: 'P/R Ratio (1y)', type: 'number' },
   { key: 'pr_ratio_forward_1y', label: 'P/R Ratio (Forward 1y)', type: 'number' },
 ];
 
@@ -39,7 +33,7 @@ function useTableData(url) {
 function Table({ columns, data, title }) {
   // Per-column filter state
   const [filters, setFilters] = useState(() =>
-    Object.fromEntries(columns.map((col) => [col.key, col.type === 'number' ? { min: '', max: '' } : '']))
+    Object.fromEntries(columns.map((col) => [col.key, col.type === 'number' || col.type === 'currency' ? { min: '', max: '' } : '']))
   );
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
 
@@ -50,7 +44,7 @@ function Table({ columns, data, title }) {
         const val = (row[col.key] ?? '').toString().toLowerCase();
         const filterVal = (filters[col.key] ?? '').toLowerCase();
         return val.includes(filterVal);
-      } else if (col.type === 'number') {
+      } else if (col.type === 'number' || col.type === 'currency') {
         const val = Number(row[col.key]);
         const { min, max } = filters[col.key] || {};
         if (min !== '' && !isNaN(Number(min)) && val < Number(min)) return false;
@@ -70,7 +64,8 @@ function Table({ columns, data, title }) {
       if (aVal === bVal) return 0;
       if (aVal === null || aVal === undefined) return 1;
       if (bVal === null || bVal === undefined) return -1;
-      if (typeof aVal === 'number' && typeof bVal === 'number') {
+      const col = columns.find(c => c.key === sortConfig.key);
+      if (col && (col.type === 'number' || col.type === 'currency')) {
         return sortConfig.direction === 'asc' ? aVal - bVal : bVal - aVal;
       }
       return sortConfig.direction === 'asc'
@@ -108,7 +103,7 @@ function Table({ columns, data, title }) {
                 <th
                   key={col.key}
                   onClick={() => handleSort(col.key)}
-                  style={{ cursor: 'pointer', textAlign: col.type === 'number' ? 'right' : 'left' }}
+                  style={{ cursor: 'pointer', textAlign: col.type === 'number' || col.type === 'currency' ? 'right' : 'left' }}
                 >
                   {col.label}
                   {sortConfig.key === col.key ? (sortConfig.direction === 'asc' ? ' ▲' : ' ▼') : ''}
@@ -117,7 +112,7 @@ function Table({ columns, data, title }) {
             </tr>
             <tr>
               {columns.map((col) => (
-                <th key={col.key} style={{ textAlign: col.type === 'number' ? 'right' : 'left' }}>
+                <th key={col.key} style={{ textAlign: col.type === 'number' || col.type === 'currency' ? 'right' : 'left' }}>
                   {col.type === 'text' ? (
                     <input
                       type="text"
@@ -154,9 +149,13 @@ function Table({ columns, data, title }) {
                 {columns.map((col) => (
                   <td
                     key={col.key}
-                    style={{ textAlign: col.type === 'number' ? 'right' : 'left', whiteSpace: 'nowrap' }}
+                    style={{ textAlign: col.type === 'number' || col.type === 'currency' ? 'right' : 'left', whiteSpace: 'nowrap' }}
                   >
-                    {row[col.key] != null ? row[col.key].toLocaleString(undefined, { maximumFractionDigits: 4 }) : ''}
+                    {col.type === 'currency' && row[col.key] != null
+                      ? Number(row[col.key]).toLocaleString(undefined, { style: 'decimal', maximumFractionDigits: 2 })
+                      : row[col.key] != null
+                        ? row[col.key].toString()
+                        : ''}
                   </td>
                 ))}
               </tr>
@@ -166,6 +165,9 @@ function Table({ columns, data, title }) {
       </div>
       <p style={{ marginTop: 8, fontSize: 12, color: '#888' }}>
         Click column headers to sort. Filter each column individually. Numeric columns support min/max.
+      </p>
+       <p style={{ marginTop: 4, fontSize: 12, color: '#888' }}>
+        <strong>Note:</strong> Forward P/F and P/R ratios are calculated as <code>FDV / (30d Fees/Revenue * 12)</code>.
       </p>
     </div>
   );

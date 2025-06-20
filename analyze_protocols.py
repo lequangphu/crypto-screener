@@ -28,15 +28,9 @@ def analyze_and_export():
         SELECT
             f.name AS protocol_name,
             f.category AS category,
-            f.fully_diluted_market_cap AS market_cap,
+            f.fully_diluted_market_cap,
             f.total30d AS fees_30d,
-            f.total1y AS fees_1y,
             f.change_30dover30d AS fees_30d_change,
-            (f.total30d * 12) AS fees_forward_1y,
-            CASE
-                WHEN f.total1y > 0 THEN f.fully_diluted_market_cap / f.total1y
-                ELSE NULL
-            END AS pf_ratio_1y,
             CASE
                 WHEN (f.total30d * 12) > 0 THEN f.fully_diluted_market_cap / (f.total30d * 12)
                 ELSE NULL
@@ -48,8 +42,7 @@ def analyze_and_export():
             AND f.fully_diluted_market_cap > 0
             AND (f.total1y > 0 OR f.total30d > 0)
         ORDER BY
-            pf_ratio_forward_1y ASC NULLS LAST,
-            pf_ratio_1y ASC NULLS LAST;
+            pf_ratio_forward_1y ASC NULLS LAST;
         """
         fees_result = con.execute(fees_query).fetchdf()
         fees_result.to_json(fees_export_path, orient='records', indent=2)
@@ -60,15 +53,9 @@ def analyze_and_export():
         SELECT
             r.name AS protocol_name,
             r.category AS category,
-            r.fully_diluted_market_cap AS market_cap,
+            r.fully_diluted_market_cap,
             r.total30d AS revenue_30d,
-            r.total1y AS revenue_1y,
             r.change_30dover30d AS revenue_30d_change,
-            (r.total30d * 12) AS revenue_forward_1y,
-            CASE
-                WHEN r.total1y > 0 THEN r.fully_diluted_market_cap / r.total1y
-                ELSE NULL
-            END AS pr_ratio_1y,
             CASE
                 WHEN (r.total30d * 12) > 0 THEN r.fully_diluted_market_cap / (r.total30d * 12)
                 ELSE NULL
@@ -80,8 +67,7 @@ def analyze_and_export():
             AND r.fully_diluted_market_cap > 0
             AND (r.total1y > 0 OR r.total30d > 0)
         ORDER BY
-            pr_ratio_forward_1y ASC NULLS LAST,
-            pr_ratio_1y ASC NULLS LAST;
+            pr_ratio_forward_1y ASC NULLS LAST;
         """
         revenue_result = con.execute(revenue_query).fetchdf()
         revenue_result.to_json(revenue_export_path, orient='records', indent=2)
