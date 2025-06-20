@@ -39,8 +39,8 @@ def analyze_and_export():
             fees_transformed f
         WHERE
             f.fully_diluted_market_cap IS NOT NULL
-            AND f.fully_diluted_market_cap > 0
-            AND (f.total1y > 0 OR f.total30d > 0)
+            AND f.fully_diluted_market_cap >= 1000000
+            AND f.total30d > 0
         ORDER BY
             pf_ratio_forward_1y ASC NULLS LAST;
         """
@@ -64,8 +64,8 @@ def analyze_and_export():
             revenue_transformed r
         WHERE
             r.fully_diluted_market_cap IS NOT NULL
-            AND r.fully_diluted_market_cap > 0
-            AND (r.total1y > 0 OR r.total30d > 0)
+            AND r.fully_diluted_market_cap >= 1000000
+            AND r.total30d > 0
         ORDER BY
             pr_ratio_forward_1y ASC NULLS LAST;
         """
