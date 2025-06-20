@@ -10,10 +10,13 @@
   - [x] Add logging at each step (start, success, error)
   - [x] Implement retry logic for API calls (3 attempts, exponential backoff)
   - [ ] Parameterize for partial/full refreshes (optional)
+  - [x] Handle nested data ingestion errors: serialize dict/list columns as JSON strings before loading into DuckDB
+  - [x] Add fail-fast checks: exit with error if protocols data is missing or protocols_staging table is not created
 - [x] **Transformation Layer (`transform_data.py`)**
   - [x] Refactor each transformation step into a modular function
   - [x] Add logging for each transformation step (row counts, summaries)
   - [x] Add validation: ensure `revenue` and `fees` fields in revenue table are non-null (log error if not)
+  - [x] Add fail-fast check: exit with error if protocols_staging table is missing before transformation
 
 ### Phase 2: Implement Data Export to JSON for Dashboard Use
 - [x] **Export Logic**
@@ -38,11 +41,14 @@
    - Add logging at each step (start, success, error).
    - Implement retry logic for API calls (e.g., 3 attempts with exponential backoff).
    - Parameterize for partial/full refreshes (optional, if time allows).
+   - Handle nested data ingestion errors: serialize dict/list columns as JSON strings before loading into DuckDB
+   - Add fail-fast checks: exit with error if protocols data is missing or protocols_staging table is not created
 
 2. **Transformation Layer (`transform_data.py`):**
    - Refactor into modular functions (one per join/enrichment).
    - Add logging for each transformation step (row counts, summaries).
    - Add validation: after transforming the revenue table, check that `revenue` and `fees` fields are non-null (log error if not).
+   - Add fail-fast check: exit with error if protocols_staging table is missing before transformation
 
 ---
 
