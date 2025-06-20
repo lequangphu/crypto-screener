@@ -124,10 +124,14 @@ def main():
 
     # Load data into DuckDB tables
     try:
+        if df_protocols is None:
+            logging.error("Protocols data is None. Exiting ingestion.")
+            exit(1)
         load_dataframe_to_duckdb(con, df_protocols, "protocols_staging")
         logging.info("Protocols data ingested into DuckDB.")
     except Exception as e:
         logging.error(f"Error ingesting protocols data into DuckDB: {e}")
+        exit(1)
     try:
         load_dataframe_to_duckdb(con, df_fees_overview, "fees_overview_staging")
         logging.info("Fees Overview data ingested into DuckDB.")
@@ -143,6 +147,13 @@ def main():
         logging.info("CoinMarketCap data ingested into DuckDB.")
     except Exception as e:
         logging.error(f"Error ingesting coinmarketcap data into DuckDB: {e}")
+
+    # After all ingestion, check that protocols_staging exists
+    table_exists = con.execute("SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'protocols_staging'").fetchone()[0]
+    if table_exists == 0:
+        logging.error("protocols_staging table does not exist after ingestion. Exiting.")
+        con.close()
+        exit(1)
 
     logging.info(f"Raw data successfully ingested into {DUCKDB_DATABASE_PATH}")
     con.close()

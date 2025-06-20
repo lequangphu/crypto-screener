@@ -69,6 +69,12 @@ def validate_revenue_and_fees_non_null(con):
 
 def main():
     con = duckdb.connect(database=DUCKDB_DATABASE_PATH, read_only=False)
+    # Pre-check for protocols_staging table
+    table_exists = con.execute("SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'protocols_staging'").fetchone()[0]
+    if table_exists == 0:
+        logging.error("protocols_staging table does not exist. Exiting transformation.")
+        con.close()
+        exit(1)
     add_cmcid_to_fees(con)
     add_fully_diluted_market_cap_to_fees(con)
     add_cmcid_to_revenue(con)
