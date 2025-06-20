@@ -5,6 +5,7 @@ import os
 import logging
 from dotenv import load_dotenv
 import time
+import json
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
@@ -75,7 +76,12 @@ def fetch_coinmarketcap_listings(api_key):
 def normalize_protocols_data(raw_data):
     if not raw_data:
         return None
-    return pd.DataFrame(raw_data)
+    df = pd.DataFrame(raw_data)
+    # Convert dict/list columns to JSON strings
+    for col in df.columns:
+        if df[col].apply(lambda x: isinstance(x, (dict, list))).any():
+            df[col] = df[col].apply(lambda x: json.dumps(x) if isinstance(x, (dict, list)) else x)
+    return df
 
 def normalize_fees_overview_data(raw_data):
     if not raw_data or 'protocols' not in raw_data:
