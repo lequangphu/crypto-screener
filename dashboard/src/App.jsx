@@ -178,8 +178,8 @@ function Table({ columns, data, title }) {
 }
 
 function App() {
-  const feesData = useTableData('/fees_analysis.json');
-  const revenueData = useTableData('/revenue_analysis.json');
+  const feesData = useTableData('data/exports/fees_analysis.json');
+  const revenueData = useTableData('data/exports/revenue_analysis.json');
 
   return (
     <div className="App">
