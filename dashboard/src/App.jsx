@@ -30,7 +30,7 @@ function useTableData(url) {
   return data;
 }
 
-function Table({ columns, data, title }) {
+function Table({ columns, data }) {
   // Per-column filter state
   const [filters, setFilters] = useState(() =>
     Object.fromEntries(columns.map((col) => [col.key, col.type === 'number' || col.type === 'currency' ? { min: '', max: '' } : '']))
@@ -94,7 +94,6 @@ function Table({ columns, data, title }) {
 
   return (
     <div style={{ marginBottom: 48 }}>
-      <h2>{title}</h2>
       <div style={{ overflowX: 'auto' }}>
         <table>
           <thead>
@@ -194,8 +193,8 @@ function App() {
         </button>
       </div>
 
-      {activeTab === 'fees' && <Table columns={FEES_COLUMNS} data={feesData} title="Fees" />}
-      {activeTab === 'revenue' && <Table columns={REVENUE_COLUMNS} data={revenueData} title="Revenue" />}
+      {activeTab === 'fees' && <Table columns={FEES_COLUMNS} data={feesData} />}
+      {activeTab === 'revenue' && <Table columns={REVENUE_COLUMNS} data={revenueData} />}
     </div>
   );
 }
