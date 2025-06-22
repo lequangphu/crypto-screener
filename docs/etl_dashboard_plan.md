@@ -29,6 +29,11 @@
 - [x] **If React app is in this repo:**
   - [x] Create a minimal React dashboard (or stub) that fetches JSON files from `data/exports/`
   - [x] Visualize the data (basic table or chart)
+  - [x] Fix Vite base path for GitHub Pages deployment (`base: '/crypto-screener/'` in vite.config.js)
+  - [x] Update React data fetch paths to use correct relative URLs (`data/exports/fees_analysis.json` etc.)
+  - [x] Update workflow to copy data export JSON files into dashboard build output before deploy
+  - [x] Add manual workflow_dispatch trigger for manual runs
+  - [x] Add troubleshooting and debugging steps for blank screen, 404s, and data loading issues
 - [x] **If React app is not in this repo:**
   - [x] Document the data contract (JSON structure, file names, sample data) for frontend integration
 

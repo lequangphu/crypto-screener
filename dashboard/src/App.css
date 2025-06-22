@@ -57,3 +57,38 @@
   background-color: #fff;
   border-bottom-color: transparent;
 }
+
+.usd-label {
+  font-size: 0.7em;
+  color: #888;
+  letter-spacing: 0.03em;
+  margin-left: 0.1em;
+}
+
+.percent-change {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.neg-change {
+  color: #ff4d4f;
+}
+
+.pos-change {
+  color: #1fc2a0;
+}
+
+.change-sublabel {
+  font-size: 0.7em;
+  color: #888;
+  font-weight: normal;
+  margin-top: 0.1em;
+}
+
+table tr {
+  border-bottom: 1px solid #333;
+}
+
+table td, table th {
+  background: transparent;
+}
