@@ -5,17 +5,17 @@ import './App.css';
 const FEES_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'fully_diluted_market_cap', label: 'FDV ($M)', type: 'fdv_million' },
-  { key: 'fees_30d', label: 'Fees (30d) ($)', type: 'currency' },
-  { key: 'fees_30d_change', label: 'Fees 30d Change (%)', type: 'number' },
+  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'fdv_million' },
+  { key: 'fees_30d', label: 'Fees (30d)', type: 'currency' },
+  { key: 'fees_30d_change', label: 'Fees 30d Change', type: 'number' },
   { key: 'pf_ratio_forward_1y', label: 'P/F Ratio (Forward 1y)', type: 'ratio' },
 ];
 const REVENUE_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'fully_diluted_market_cap', label: 'FDV ($M)', type: 'fdv_million' },
-  { key: 'revenue_30d', label: 'Revenue (30d) ($)', type: 'currency' },
-  { key: 'revenue_30d_change', label: 'Revenue 30d Change (%)', type: 'number' },
+  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'fdv_million' },
+  { key: 'revenue_30d', label: 'Revenue (30d)', type: 'currency' },
+  { key: 'revenue_30d_change', label: 'Revenue 30d Change', type: 'number' },
   { key: 'pr_ratio_forward_1y', label: 'P/R Ratio (Forward 1y)', type: 'ratio' },
 ];
 
@@ -187,7 +187,7 @@ function Table({ columns, data }) {
                       formatPercentChange(row[col.key])
                     ) : col.type === 'fdv_million' && row[col.key] != null ? (
                       <span>
-                        {formatCompactUSD(row[col.key] * 1_000_000)} <span className="usd-label">USD</span>
+                        {formatCompactUSD(row[col.key])} <span className="usd-label">USD</span>
                       </span>
                     ) : col.type === 'currency' && row[col.key] != null ? (
                       <span>
