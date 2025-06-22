@@ -5,17 +5,17 @@ import './App.css';
 const FEES_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'fdv_million' },
-  { key: 'fees_30d', label: 'Fees (30d)', type: 'currency' },
-  { key: 'fees_30d_change', label: 'Fees 30d Change', type: 'number' },
+  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'usd' },
+  { key: 'fees_30d', label: 'Fees (30d)', type: 'usd' },
+  { key: 'fees_30d_change', label: 'Fees 30d Change', type: 'percent' },
   { key: 'pf_ratio_forward_1y', label: 'P/F Ratio (Forward 1y)', type: 'ratio' },
 ];
 const REVENUE_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'fdv_million' },
-  { key: 'revenue_30d', label: 'Revenue (30d)', type: 'currency' },
-  { key: 'revenue_30d_change', label: 'Revenue 30d Change', type: 'number' },
+  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'usd' },
+  { key: 'revenue_30d', label: 'Revenue (30d)', type: 'usd' },
+  { key: 'revenue_30d_change', label: 'Revenue 30d Change', type: 'percent' },
   { key: 'pr_ratio_forward_1y', label: 'P/R Ratio (Forward 1y)', type: 'ratio' },
 ];
 
@@ -63,7 +63,7 @@ function formatPercentChange(value) {
 function Table({ columns, data }) {
   // Per-column filter state
   const [filters, setFilters] = useState(() =>
-    Object.fromEntries(columns.map((col) => [col.key, col.type === 'number' || col.type === 'currency' ? { min: '', max: '' } : '']))
+    Object.fromEntries(columns.map((col) => [col.key, ['usd', 'number', 'percent', 'ratio'].includes(col.type) ? { min: '', max: '' } : '']))
   );
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
 
@@ -74,11 +74,13 @@ function Table({ columns, data }) {
         const val = (row[col.key] ?? '').toString().toLowerCase();
         const filterVal = (filters[col.key] ?? '').toLowerCase();
         return val.includes(filterVal);
-      } else if (col.type === 'number' || col.type === 'currency') {
+      } else if (["usd", "number", "percent", "ratio"].includes(col.type)) {
         const val = Number(row[col.key]);
         const { min, max } = filters[col.key] || {};
-        if (min !== '' && !isNaN(Number(min)) && val < Number(min)) return false;
-        if (max !== '' && !isNaN(Number(max)) && val > Number(max)) return false;
+        const minVal = Number(min);
+        const maxVal = Number(max);
+        if (min !== '' && !isNaN(minVal) && val < minVal) return false;
+        if (max !== '' && !isNaN(maxVal) && val > maxVal) return false;
         return true;
       }
       return true;
@@ -95,7 +97,7 @@ function Table({ columns, data }) {
       if (aVal === null || aVal === undefined) return 1;
       if (bVal === null || bVal === undefined) return -1;
       const col = columns.find(c => c.key === sortConfig.key);
-      if (col && (col.type === 'number' || col.type === 'currency' || col.type === 'fdv_million' || col.type === 'ratio')) {
+      if (col && ["usd", "number", "percent", "ratio"].includes(col.type)) {
         return sortConfig.direction === 'asc' ? Number(aVal) - Number(bVal) : Number(bVal) - Number(aVal);
       }
       return sortConfig.direction === 'asc'
@@ -122,6 +124,30 @@ function Table({ columns, data }) {
     });
   };
 
+  function renderCell(col, value) {
+    switch (col.type) {
+      case 'usd':
+        return (
+          <span>
+            {formatCompactUSD(value)} <span className="usd-label">USD</span>
+          </span>
+        );
+      case 'percent': {
+        if (value == null || isNaN(value)) return '';
+        const color = value > 0 ? 'pos-change' : value < 0 ? 'neg-change' : '';
+        const sign = value > 0 ? '+' : '';
+        return <span className={`percent-change ${color}`}><b>{sign}{Number(value).toFixed(2)}%</b></span>;
+      }
+      case 'ratio':
+        return value == null || isNaN(value) ? '--' : `${Number(value).toFixed(1)}x`;
+      case 'number':
+        return value == null || isNaN(value) ? '' : Number(value).toLocaleString();
+      case 'text':
+      default:
+        return value != null ? value.toString() : '';
+    }
+  }
+
   return (
     <div style={{ marginBottom: 48 }}>
       <div style={{ overflowX: 'auto' }}>
@@ -132,7 +158,7 @@ function Table({ columns, data }) {
                 <th
                   key={col.key}
                   onClick={() => handleSort(col.key)}
-                  style={{ cursor: 'pointer', textAlign: col.type === 'number' || col.type === 'currency' ? 'right' : 'left' }}
+                  style={{ cursor: 'pointer', textAlign: ['usd', 'number', 'percent', 'ratio'].includes(col.type) ? 'right' : 'left' }}
                 >
                   {col.label}
                   {sortConfig.key === col.key ? (sortConfig.direction === 'asc' ? ' ▲' : ' ▼') : ''}
@@ -144,7 +170,7 @@ function Table({ columns, data }) {
             </tr>
             <tr>
               {columns.map((col) => (
-                <th key={col.key} style={{ textAlign: col.type === 'number' || col.type === 'currency' ? 'right' : 'left' }}>
+                <th key={col.key} style={{ textAlign: ['usd', 'number', 'percent', 'ratio'].includes(col.type) ? 'right' : 'left' }}>
                   {col.type === 'text' ? (
                     <input
                       type="text"
@@ -156,18 +182,18 @@ function Table({ columns, data }) {
                   ) : (
                     <div style={{ display: 'flex', gap: 2, justifyContent: 'flex-end' }}>
                       <input
-                        type="number"
+                        type="text"
                         value={filters[col.key].min}
                         onChange={(e) => handleFilterChange(col.key, e.target.value, 'min')}
                         placeholder="Min"
-                        style={{ width: 50 }}
+                        style={{ width: 70 }}
                       />
                       <input
-                        type="number"
+                        type="text"
                         value={filters[col.key].max}
                         onChange={(e) => handleFilterChange(col.key, e.target.value, 'max')}
                         placeholder="Max"
-                        style={{ width: 50 }}
+                        style={{ width: 70 }}
                       />
                     </div>
                   )}
@@ -181,23 +207,9 @@ function Table({ columns, data }) {
                 {columns.map((col) => (
                   <td
                     key={col.key}
-                    style={{ textAlign: col.type === 'number' || col.type === 'currency' || col.type === 'fdv_million' || col.type === 'ratio' ? 'right' : 'left', whiteSpace: 'nowrap' }}
+                    style={{ textAlign: ['usd', 'number', 'percent', 'ratio'].includes(col.type) ? 'right' : 'left', whiteSpace: 'nowrap' }}
                   >
-                    {col.key === 'fees_30d_change' || col.key === 'revenue_30d_change' ? (
-                      formatPercentChange(row[col.key])
-                    ) : col.type === 'fdv_million' && row[col.key] != null ? (
-                      <span>
-                        {formatCompactUSD(row[col.key])} <span className="usd-label">USD</span>
-                      </span>
-                    ) : col.type === 'currency' && row[col.key] != null ? (
-                      <span>
-                        {formatCompactUSD(row[col.key])} <span className="usd-label">USD</span>
-                      </span>
-                    ) : col.type === 'ratio' ? (
-                      row[col.key] == null || isNaN(row[col.key]) ? '--' : `${Number(row[col.key]).toFixed(1)}x`
-                    ) : row[col.key] != null ? (
-                      row[col.key].toString()
-                    ) : ''}
+                    {renderCell(col, row[col.key])}
                   </td>
                 ))}
               </tr>
@@ -206,9 +218,9 @@ function Table({ columns, data }) {
         </table>
       </div>
       <p style={{ marginTop: 8, fontSize: 12, color: '#888' }}>
-        Click column headers to sort. Filter each column individually. Numeric columns support min/max.
+        Click column headers to sort. Filter each column individually. Numeric columns support min/max. Use scientific notation (e.g. 1e9) for large numbers.
       </p>
-       <p style={{ marginTop: 4, fontSize: 12, color: '#888' }}>
+      <p style={{ marginTop: 4, fontSize: 12, color: '#888' }}>
         <strong>Note:</strong> Forward P/F and P/R ratios are calculated as <code>FDV / (30d Fees/Revenue * 12)</code>.
       </p>
     </div>
