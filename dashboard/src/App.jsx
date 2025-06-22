@@ -30,6 +30,36 @@ function useTableData(url) {
   return data;
 }
 
+// Helper to format large numbers as 2.04T USD, 274.02B USD, etc.
+function formatCompactUSD(value) {
+  if (value == null || isNaN(value)) return '';
+  const abs = Math.abs(value);
+  let num = value;
+  let suffix = '';
+  if (abs >= 1e12) {
+    num = value / 1e12;
+    suffix = 'T';
+  } else if (abs >= 1e9) {
+    num = value / 1e9;
+    suffix = 'B';
+  } else if (abs >= 1e6) {
+    num = value / 1e6;
+    suffix = 'M';
+  } else if (abs >= 1e3) {
+    num = value / 1e3;
+    suffix = 'K';
+  }
+  return `${num.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}${suffix}`;
+}
+
+// Helper to format percent change with color
+function formatPercentChange(value) {
+  if (value == null || isNaN(value)) return '';
+  const color = value > 0 ? 'pos-change' : value < 0 ? 'neg-change' : '';
+  const sign = value > 0 ? '+' : '';
+  return <span className={`percent-change ${color}`}><b>{sign}{value.toFixed(2)}%</b></span>;
+}
+
 function Table({ columns, data }) {
   // Per-column filter state
   const [filters, setFilters] = useState(() =>
@@ -106,6 +136,9 @@ function Table({ columns, data }) {
                 >
                   {col.label}
                   {sortConfig.key === col.key ? (sortConfig.direction === 'asc' ? ' ▲' : ' ▼') : ''}
+                  {(col.key === 'fees_30d_change' || col.key === 'revenue_30d_change') && (
+                    <div className="change-sublabel">30d</div>
+                  )}
                 </th>
               ))}
             </tr>
@@ -150,15 +183,21 @@ function Table({ columns, data }) {
                     key={col.key}
                     style={{ textAlign: col.type === 'number' || col.type === 'currency' || col.type === 'fdv_million' || col.type === 'ratio' ? 'right' : 'left', whiteSpace: 'nowrap' }}
                   >
-                    {col.type === 'fdv_million' && row[col.key] != null
-                      ? Number(row[col.key] / 1_000_000).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
-                      : col.type === 'currency' && row[col.key] != null
-                        ? Number(row[col.key]).toLocaleString(undefined, { style: 'decimal', maximumFractionDigits: 2 })
-                        : col.type === 'ratio' && row[col.key] != null
-                          ? Number(row[col.key]).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
-                          : row[col.key] != null
-                            ? row[col.key].toString()
-                            : ''}
+                    {col.key === 'fees_30d_change' || col.key === 'revenue_30d_change' ? (
+                      formatPercentChange(row[col.key])
+                    ) : col.type === 'fdv_million' && row[col.key] != null ? (
+                      <span>
+                        {formatCompactUSD(row[col.key] * 1_000_000)} <span className="usd-label">USD</span>
+                      </span>
+                    ) : col.type === 'currency' && row[col.key] != null ? (
+                      <span>
+                        {formatCompactUSD(row[col.key])} <span className="usd-label">USD</span>
+                      </span>
+                    ) : col.type === 'ratio' ? (
+                      row[col.key] == null || isNaN(row[col.key]) ? '--' : `${Number(row[col.key]).toFixed(1)}x`
+                    ) : row[col.key] != null ? (
+                      row[col.key].toString()
+                    ) : ''}
                   </td>
                 ))}
               </tr>
