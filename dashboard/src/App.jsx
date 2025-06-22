@@ -178,14 +178,24 @@ function Table({ columns, data, title }) {
 }
 
 function App() {
-  const feesData = useTableData('data/exports/fees_analysis.json');
-  const revenueData = useTableData('data/exports/revenue_analysis.json');
+  const feesData = useTableData('fees_analysis.json');
+  const revenueData = useTableData('revenue_analysis.json');
+  const [activeTab, setActiveTab] = useState('fees');
 
   return (
     <div className="App">
-      <h1>Protocol Analysis Dashboard</h1>
-      <Table columns={FEES_COLUMNS} data={feesData} title="Fees Analysis" />
-      <Table columns={REVENUE_COLUMNS} data={revenueData} title="Revenue Analysis" />
+      <h1>Protocol Fees/Revenue Screener</h1>
+      <div className="tabs">
+        <button onClick={() => setActiveTab('fees')} className={activeTab === 'fees' ? 'active' : ''}>
+          Fees
+        </button>
+        <button onClick={() => setActiveTab('revenue')} className={activeTab === 'revenue' ? 'active' : ''}>
+          Revenue
+        </button>
+      </div>
+
+      {activeTab === 'fees' && <Table columns={FEES_COLUMNS} data={feesData} title="Fees" />}
+      {activeTab === 'revenue' && <Table columns={REVENUE_COLUMNS} data={revenueData} title="Revenue" />}
     </div>
   );
 }
