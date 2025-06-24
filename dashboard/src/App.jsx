@@ -57,7 +57,7 @@ function formatPercentChange(value) {
   if (value == null || isNaN(value)) return '';
   const color = value > 0 ? 'pos-change' : value < 0 ? 'neg-change' : '';
   const sign = value > 0 ? '+' : '';
-  return <span className={`percent-change ${color}`}><b>{sign}{value.toFixed(2)}%</b></span>;
+  return <span className={`percent-change ${color}`}>{sign}{value.toFixed(2)}%</span>;
 }
 
 function Table({ columns, data }) {
@@ -136,7 +136,7 @@ function Table({ columns, data }) {
         if (value == null || isNaN(value)) return '';
         const color = value > 0 ? 'pos-change' : value < 0 ? 'neg-change' : '';
         const sign = value > 0 ? '+' : '';
-        return <span className={`percent-change ${color}`}><b>{sign}{Number(value).toFixed(2)}%</b></span>;
+        return <span className={`percent-change ${color}`}>{sign}{Number(value).toFixed(2)}%</span>;
       }
       case 'ratio':
         return value == null || isNaN(value) ? '--' : `${Number(value).toFixed(1)}x`;
