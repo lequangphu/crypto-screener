@@ -231,10 +231,29 @@ function App() {
   const feesData = useTableData('fees_analysis.json');
   const revenueData = useTableData('revenue_analysis.json');
   const [activeTab, setActiveTab] = useState('fees');
+  const [lastUpdated, setLastUpdated] = useState(null);
+
+  useEffect(() => {
+    fetch('last_updated.json')
+      .then((res) => res.json())
+      .then((data) => setLastUpdated(data.last_updated))
+      .catch(() => setLastUpdated(null));
+  }, []);
+
+  function formatDate(isoString) {
+    if (!isoString) return '';
+    const d = new Date(isoString);
+    return d.toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
+  }
 
   return (
     <div className="App">
       <h1>Protocol Fees/Revenue Screener</h1>
+      {lastUpdated && (
+        <div style={{ fontSize: 14, color: '#888', marginBottom: 8 }}>
+          Last updated: {formatDate(lastUpdated)}
+        </div>
+      )}
       <div className="tabs">
         <button onClick={() => setActiveTab('fees')} className={activeTab === 'fees' ? 'active' : ''}>
           Fees
