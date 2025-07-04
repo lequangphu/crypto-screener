@@ -34,7 +34,8 @@ def analyze_and_export():
             CASE
                 WHEN (f.total30d * 12) > 0 THEN f.fully_diluted_market_cap / (f.total30d * 12)
                 ELSE NULL
-            END AS pf_ratio_forward_1y
+            END AS pf_ratio_forward_1y,
+            f.slug AS slug
         FROM
             fees_transformed f
         WHERE
@@ -59,7 +60,8 @@ def analyze_and_export():
             CASE
                 WHEN (r.total30d * 12) > 0 THEN r.fully_diluted_market_cap / (r.total30d * 12)
                 ELSE NULL
-            END AS pr_ratio_forward_1y
+            END AS pr_ratio_forward_1y,
+            r.slug AS slug
         FROM
             revenue_transformed r
         WHERE

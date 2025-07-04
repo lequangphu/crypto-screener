@@ -124,7 +124,7 @@ function Table({ columns, data }) {
     });
   };
 
-  function renderCell(col, value) {
+  function renderCell(col, value, row) {
     switch (col.type) {
       case 'usd':
         return (
@@ -144,6 +144,14 @@ function Table({ columns, data }) {
         return value == null || isNaN(value) ? '' : Number(value).toLocaleString();
       case 'text':
       default:
+        // Hyperlink protocol_name if slug is available
+        if (col.key === 'protocol_name' && row && row.slug) {
+          return (
+            <a href={`https://defillama.com/protocol/${row.slug}`} target="_blank" rel="noopener noreferrer">
+              {value}
+            </a>
+          );
+        }
         return value != null ? value.toString() : '';
     }
   }
@@ -209,7 +217,7 @@ function Table({ columns, data }) {
                     key={col.key}
                     style={{ textAlign: ['usd', 'number', 'percent', 'ratio'].includes(col.type) ? 'right' : 'left', whiteSpace: 'nowrap' }}
                   >
-                    {renderCell(col, row[col.key])}
+                    {renderCell(col, row[col.key], row)}
                   </td>
                 ))}
               </tr>
