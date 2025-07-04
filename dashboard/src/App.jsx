@@ -49,7 +49,7 @@ function formatCompactUSD(value) {
     num = value / 1e3;
     suffix = 'K';
   }
-  return `${num.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}${suffix}`;
+  return `${num.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}${suffix}`;
 }
 
 // Helper to format percent change with color
@@ -136,12 +136,12 @@ function Table({ columns, data }) {
         if (value == null || isNaN(value)) return '';
         const color = value > 0 ? 'pos-change' : value < 0 ? 'neg-change' : '';
         const sign = value > 0 ? '+' : '';
-        return <span className={`percent-change ${color}`}>{sign}{Number(value).toFixed(2)}%</span>;
+        return <span className={`percent-change ${color}`}>{sign}{Number(value).toFixed(1)}%</span>;
       }
       case 'ratio':
         return value == null || isNaN(value) ? '--' : `${Number(value).toFixed(1)}x`;
       case 'number':
-        return value == null || isNaN(value) ? '' : Number(value).toLocaleString();
+        return value == null || isNaN(value) ? '' : Number(value).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
       case 'text':
       default:
         // Hyperlink protocol_name if slug is available
