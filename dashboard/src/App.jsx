@@ -75,10 +75,15 @@ function Table({ columns, data }) {
         const filterVal = (filters[col.key] ?? '').toLowerCase();
         return val.includes(filterVal);
       } else if (["usd", "number", "percent", "ratio"].includes(col.type)) {
-        const val = Number(row[col.key]);
+        const valRaw = row[col.key];
+        const val = Number(valRaw);
         const { min, max } = filters[col.key] || {};
         const minVal = Number(min);
         const maxVal = Number(max);
+        // If min or max is set, exclude empty/null/undefined/NaN
+        if ((min !== '' || max !== '') && (valRaw === null || valRaw === undefined || valRaw === '' || isNaN(val))) {
+          return false;
+        }
         if (min !== '' && !isNaN(minVal) && val < minVal) return false;
         if (max !== '' && !isNaN(maxVal) && val > maxVal) return false;
         return true;
