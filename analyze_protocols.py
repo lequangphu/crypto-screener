@@ -75,14 +75,6 @@ def analyze_and_export():
         revenue_result.to_json(revenue_export_path, orient='records', indent=2)
         logging.info(f"Exported {len(revenue_result)} rows to {revenue_export_path}")
 
-        # Write last_updated.json
-        last_updated_path = os.path.join(export_dir, "last_updated.json")
-        last_updated = {"last_updated": datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"}
-        with open(last_updated_path, "w") as f:
-            import json
-            json.dump(last_updated, f, indent=2)
-        logging.info(f"Wrote last updated time to {last_updated_path}")
-
     except Exception as e:
         logging.error(f"An error occurred: {e}")
     finally:
