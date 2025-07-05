@@ -1,7 +1,6 @@
 import duckdb
 import os
 import logging
-import datetime
 
 def analyze_and_export():
     """

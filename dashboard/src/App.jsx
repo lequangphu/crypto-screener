@@ -5,18 +5,18 @@ import './App.css';
 const FEES_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'usd' },
-  { key: 'fees_30d', label: 'Fees (30d)', type: 'usd' },
-  { key: 'fees_30d_change', label: 'Fees 30d Change', type: 'percent' },
-  { key: 'pf_ratio_forward_1y', label: 'P/F Ratio (Forward 1y)', type: 'ratio' },
+  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'usd', tooltip: 'Fully Diluted Valuation' },
+  { key: 'fees_30d', label: 'Fees', type: 'usd', tooltip: 'Total protocol fees collected in the last 30 days (30d).' },
+  { key: 'pf_ratio_forward_1y', label: 'P/F Ratio', type: 'ratio', tooltip: 'Price to Fees Ratio (Forward 1y): FDV / (30d Fees * 12)' },
+  { key: 'fees_30d_change', label: 'Fees Change', type: 'percent', tooltip: 'Percent change in fees over the last 30 days (30d).' },
 ];
 const REVENUE_COLUMNS = [
   { key: 'protocol_name', label: 'Protocol', type: 'text' },
   { key: 'category', label: 'Category', type: 'text' },
-  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'usd' },
-  { key: 'revenue_30d', label: 'Revenue (30d)', type: 'usd' },
-  { key: 'revenue_30d_change', label: 'Revenue 30d Change', type: 'percent' },
-  { key: 'pr_ratio_forward_1y', label: 'P/R Ratio (Forward 1y)', type: 'ratio' },
+  { key: 'fully_diluted_market_cap', label: 'FDV', type: 'usd', tooltip: 'Fully Diluted Valuation' },
+  { key: 'revenue_30d', label: 'Revenue', type: 'usd', tooltip: 'Total protocol revenue in the last 30 days (30d).' },
+  { key: 'pr_ratio_forward_1y', label: 'P/R Ratio', type: 'ratio', tooltip: 'Price to Revenue Ratio (Forward 1y): FDV / (30d Revenue * 12)' },
+  { key: 'revenue_30d_change', label: 'Revenue Change', type: 'percent', tooltip: 'Percent change in revenue over the last 30 days (30d).' },
 ];
 
 function useTableData(url) {
@@ -171,13 +171,17 @@ function Table({ columns, data }) {
                 <th
                   key={col.key}
                   onClick={() => handleSort(col.key)}
-                  style={{ cursor: 'pointer', textAlign: ['usd', 'number', 'percent', 'ratio'].includes(col.type) ? 'right' : 'left' }}
+                  style={{ cursor: 'pointer', textAlign: 'center', position: 'relative' }}
+                  tabIndex={0}
                 >
-                  {col.label}
-                  {sortConfig.key === col.key ? (sortConfig.direction === 'asc' ? ' ▲' : ' ▼') : ''}
-                  {(col.key === 'fees_30d_change' || col.key === 'revenue_30d_change') && (
-                    <div className="change-sublabel">30d</div>
-                  )}
+                  <div className="header-main-label">
+                    {col.label}{sortConfig.key === col.key ? (sortConfig.direction === 'asc' ? ' ▲' : ' ▼') : ''}
+                    {col.tooltip && (
+                      <span className="header-tooltip">&#9432;
+                        <span className="header-tooltip-text">{col.tooltip}</span>
+                      </span>
+                    )}
+                  </div>
                 </th>
               ))}
             </tr>

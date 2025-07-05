@@ -77,11 +77,30 @@
   color: #1fc2a0;
 }
 
-.change-sublabel {
-  font-size: 0.7em;
-  color: #888;
-  font-weight: normal;
-  margin-top: 0.1em;
+.header-main-label {
+  display: block;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.header-sub-label {
+  display: none;
+  font-size: 0.75em;
+  color: #aaa;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2px;
+  transition: color 0.2s;
+}
+
+th.has-sublabel:hover .header-sub-label,
+th.has-sublabel:focus .header-sub-label {
+  display: block;
+}
+
+th.has-sublabel {
+  vertical-align: middle;
 }
 
 table tr {
@@ -90,4 +109,50 @@ table tr {
 
 table td, table th {
   background: transparent;
+}
+
+.header-tooltip {
+  display: inline-block;
+  position: relative;
+  margin-left: 6px;
+  color: #aaa;
+  cursor: help;
+  font-size: 0.9em;
+  vertical-align: middle;
+  pointer-events: auto;
+  z-index: 20;
+}
+
+.header-tooltip-text {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 120%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  white-space: pre-line;
+  z-index: 99;
+  min-width: 180px;
+  max-width: 260px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.header-tooltip:hover .header-tooltip-text,
+.header-tooltip:focus .header-tooltip-text,
+.header-tooltip:active .header-tooltip-text {
+  display: block;
+}
+
+.header-tooltip:focus {
+  outline: 2px solid #888;
+}
+
+@media (max-width: 600px) {
+  .header-sub-label {
+    display: block !important;
+  }
 }
