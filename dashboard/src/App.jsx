@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 
 // Column configs for renaming and type
@@ -60,12 +61,60 @@ function formatPercentChange(value) {
   return <span className={`percent-change ${color}`}>{sign}{value.toFixed(2)}%</span>;
 }
 
+// TooltipPortal component for rendering tooltip in a portal
+function TooltipPortal({ anchorRef, children, visible }) {
+  const [coords, setCoords] = useState({ top: 0, left: 0 });
+  const tooltipRef = useRef();
+
+  useEffect(() => {
+    if (anchorRef.current && visible) {
+      const rect = anchorRef.current.getBoundingClientRect();
+      setCoords({
+        top: rect.bottom + window.scrollY + 6, // 6px below
+        left: rect.left + window.scrollX + rect.width / 2,
+      });
+    }
+  }, [anchorRef, visible]);
+
+  if (!visible) return null;
+  return ReactDOM.createPortal(
+    <div
+      ref={tooltipRef}
+      role="tooltip"
+      style={{
+        position: 'absolute',
+        top: coords.top,
+        left: coords.left,
+        transform: 'translateX(-50%)',
+        background: '#222',
+        color: '#fff',
+        padding: '6px 10px',
+        borderRadius: 4,
+        fontSize: '0.85em',
+        whiteSpace: 'pre-line',
+        zIndex: 9999,
+        minWidth: 180,
+        maxWidth: 260,
+        boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
+        pointerEvents: 'auto',
+        animation: 'fade-in-tooltip 0.18s cubic-bezier(0.4,0,0.2,1)',
+      }}
+      className="header-tooltip-text-portal"
+    >
+      {children}
+    </div>,
+    document.body
+  );
+}
+
 function Table({ columns, data }) {
   // Per-column filter state
   const [filters, setFilters] = useState(() =>
     Object.fromEntries(columns.map((col) => [col.key, ['usd', 'number', 'percent', 'ratio'].includes(col.type) ? { min: '', max: '' } : '']))
   );
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
+  const [tooltip, setTooltip] = useState({ idx: null, visible: false });
+  const tooltipAnchorRefs = useRef([]);
 
   // Filtering logic
   const filteredData = data.filter((row) =>
@@ -167,7 +216,7 @@ function Table({ columns, data }) {
         <table>
           <thead>
             <tr>
-              {columns.map((col) => (
+              {columns.map((col, idx) => (
                 <th
                   key={col.key}
                   onClick={() => handleSort(col.key)}
@@ -177,8 +226,23 @@ function Table({ columns, data }) {
                   <div className="header-main-label">
                     {col.label}{sortConfig.key === col.key ? (sortConfig.direction === 'asc' ? ' ▲' : ' ▼') : ''}
                     {col.tooltip && (
-                      <span className="header-tooltip">&#9432;
-                        <span className="header-tooltip-text">{col.tooltip}</span>
+                      <span
+                        className="header-tooltip"
+                        ref={el => (tooltipAnchorRefs.current[idx] = el)}
+                        onMouseEnter={() => setTooltip({ idx, visible: true })}
+                        onMouseLeave={() => setTooltip({ idx: null, visible: false })}
+                        onFocus={() => setTooltip({ idx, visible: true })}
+                        onBlur={() => setTooltip({ idx: null, visible: false })}
+                        tabIndex={0}
+                        aria-label={col.tooltip}
+                      >
+                        &#9432;
+                        {/* Remove inline tooltip, use portal instead */}
+                        {tooltip.visible && tooltip.idx === idx && (
+                          <TooltipPortal anchorRef={{ current: tooltipAnchorRefs.current[idx] }} visible={true}>
+                            {col.tooltip}
+                          </TooltipPortal>
+                        )}
                       </span>
                     )}
                   </div>
