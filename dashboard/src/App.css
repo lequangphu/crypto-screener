@@ -151,29 +151,8 @@ table td, table th {
   outline: 2px solid #888;
 }
 
-.header-tooltip-text {
-  z-index: 99999 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  background: #222 !important;
-  color: #fff !important;
-  pointer-events: auto !important;
-}
-
-.header-tooltip:hover .header-tooltip-text {
-  display: block !important;
-}
-
 @media (max-width: 600px) {
   .header-sub-label {
     display: block !important;
   }
 }
-
-th, .header-main-label {
-  overflow: visible !important;
-  position: relative !important;
-}
-
-span { display: none; }
-* { opacity: 0; }
