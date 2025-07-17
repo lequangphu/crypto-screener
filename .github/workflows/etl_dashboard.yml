@@ -35,6 +35,9 @@ jobs:
       - name: Run transform_data.py
         run: uv run transform_data.py
 
+      - name: Run analyze_protocols.py
+        run: uv run analyze_protocols.py
+
       - name: Commit and push data exports
         run: |
           git config --global user.name 'github-actions[bot]'
