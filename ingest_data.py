@@ -100,9 +100,12 @@ def normalize_coinmarketcap_data(raw_data):
 
 def load_dataframe_to_duckdb(con, df, table_name):
     if df is None:
+        logging.warning(f"DataFrame for {table_name} is None, skipping load.")
         return
     con.execute(f"DROP TABLE IF EXISTS {table_name};")
     con.execute(f"CREATE TABLE {table_name} AS SELECT * FROM df")
+    row_count = con.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0]
+    logging.info(f"Loaded {row_count} rows into {table_name}")
 
 def main():
     # Fetch DeFiLlama Data
@@ -123,13 +126,11 @@ def main():
     df_fees_overview = normalize_fees_overview_data(fees_overview_data)
     df_revenue_overview = normalize_revenue_overview_data(revenue_overview_data)
     df_coinmarketcap = normalize_coinmarketcap_data(coinmarketcap_data)
-    logging.info("Data normalization complete.")
-
-    # After normalization
     logging.info(f"Protocols normalized: {len(df_protocols) if df_protocols is not None else 0} rows")
     logging.info(f"Fees overview normalized: {len(df_fees_overview) if df_fees_overview is not None else 0} rows")
     logging.info(f"Revenue overview normalized: {len(df_revenue_overview) if df_revenue_overview is not None else 0} rows")
     logging.info(f"CoinMarketCap normalized: {len(df_coinmarketcap) if df_coinmarketcap is not None else 0} rows")
+    logging.info("Data normalization complete.")
 
     # Initialize DuckDB connection to a persistent file
     con = duckdb.connect(database=DUCKDB_DATABASE_PATH, read_only=False)
@@ -139,7 +140,7 @@ def main():
         if df_protocols is None:
             logging.error("Protocols data is None. Exiting ingestion.")
             exit(1)
-        load_dataframe_to_duckdb(con, df_protocols, "protocols_staging")  # noqa: F823
+        load_dataframe_to_duckdb(con, df_protocols, "protocols_staging")
         logging.info("Protocols data ingested into DuckDB.")
     except Exception as e:
         logging.error(f"Error ingesting protocols data into DuckDB: {e}")
@@ -159,16 +160,6 @@ def main():
         logging.info("CoinMarketCap data ingested into DuckDB.")
     except Exception as e:
         logging.error(f"Error ingesting coinmarketcap data into DuckDB: {e}")
-
-    # After loading to DuckDB
-    def load_dataframe_to_duckdb(con, df, table_name):
-        if df is None:
-            logging.warning(f"DataFrame for {table_name} is None, skipping load.")
-            return
-        con.execute(f"DROP TABLE IF EXISTS {table_name};")
-        con.execute(f"CREATE TABLE {table_name} AS SELECT * FROM df")
-        row_count = con.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0]
-        logging.info(f"Loaded {row_count} rows into {table_name}")
 
     # After all ingestion, check that protocols_staging exists
     table_exists = con.execute("SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'protocols_staging'").fetchone()[0]
