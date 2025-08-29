@@ -27,7 +27,9 @@ def add_fully_diluted_market_cap_to_fees(con):
             fo.*,
             cmc.quote.USD.fully_diluted_market_cap
         FROM fees_transformed fo
-        LEFT JOIN coinmarketcap_staging cmc ON fo.cmcId::BIGINT = cmc.id;
+        LEFT JOIN coinmarketcap_staging cmc
+          ON try_cast(fo.cmcId AS BIGINT) IS NOT NULL
+         AND try_cast(fo.cmcId AS BIGINT) = cmc.id;
     """)
     row_count = con.execute("SELECT COUNT(*) FROM fees_transformed").fetchone()[0]
     logging.info(f"fully_diluted_market_cap added to fees_transformed table. Row count: {row_count}")
@@ -38,7 +40,7 @@ def add_cmcid_and_slug_to_fees(con):
         CREATE OR REPLACE TABLE fees_transformed AS
         SELECT
             fo.*,
-            p.cmcId AS cmcId,
+            try_cast(p.cmcId AS BIGINT) AS cmcId,
             p.slug AS slug
         FROM fees_overview_staging fo
         LEFT JOIN protocols_staging p ON fo.id = p.id;
@@ -67,7 +69,9 @@ def add_fully_diluted_market_cap_to_revenue(con):
             ro.*,
             cmc.quote.USD.fully_diluted_market_cap
         FROM revenue_transformed ro
-        LEFT JOIN coinmarketcap_staging cmc ON ro.cmcId::BIGINT = cmc.id;
+        LEFT JOIN coinmarketcap_staging cmc
+          ON try_cast(ro.cmcId AS BIGINT) IS NOT NULL
+         AND try_cast(ro.cmcId AS BIGINT) = cmc.id;
     """)
     row_count = con.execute("SELECT COUNT(*) FROM revenue_transformed").fetchone()[0]
     logging.info(f"fully_diluted_market_cap added to revenue_transformed table. Row count: {row_count}")
@@ -78,7 +82,7 @@ def add_cmcid_and_slug_to_revenue(con):
         CREATE OR REPLACE TABLE revenue_transformed AS
         SELECT
             ro.*,
-            p.cmcId AS cmcId,
+            try_cast(p.cmcId AS BIGINT) AS cmcId,
             p.slug AS slug
         FROM revenue_overview_staging ro
         LEFT JOIN protocols_staging p ON ro.id = p.id;
