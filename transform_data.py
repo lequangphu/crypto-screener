@@ -25,7 +25,7 @@ def add_fully_diluted_market_cap_to_fees(con):
         CREATE OR REPLACE TABLE fees_transformed AS
         SELECT
             fo.*,
-            cmc.quote.USD.fully_diluted_market_cap
+            json_extract_string(cmc.quote, '$.USD.fully_diluted_market_cap')::DOUBLE AS fully_diluted_market_cap
         FROM fees_transformed fo
         LEFT JOIN coinmarketcap_staging cmc
           ON try_cast(fo.cmcId AS BIGINT) IS NOT NULL
@@ -67,7 +67,7 @@ def add_fully_diluted_market_cap_to_revenue(con):
         CREATE OR REPLACE TABLE revenue_transformed AS
         SELECT
             ro.*,
-            cmc.quote.USD.fully_diluted_market_cap
+            json_extract_string(cmc.quote, '$.USD.fully_diluted_market_cap')::DOUBLE AS fully_diluted_market_cap
         FROM revenue_transformed ro
         LEFT JOIN coinmarketcap_staging cmc
           ON try_cast(ro.cmcId AS BIGINT) IS NOT NULL
