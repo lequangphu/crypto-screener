@@ -96,7 +96,15 @@ def normalize_revenue_overview_data(raw_data):
 def normalize_coinmarketcap_data(raw_data):
     if not raw_data or 'data' not in raw_data:
         return None
-    return pd.DataFrame(raw_data['data'])
+    df = pd.DataFrame(raw_data['data'])
+    # Convert nested dict/list columns to JSON strings to avoid complex dtype coercions in DuckDB
+    for col in df.columns:
+        if df[col].apply(lambda x: isinstance(x, (dict, list))).any():
+            df[col] = df[col].apply(lambda x: json.dumps(x) if isinstance(x, (dict, list)) else x)
+    # Ensure id is integral if possible; coerce bad values to NA (nullable Int64)
+    if 'id' in df.columns:
+        df['id'] = pd.to_numeric(df['id'], errors='coerce').astype('Int64')
+    return df
 
 def load_dataframe_to_duckdb(con, df, table_name):
     if df is None:
