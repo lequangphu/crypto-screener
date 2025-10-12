@@ -1,929 +1,956 @@
 [
   {
+    "protocol_name":"Graphite Protocol",
+    "category":"Launchpad",
+    "fully_diluted_market_cap":24381902.0300000012,
+    "revenue_30d":1319112.0,
+    "revenue_30d_change":29.18,
+    "pr_ratio_forward_1y":1.5402976921,
+    "slug":"graphite-protocol"
+  },
+  {
+    "protocol_name":"Peapods Finance",
+    "category":"Yield",
+    "fully_diluted_market_cap":17214880.3200000003,
+    "revenue_30d":713894.0,
+    "revenue_30d_change":117.2,
+    "pr_ratio_forward_1y":2.0095047164,
+    "slug":"peapods-finance"
+  },
+  {
     "protocol_name":"Inverse Finance FiRM",
     "category":"CDP",
-    "fully_diluted_market_cap":27615927.870000001,
-    "revenue_30d":987676.0,
-    "revenue_30d_change":2.11,
-    "pr_ratio_forward_1y":2.3300427696,
+    "fully_diluted_market_cap":23371002.8099999987,
+    "revenue_30d":855866.0,
+    "revenue_30d_change":-17.91,
+    "pr_ratio_forward_1y":2.2755706705,
     "slug":"inverse-finance-firm"
   },
   {
-    "protocol_name":"Graphite Protocol",
-    "category":"Launchpad",
-    "fully_diluted_market_cap":50611875.8200000003,
-    "revenue_30d":1398816.0,
-    "revenue_30d_change":-5.58,
-    "pr_ratio_forward_1y":3.0151616212,
-    "slug":"graphite-protocol"
+    "protocol_name":"Quickswap Dex",
+    "category":"Dexs",
+    "fully_diluted_market_cap":17370387.5399999991,
+    "revenue_30d":414110.0,
+    "revenue_30d_change":-6.73,
+    "pr_ratio_forward_1y":3.4955260559,
+    "slug":"quickswap-dex"
   },
   {
     "protocol_name":"TeleSwap",
     "category":"Bridge",
-    "fully_diluted_market_cap":1066407.29,
-    "revenue_30d":22373.0,
-    "revenue_30d_change":-2.82,
-    "pr_ratio_forward_1y":3.9720767964,
+    "fully_diluted_market_cap":1015644.73,
+    "revenue_30d":23874.0,
+    "revenue_30d_change":4.04,
+    "pr_ratio_forward_1y":3.5451562718,
     "slug":"teleswap"
   },
   {
     "protocol_name":"SideShift",
     "category":"Cross Chain Bridge",
-    "fully_diluted_market_cap":32312871.4800000004,
-    "revenue_30d":589678.0,
-    "revenue_30d_change":-2.99,
-    "pr_ratio_forward_1y":4.5664571003,
+    "fully_diluted_market_cap":29409161.870000001,
+    "revenue_30d":675713.0,
+    "revenue_30d_change":18.51,
+    "pr_ratio_forward_1y":3.6269296124,
     "slug":"sideshift"
-  },
-  {
-    "protocol_name":"Peapods Finance",
-    "category":"Yield",
-    "fully_diluted_market_cap":49377610.4600000009,
-    "revenue_30d":834378.0,
-    "revenue_30d_change":2605.86,
-    "pr_ratio_forward_1y":4.9315788188,
-    "slug":"peapods-finance"
-  },
-  {
-    "protocol_name":"Beefy",
-    "category":"Yield Aggregator",
-    "fully_diluted_market_cap":14002574.9399999995,
-    "revenue_30d":217708.0,
-    "revenue_30d_change":-1.81,
-    "pr_ratio_forward_1y":5.3598455041,
-    "slug":"beefy"
-  },
-  {
-    "protocol_name":"Bifrost Liquid Staking",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":8290828.5099999998,
-    "revenue_30d":128189.0,
-    "revenue_30d_change":11.2,
-    "pr_ratio_forward_1y":5.3897165578,
-    "slug":"bifrost-liquid-staking"
-  },
-  {
-    "protocol_name":"Quickswap Dex",
-    "category":"Dexs",
-    "fully_diluted_market_cap":24055182.6099999994,
-    "revenue_30d":367973.0,
-    "revenue_30d_change":-21.06,
-    "pr_ratio_forward_1y":5.4476783645,
-    "slug":"quickswap-dex"
   },
   {
     "protocol_name":"Merkle Trade",
     "category":"Derivatives",
-    "fully_diluted_market_cap":12255611.1400000006,
-    "revenue_30d":180812.0,
-    "revenue_30d_change":93.08,
-    "pr_ratio_forward_1y":5.6484134257,
+    "fully_diluted_market_cap":8696485.4600000009,
+    "revenue_30d":196915.0,
+    "revenue_30d_change":74.58,
+    "pr_ratio_forward_1y":3.6803043022,
     "slug":"merkle-trade"
   },
   {
-    "protocol_name":"BetSwirl",
-    "category":"Prediction Market",
-    "fully_diluted_market_cap":1374026.1799999999,
-    "revenue_30d":17743.0,
-    "revenue_30d_change":76.62,
-    "pr_ratio_forward_1y":6.453372128,
-    "slug":"betswirl"
+    "protocol_name":"Bifrost Liquid Staking",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":7011812.7300000004,
+    "revenue_30d":135901.0,
+    "revenue_30d_change":21.26,
+    "pr_ratio_forward_1y":4.2995837227,
+    "slug":"bifrost-liquid-staking"
+  },
+  {
+    "protocol_name":"Beefy",
+    "category":"Yield Aggregator",
+    "fully_diluted_market_cap":11564918.9100000001,
+    "revenue_30d":222946.0,
+    "revenue_30d_change":-0.3,
+    "pr_ratio_forward_1y":4.3227653445,
+    "slug":"beefy"
   },
   {
     "protocol_name":"Yield Yak Aggregator",
     "category":"Yield Aggregator",
-    "fully_diluted_market_cap":6099260.8700000001,
-    "revenue_30d":70905.0,
-    "revenue_30d_change":-17.57,
-    "pr_ratio_forward_1y":7.1683483417,
+    "fully_diluted_market_cap":3479487.3599999999,
+    "revenue_30d":62634.0,
+    "revenue_30d_change":-0.46,
+    "pr_ratio_forward_1y":4.6293910656,
     "slug":"yield-yak-aggregator"
-  },
-  {
-    "protocol_name":"Vesper",
-    "category":"Yield Aggregator",
-    "fully_diluted_market_cap":1945109.26,
-    "revenue_30d":21993.0,
-    "revenue_30d_change":2.6,
-    "pr_ratio_forward_1y":7.3701831643,
-    "slug":"vesper"
-  },
-  {
-    "protocol_name":"Gains Network",
-    "category":"Derivatives",
-    "fully_diluted_market_cap":52354982.5099999979,
-    "revenue_30d":590710.0,
-    "revenue_30d_change":-31.23,
-    "pr_ratio_forward_1y":7.3858834439,
-    "slug":"gains-network"
   },
   {
     "protocol_name":"Navigator",
     "category":"Derivatives",
-    "fully_diluted_market_cap":2950543.9300000002,
-    "revenue_30d":29746.0,
-    "revenue_30d_change":6.11,
-    "pr_ratio_forward_1y":8.2659403225,
+    "fully_diluted_market_cap":1641521.05,
+    "revenue_30d":29519.0,
+    "revenue_30d_change":8.61,
+    "pr_ratio_forward_1y":4.634080451,
     "slug":"navigator"
   },
   {
     "protocol_name":"ODOS",
     "category":"DEX Aggregator",
-    "fully_diluted_market_cap":47716730.799999997,
-    "revenue_30d":438099.0,
-    "revenue_30d_change":11.29,
-    "pr_ratio_forward_1y":9.0764741151,
+    "fully_diluted_market_cap":30506524.1400000006,
+    "revenue_30d":523316.0,
+    "revenue_30d_change":36.28,
+    "pr_ratio_forward_1y":4.8578876721,
     "slug":"odos"
   },
   {
-    "protocol_name":"Houdini Swap",
-    "category":"DEX Aggregator",
-    "fully_diluted_market_cap":18608713.0399999991,
-    "revenue_30d":166660.0,
-    "revenue_30d_change":6.78,
-    "pr_ratio_forward_1y":9.3047287091,
-    "slug":"houdini-swap"
+    "protocol_name":"BetSwirl",
+    "category":"Prediction Market",
+    "fully_diluted_market_cap":1083983.8600000001,
+    "revenue_30d":17917.0,
+    "revenue_30d_change":63.64,
+    "pr_ratio_forward_1y":5.0416915964,
+    "slug":"betswirl"
   },
   {
-    "protocol_name":"ZeroLend Lending",
-    "category":"Lending",
-    "fully_diluted_market_cap":3422989.04,
-    "revenue_30d":27819.0,
-    "revenue_30d_change":-14.61,
-    "pr_ratio_forward_1y":10.2537505542,
-    "slug":"zerolend-lending"
+    "protocol_name":"Gains Network",
+    "category":"Derivatives",
+    "fully_diluted_market_cap":35518893.2299999967,
+    "revenue_30d":575718.0,
+    "revenue_30d_change":-37.32,
+    "pr_ratio_forward_1y":5.1412458342,
+    "slug":"gains-network"
   },
   {
     "protocol_name":"Cellana Finance",
     "category":"Dexs",
-    "fully_diluted_market_cap":1774965.99,
-    "revenue_30d":14273.0,
-    "revenue_30d_change":-49.91,
-    "pr_ratio_forward_1y":10.3631915154,
+    "fully_diluted_market_cap":1183965.03,
+    "revenue_30d":17671.0,
+    "revenue_30d_change":-21.01,
+    "pr_ratio_forward_1y":5.5833712014,
     "slug":"cellana-finance"
-  },
-  {
-    "protocol_name":"Metaplex",
-    "category":"Launchpad",
-    "fully_diluted_market_cap":286906626.6399999857,
-    "revenue_30d":2275125.0,
-    "revenue_30d_change":1.63,
-    "pr_ratio_forward_1y":10.5088228354,
-    "slug":"metaplex"
-  },
-  {
-    "protocol_name":"Lido",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":1213680651.8599998951,
-    "revenue_30d":8771225.0,
-    "revenue_30d_change":-6.1,
-    "pr_ratio_forward_1y":11.5308926999,
-    "slug":"lido"
-  },
-  {
-    "protocol_name":"Vader AI",
-    "category":"AI Agents",
-    "fully_diluted_market_cap":11504918.5,
-    "revenue_30d":73023.0,
-    "revenue_30d_change":-9.73,
-    "pr_ratio_forward_1y":13.1293319685,
-    "slug":"vader-ai"
-  },
-  {
-    "protocol_name":"SushiSwap",
-    "category":"Dexs",
-    "fully_diluted_market_cap":200439928.0699999928,
-    "revenue_30d":1243995.0,
-    "revenue_30d_change":490.84,
-    "pr_ratio_forward_1y":13.4271659767,
-    "slug":"sushiswap"
-  },
-  {
-    "protocol_name":"pump.fun",
-    "category":"Launchpad",
-    "fully_diluted_market_cap":6781372565.3000001907,
-    "revenue_30d":41647484.0,
-    "revenue_30d_change":-9.27,
-    "pr_ratio_forward_1y":13.5689920774,
-    "slug":"pump.fun"
-  },
-  {
-    "protocol_name":"deBridge",
-    "category":"Bridge",
-    "fully_diluted_market_cap":270810718.9399999976,
-    "revenue_30d":1623946.0,
-    "revenue_30d_change":42.33,
-    "pr_ratio_forward_1y":13.8967428176,
-    "slug":"debridge"
-  },
-  {
-    "protocol_name":"Launch Coin on Believe",
-    "category":"Launchpad",
-    "fully_diluted_market_cap":111263629.5799999982,
-    "revenue_30d":592990.0,
-    "revenue_30d_change":111.64,
-    "pr_ratio_forward_1y":15.6359620426,
-    "slug":"launch-coin-on-believe"
-  },
-  {
-    "protocol_name":"CoWSwap",
-    "category":"DEX Aggregator",
-    "fully_diluted_market_cap":285151894.0600000024,
-    "revenue_30d":1468633.0,
-    "revenue_30d_change":-31.04,
-    "pr_ratio_forward_1y":16.1801197701,
-    "slug":"cowswap"
-  },
-  {
-    "protocol_name":"Stride",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":6534603.0499999998,
-    "revenue_30d":33494.0,
-    "revenue_30d_change":0.31,
-    "pr_ratio_forward_1y":16.2581433739,
-    "slug":"stride"
-  },
-  {
-    "protocol_name":"Chainflip",
-    "category":"Dexs",
-    "fully_diluted_market_cap":54734638.200000003,
-    "revenue_30d":273888.0,
-    "revenue_30d_change":5.15,
-    "pr_ratio_forward_1y":16.6535950827,
-    "slug":"chainflip"
   },
   {
     "protocol_name":"Banana Gun",
     "category":"Telegram Bot",
-    "fully_diluted_market_cap":192478218.349999994,
-    "revenue_30d":949132.0,
-    "revenue_30d_change":11.1,
-    "pr_ratio_forward_1y":16.899495043,
+    "fully_diluted_market_cap":124596865.8799999952,
+    "revenue_30d":1711515.0,
+    "revenue_30d_change":135.07,
+    "pr_ratio_forward_1y":6.0665972292,
     "slug":"banana-gun"
   },
   {
-    "protocol_name":"PinkSale",
+    "protocol_name":"ZeroLend Lending",
+    "category":"Lending",
+    "fully_diluted_market_cap":2718727.0499999998,
+    "revenue_30d":37105.0,
+    "revenue_30d_change":24.73,
+    "pr_ratio_forward_1y":6.1059314782,
+    "slug":"zerolend-lending"
+  },
+  {
+    "protocol_name":"Lido",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":800296948.6900000572,
+    "revenue_30d":8881403.0,
+    "revenue_30d_change":-5.43,
+    "pr_ratio_forward_1y":7.509107783,
+    "slug":"lido"
+  },
+  {
+    "protocol_name":"SushiSwap",
+    "category":"Dexs",
+    "fully_diluted_market_cap":142046019.2800000012,
+    "revenue_30d":1504983.0,
+    "revenue_30d_change":278.37,
+    "pr_ratio_forward_1y":7.8653169327,
+    "slug":"sushiswap"
+  },
+  {
+    "protocol_name":"Vesper",
+    "category":"Yield Aggregator",
+    "fully_diluted_market_cap":2460139.3700000001,
+    "revenue_30d":24796.0,
+    "revenue_30d_change":59.74,
+    "pr_ratio_forward_1y":8.2679308827,
+    "slug":"vesper"
+  },
+  {
+    "protocol_name":"pump.fun",
     "category":"Launchpad",
-    "fully_diluted_market_cap":35728002.8999999985,
-    "revenue_30d":168950.0,
-    "revenue_30d_change":-0.48,
-    "pr_ratio_forward_1y":17.6225722107,
-    "slug":"pinksale"
+    "fully_diluted_market_cap":3706073289.3299999237,
+    "revenue_30d":36913422.0,
+    "revenue_30d_change":-20.28,
+    "pr_ratio_forward_1y":8.3665892796,
+    "slug":"pump.fun"
   },
   {
     "protocol_name":"Velora",
     "category":"DEX Aggregator",
-    "fully_diluted_market_cap":29194532.9499999993,
-    "revenue_30d":135810.0,
-    "revenue_30d_change":-50.93,
-    "pr_ratio_forward_1y":17.913833634,
+    "fully_diluted_market_cap":21182371.370000001,
+    "revenue_30d":201715.0,
+    "revenue_30d_change":-20.81,
+    "pr_ratio_forward_1y":8.7509486859,
     "slug":"velora"
   },
   {
-    "protocol_name":"Streamflow",
-    "category":"Payments",
-    "fully_diluted_market_cap":62113980.9600000009,
-    "revenue_30d":284875.0,
-    "revenue_30d_change":28.44,
-    "pr_ratio_forward_1y":18.169952014,
-    "slug":"streamflow"
+    "protocol_name":"Houdini Swap",
+    "category":"Privacy",
+    "fully_diluted_market_cap":18489862.120000001,
+    "revenue_30d":173935.0,
+    "revenue_30d_change":15.07,
+    "pr_ratio_forward_1y":8.8586072,
+    "slug":"houdini-swap"
   },
   {
-    "protocol_name":"DEXTools",
-    "category":"Coins Tracker",
-    "fully_diluted_market_cap":94930587.2600000054,
-    "revenue_30d":434024.0,
-    "revenue_30d_change":-68.87,
-    "pr_ratio_forward_1y":18.2268314003,
-    "slug":"dextools"
-  },
-  {
-    "protocol_name":"Tree News",
-    "category":"SoFi",
-    "fully_diluted_market_cap":39228222.3400000036,
-    "revenue_30d":173239.0,
-    "revenue_30d_change":35.12,
-    "pr_ratio_forward_1y":18.8699919091,
-    "slug":"tree-news"
-  },
-  {
-    "protocol_name":"mETH Protocol",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":70490033.299999997,
-    "revenue_30d":303147.0,
-    "revenue_30d_change":-23.81,
-    "pr_ratio_forward_1y":19.3772969604,
-    "slug":"meth-protocol"
-  },
-  {
-    "protocol_name":"Pendle",
-    "category":"Yield",
-    "fully_diluted_market_cap":1355723354.7300000191,
-    "revenue_30d":5812842.0,
-    "revenue_30d_change":-6.71,
-    "pr_ratio_forward_1y":19.4357504001,
-    "slug":"pendle"
-  },
-  {
-    "protocol_name":"Swappi",
-    "category":"Dexs",
-    "fully_diluted_market_cap":1009026.37,
-    "revenue_30d":4246.0,
-    "revenue_30d_change":-58.16,
-    "pr_ratio_forward_1y":19.8034693437,
-    "slug":"swappi"
-  },
-  {
-    "protocol_name":"Colony",
-    "category":"Yield",
-    "fully_diluted_market_cap":11849481.6999999993,
-    "revenue_30d":49484.0,
-    "revenue_30d_change":-57.12,
-    "pr_ratio_forward_1y":19.955072515,
-    "slug":"colony"
-  },
-  {
-    "protocol_name":"Stake DAO",
-    "category":"Yield",
-    "fully_diluted_market_cap":35273792.9699999988,
-    "revenue_30d":146141.0,
-    "revenue_30d_change":19.3,
-    "pr_ratio_forward_1y":20.114018294,
-    "slug":"stake-dao"
-  },
-  {
-    "protocol_name":"Solana Name Service",
-    "category":"Domains",
-    "fully_diluted_market_cap":23934581.8299999982,
-    "revenue_30d":95165.0,
-    "revenue_30d_change":-50.61,
-    "pr_ratio_forward_1y":20.9588450148,
-    "slug":"solana-name-service"
-  },
-  {
-    "protocol_name":"Equilibria",
-    "category":"Yield",
-    "fully_diluted_market_cap":43242929.7299999967,
-    "revenue_30d":163436.0,
-    "revenue_30d_change":12.0,
-    "pr_ratio_forward_1y":22.0488599666,
-    "slug":"equilibria"
-  },
-  {
-    "protocol_name":"Aura",
-    "category":"Yield",
-    "fully_diluted_market_cap":16783018.8299999982,
-    "revenue_30d":56820.0,
-    "revenue_30d_change":-19.83,
-    "pr_ratio_forward_1y":24.6143066262,
-    "slug":"aura"
-  },
-  {
-    "protocol_name":"Penpie",
-    "category":"Yield",
-    "fully_diluted_market_cap":29371740.6499999985,
-    "revenue_30d":95302.0,
-    "revenue_30d_change":0.34,
-    "pr_ratio_forward_1y":25.6830397491,
-    "slug":"penpie"
-  },
-  {
-    "protocol_name":"Indigo",
-    "category":"CDP",
-    "fully_diluted_market_cap":41145046.9299999997,
-    "revenue_30d":129308.0,
-    "revenue_30d_change":-0.27,
-    "pr_ratio_forward_1y":26.5161777371,
-    "slug":"indigo"
-  },
-  {
-    "protocol_name":"Geodnet",
-    "category":"Oracle",
-    "fully_diluted_market_cap":157445631.1599999964,
-    "revenue_30d":467661.0,
-    "revenue_30d_change":13.32,
-    "pr_ratio_forward_1y":28.0555129962,
-    "slug":"geodnet"
-  },
-  {
-    "protocol_name":"Resolv",
-    "category":"Basis Trading",
-    "fully_diluted_market_cap":107687813.6400000006,
-    "revenue_30d":312817.0,
-    "revenue_30d_change":-3.82,
-    "pr_ratio_forward_1y":28.6876495523,
-    "slug":"resolv"
-  },
-  {
-    "protocol_name":"Helium Network",
-    "category":"DePIN",
-    "fully_diluted_market_cap":577480000.5800000429,
-    "revenue_30d":1592174.0,
-    "revenue_30d_change":50.12,
-    "pr_ratio_forward_1y":30.2249210084,
-    "slug":"helium-network"
-  },
-  {
-    "protocol_name":"Step Finance",
-    "category":"Portfolio Tracker",
-    "fully_diluted_market_cap":33546921.2600000016,
-    "revenue_30d":88512.0,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":31.5841555006,
-    "slug":"step-finance"
-  },
-  {
-    "protocol_name":"Gearbox",
-    "category":"Lending",
-    "fully_diluted_market_cap":33338713.3099999987,
-    "revenue_30d":84378.0,
-    "revenue_30d_change":137.81,
-    "pr_ratio_forward_1y":32.9259535562,
-    "slug":"gearbox"
-  },
-  {
-    "protocol_name":"STON.fi",
-    "category":"Dexs",
-    "fully_diluted_market_cap":62235109.3999999985,
-    "revenue_30d":157042.0,
-    "revenue_30d_change":96.32,
-    "pr_ratio_forward_1y":33.0246629352,
-    "slug":"ston.fi"
-  },
-  {
-    "protocol_name":"Virtuals Protocol",
-    "category":"AI Agents",
-    "fully_diluted_market_cap":1114250561.3800001144,
-    "revenue_30d":2673758.0,
-    "revenue_30d_change":-16.23,
-    "pr_ratio_forward_1y":34.7279796632,
-    "slug":"virtuals-protocol"
-  },
-  {
-    "protocol_name":"Benqi Lending",
-    "category":"Lending",
-    "fully_diluted_market_cap":58597147.6300000027,
-    "revenue_30d":133619.0,
-    "revenue_30d_change":12.85,
-    "pr_ratio_forward_1y":36.5449197781,
-    "slug":"benqi-lending"
-  },
-  {
-    "protocol_name":"Convex Finance",
-    "category":"Yield",
-    "fully_diluted_market_cap":377450113.5099999905,
-    "revenue_30d":854192.0,
-    "revenue_30d_change":76.73,
-    "pr_ratio_forward_1y":36.8233091926,
-    "slug":"convex-finance"
-  },
-  {
-    "protocol_name":"Thorchain DEX",
-    "category":"Dexs",
-    "fully_diluted_market_cap":511236152.3999999762,
-    "revenue_30d":1122609.0,
-    "revenue_30d_change":23.46,
-    "pr_ratio_forward_1y":37.9500010244,
-    "slug":"thorchain-dex"
-  },
-  {
-    "protocol_name":"boop.fun",
+    "protocol_name":"Metaplex",
     "category":"Launchpad",
-    "fully_diluted_market_cap":20456645.4899999984,
-    "revenue_30d":44717.0,
-    "revenue_30d_change":-90.18,
-    "pr_ratio_forward_1y":38.1224245253,
-    "slug":"boop.fun"
+    "fully_diluted_market_cap":241325432.1599999964,
+    "revenue_30d":2176871.0,
+    "revenue_30d_change":-0.72,
+    "pr_ratio_forward_1y":9.2382381317,
+    "slug":"metaplex"
   },
   {
-    "protocol_name":"Dolomite",
-    "category":"Lending",
-    "fully_diluted_market_cap":115468026.3700000048,
-    "revenue_30d":221078.0,
-    "revenue_30d_change":16.77,
-    "pr_ratio_forward_1y":43.5246181476,
-    "slug":"dolomite"
-  },
-  {
-    "protocol_name":"Renzo",
-    "category":"Liquid Restaking",
-    "fully_diluted_market_cap":124793187.450000003,
-    "revenue_30d":235419.0,
-    "revenue_30d_change":-3.12,
-    "pr_ratio_forward_1y":44.1741417961,
-    "slug":"renzo"
-  },
-  {
-    "protocol_name":"Javsphere",
-    "category":"Derivatives",
-    "fully_diluted_market_cap":5320118.79,
-    "revenue_30d":9922.0,
-    "revenue_30d_change":-63.13,
-    "pr_ratio_forward_1y":44.6828494759,
-    "slug":"javsphere"
-  },
-  {
-    "protocol_name":"YieldNest",
-    "category":"Onchain Capital Allocator",
-    "fully_diluted_market_cap":1681251.01,
-    "revenue_30d":3017.0,
-    "revenue_30d_change":747.47,
-    "pr_ratio_forward_1y":46.4382667661,
-    "slug":"yieldnest"
-  },
-  {
-    "protocol_name":"Treehouse Protocol",
-    "category":"DOR",
-    "fully_diluted_market_cap":266051859.0399999917,
-    "revenue_30d":470835.0,
-    "revenue_30d_change":-49.87,
-    "pr_ratio_forward_1y":47.0886579233,
-    "slug":"treehouse-protocol"
-  },
-  {
-    "protocol_name":"CLever",
-    "category":"Yield",
-    "fully_diluted_market_cap":18162624.7199999988,
-    "revenue_30d":30079.0,
-    "revenue_30d_change":-28.16,
-    "pr_ratio_forward_1y":50.3192280328,
-    "slug":"clever"
-  },
-  {
-    "protocol_name":"Storm Trade",
-    "category":"Derivatives",
-    "fully_diluted_market_cap":15321414.3800000008,
-    "revenue_30d":22668.0,
-    "revenue_30d_change":-17.95,
-    "pr_ratio_forward_1y":56.3254160785,
-    "slug":"storm-trade"
-  },
-  {
-    "protocol_name":"Stader",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":64518400.1300000027,
-    "revenue_30d":93296.0,
-    "revenue_30d_change":15.33,
-    "pr_ratio_forward_1y":57.6287659081,
-    "slug":"stader"
-  },
-  {
-    "protocol_name":"Alkimi",
-    "category":"Services",
-    "fully_diluted_market_cap":57568387.549999997,
-    "revenue_30d":74594.0,
-    "revenue_30d_change":76.32,
-    "pr_ratio_forward_1y":64.3130228861,
-    "slug":"alkimi"
-  },
-  {
-    "protocol_name":"Definitive",
+    "protocol_name":"CoWSwap",
     "category":"DEX Aggregator",
-    "fully_diluted_market_cap":289813462.2699999809,
-    "revenue_30d":375369.0,
-    "revenue_30d_change":-13.02,
-    "pr_ratio_forward_1y":64.3396813691,
-    "slug":"definitive"
+    "fully_diluted_market_cap":237322102.1899999976,
+    "revenue_30d":1905168.0,
+    "revenue_30d_change":6.18,
+    "pr_ratio_forward_1y":10.3806288207,
+    "slug":"cowswap"
   },
   {
-    "protocol_name":"Sendshot",
-    "category":"Launchpad",
-    "fully_diluted_market_cap":4491580.6100000003,
-    "revenue_30d":5681.0,
-    "revenue_30d_change":-80.1,
-    "pr_ratio_forward_1y":65.8860031978,
-    "slug":"sendshot"
+    "protocol_name":"Vader AI",
+    "category":"AI Agents",
+    "fully_diluted_market_cap":7865009.4400000004,
+    "revenue_30d":60822.0,
+    "revenue_30d_change":-33.54,
+    "pr_ratio_forward_1y":10.7759931165,
+    "slug":"vader-ai"
   },
   {
-    "protocol_name":"SOFA.org",
-    "category":"Options",
-    "fully_diluted_market_cap":10502903.6400000006,
-    "revenue_30d":12785.0,
-    "revenue_30d_change":-24.69,
-    "pr_ratio_forward_1y":68.4585037153,
-    "slug":"sofa.org"
+    "protocol_name":"deBridge",
+    "category":"Bridge",
+    "fully_diluted_market_cap":276319827.3000000119,
+    "revenue_30d":2005014.0,
+    "revenue_30d_change":80.23,
+    "pr_ratio_forward_1y":11.4845344097,
+    "slug":"debridge"
   },
   {
     "protocol_name":"Heaven",
     "category":"Dexs",
-    "fully_diluted_market_cap":128974706.6099999994,
-    "revenue_30d":153304.0,
-    "revenue_30d_change":-96.48,
-    "pr_ratio_forward_1y":70.1083612789,
+    "fully_diluted_market_cap":13156409.5899999999,
+    "revenue_30d":92623.0,
+    "revenue_30d_change":-97.91,
+    "pr_ratio_forward_1y":11.8368813991,
     "slug":"heaven"
   },
   {
-    "protocol_name":"NetSwap",
+    "protocol_name":"Chainflip",
     "category":"Dexs",
-    "fully_diluted_market_cap":3663202.2000000002,
-    "revenue_30d":4354.0,
-    "revenue_30d_change":-44.12,
-    "pr_ratio_forward_1y":70.1118167203,
-    "slug":"netswap"
+    "fully_diluted_market_cap":46169725.7899999991,
+    "revenue_30d":316026.0,
+    "revenue_30d_change":25.12,
+    "pr_ratio_forward_1y":12.1745588944,
+    "slug":"chainflip"
   },
   {
-    "protocol_name":"ZyFAI",
-    "category":"Yield",
-    "fully_diluted_market_cap":10521564.0199999996,
-    "revenue_30d":10644.0,
-    "revenue_30d_change":422.53,
-    "pr_ratio_forward_1y":82.3747652825,
-    "slug":"zyfai"
-  },
-  {
-    "protocol_name":"Verse",
-    "category":"Dexs",
-    "fully_diluted_market_cap":14967460.2599999998,
-    "revenue_30d":12811.0,
-    "revenue_30d_change":624.19,
-    "pr_ratio_forward_1y":97.3607333541,
-    "slug":"verse"
-  },
-  {
-    "protocol_name":"Ethervista",
-    "category":"Dexs",
-    "fully_diluted_market_cap":7278132.6799999997,
-    "revenue_30d":6101.0,
-    "revenue_30d_change":26.37,
-    "pr_ratio_forward_1y":99.4117450691,
-    "slug":"ethervista"
-  },
-  {
-    "protocol_name":"Amnis Finance",
+    "protocol_name":"mETH Protocol",
     "category":"Liquid Staking",
-    "fully_diluted_market_cap":54177471.2400000021,
-    "revenue_30d":39631.0,
-    "revenue_30d_change":-16.92,
-    "pr_ratio_forward_1y":113.9206497439,
-    "slug":"amnis-finance"
+    "fully_diluted_market_cap":45596576.4799999967,
+    "revenue_30d":306903.0,
+    "revenue_30d_change":-18.38,
+    "pr_ratio_forward_1y":12.3808327278,
+    "slug":"meth-protocol"
   },
   {
-    "protocol_name":"Hydration DEX",
-    "category":"Dexs",
-    "fully_diluted_market_cap":54867096.2100000009,
-    "revenue_30d":36027.0,
-    "revenue_30d_change":169.08,
-    "pr_ratio_forward_1y":126.9119831654,
-    "slug":"hydration-dex"
+    "protocol_name":"Indigo",
+    "category":"CDP",
+    "fully_diluted_market_cap":31355677.75,
+    "revenue_30d":206879.0,
+    "revenue_30d_change":12.07,
+    "pr_ratio_forward_1y":12.6304416873,
+    "slug":"indigo"
+  },
+  {
+    "protocol_name":"Colony",
+    "category":"Yield",
+    "fully_diluted_market_cap":7895555.5899999999,
+    "revenue_30d":49608.0,
+    "revenue_30d_change":-53.06,
+    "pr_ratio_forward_1y":13.2632431429,
+    "slug":"colony"
+  },
+  {
+    "protocol_name":"Pendle",
+    "category":"Yield",
+    "fully_diluted_market_cap":933008588.8999999762,
+    "revenue_30d":5722326.0,
+    "revenue_30d_change":-1.82,
+    "pr_ratio_forward_1y":13.5872573044,
+    "slug":"pendle"
+  },
+  {
+    "protocol_name":"PinkSale",
+    "category":"Launchpad",
+    "fully_diluted_market_cap":39123393.4900000021,
+    "revenue_30d":218251.0,
+    "revenue_30d_change":28.67,
+    "pr_ratio_forward_1y":14.9382261288,
+    "slug":"pinksale"
+  },
+  {
+    "protocol_name":"Launch Coin on Believe",
+    "category":"Launchpad",
+    "fully_diluted_market_cap":74454169.7699999958,
+    "revenue_30d":409318.0,
+    "revenue_30d_change":-2.93,
+    "pr_ratio_forward_1y":15.1581756666,
+    "slug":"launch-coin-on-believe"
+  },
+  {
+    "protocol_name":"DEXTools",
+    "category":"Coins Tracker",
+    "fully_diluted_market_cap":76503432.299999997,
+    "revenue_30d":403449.0,
+    "revenue_30d_change":-70.11,
+    "pr_ratio_forward_1y":15.8019626396,
+    "slug":"dextools"
+  },
+  {
+    "protocol_name":"Solana Name Service",
+    "category":"Domains",
+    "fully_diluted_market_cap":18996690.2199999988,
+    "revenue_30d":99930.0,
+    "revenue_30d_change":-6.62,
+    "pr_ratio_forward_1y":15.8416643484,
+    "slug":"solana-name-service"
+  },
+  {
+    "protocol_name":"Streamflow",
+    "category":"Payments",
+    "fully_diluted_market_cap":56707514.1300000027,
+    "revenue_30d":294387.0,
+    "revenue_30d_change":26.19,
+    "pr_ratio_forward_1y":16.0524281898,
+    "slug":"streamflow"
+  },
+  {
+    "protocol_name":"Tree News",
+    "category":"SoFi",
+    "fully_diluted_market_cap":34951470.1499999985,
+    "revenue_30d":179103.0,
+    "revenue_30d_change":23.06,
+    "pr_ratio_forward_1y":16.2622765252,
+    "slug":"tree-news"
+  },
+  {
+    "protocol_name":"Stake DAO",
+    "category":"Yield",
+    "fully_diluted_market_cap":29491784.2899999991,
+    "revenue_30d":142074.0,
+    "revenue_30d_change":21.65,
+    "pr_ratio_forward_1y":17.2983705029,
+    "slug":"stake-dao"
+  },
+  {
+    "protocol_name":"Stride",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":6962999.79,
+    "revenue_30d":33510.0,
+    "revenue_30d_change":0.32,
+    "pr_ratio_forward_1y":17.3157261265,
+    "slug":"stride"
+  },
+  {
+    "protocol_name":"Resolv",
+    "category":"Basis Trading",
+    "fully_diluted_market_cap":64023835.9099999964,
+    "revenue_30d":304921.0,
+    "revenue_30d_change":-14.95,
+    "pr_ratio_forward_1y":17.4973834507,
+    "slug":"resolv"
+  },
+  {
+    "protocol_name":"Aura",
+    "category":"Yield",
+    "fully_diluted_market_cap":12505974.0099999998,
+    "revenue_30d":54109.0,
+    "revenue_30d_change":-24.65,
+    "pr_ratio_forward_1y":19.2604650027,
+    "slug":"aura"
+  },
+  {
+    "protocol_name":"Step Finance",
+    "category":"Portfolio Tracker",
+    "fully_diluted_market_cap":25635070.2199999988,
+    "revenue_30d":110602.0,
+    "revenue_30d_change":null,
+    "pr_ratio_forward_1y":19.3148030928,
+    "slug":"step-finance"
+  },
+  {
+    "protocol_name":"Equilibria",
+    "category":"Yield",
+    "fully_diluted_market_cap":35978733.9699999988,
+    "revenue_30d":145037.0,
+    "revenue_30d_change":-16.92,
+    "pr_ratio_forward_1y":20.6721583515,
+    "slug":"equilibria"
+  },
+  {
+    "protocol_name":"Geodnet",
+    "category":"Oracle",
+    "fully_diluted_market_cap":112048558.9099999964,
+    "revenue_30d":436573.0,
+    "revenue_30d_change":-2.18,
+    "pr_ratio_forward_1y":21.3879005554,
+    "slug":"geodnet"
+  },
+  {
+    "protocol_name":"Convex Finance",
+    "category":"Yield",
+    "fully_diluted_market_cap":216284769.5500000119,
+    "revenue_30d":840136.0,
+    "revenue_30d_change":50.58,
+    "pr_ratio_forward_1y":21.4533489766,
+    "slug":"convex-finance"
   },
   {
     "protocol_name":"Osmosis DEX",
     "category":"Dexs",
-    "fully_diluted_market_cap":174747166.150000006,
-    "revenue_30d":76109.0,
-    "revenue_30d_change":45.92,
-    "pr_ratio_forward_1y":191.3343211162,
+    "fully_diluted_market_cap":111156502.8900000006,
+    "revenue_30d":426797.0,
+    "revenue_30d_change":89.86,
+    "pr_ratio_forward_1y":21.7036246916,
     "slug":"osmosis-dex"
   },
   {
-    "protocol_name":"Safe",
+    "protocol_name":"Virtuals Protocol",
+    "category":"AI Agents",
+    "fully_diluted_market_cap":684810486.3999999762,
+    "revenue_30d":2617188.0,
+    "revenue_30d_change":-12.76,
+    "pr_ratio_forward_1y":21.804906844,
+    "slug":"virtuals-protocol"
+  },
+  {
+    "protocol_name":"Penpie",
+    "category":"Yield",
+    "fully_diluted_market_cap":23530254.2300000004,
+    "revenue_30d":87666.0,
+    "revenue_30d_change":-7.24,
+    "pr_ratio_forward_1y":22.3673319094,
+    "slug":"penpie"
+  },
+  {
+    "protocol_name":"Treehouse Protocol",
+    "category":"DOR",
+    "fully_diluted_market_cap":164102013.2199999988,
+    "revenue_30d":611336.0,
+    "revenue_30d_change":-3.86,
+    "pr_ratio_forward_1y":22.3693153492,
+    "slug":"treehouse-protocol"
+  },
+  {
+    "protocol_name":"Benqi Lending",
+    "category":"Lending",
+    "fully_diluted_market_cap":38295658.4200000018,
+    "revenue_30d":138099.0,
+    "revenue_30d_change":15.94,
+    "pr_ratio_forward_1y":23.1088195304,
+    "slug":"benqi-lending"
+  },
+  {
+    "protocol_name":"Ekubo",
+    "category":"Dexs",
+    "fully_diluted_market_cap":46898506.5600000024,
+    "revenue_30d":167094.0,
+    "revenue_30d_change":210.88,
+    "pr_ratio_forward_1y":23.389283158,
+    "slug":"ekubo"
+  },
+  {
+    "protocol_name":"Thorchain DEX",
+    "category":"Dexs",
+    "fully_diluted_market_cap":357526593.8700000048,
+    "revenue_30d":1267069.0,
+    "revenue_30d_change":15.76,
+    "pr_ratio_forward_1y":23.5140176443,
+    "slug":"thorchain-dex"
+  },
+  {
+    "protocol_name":"Helium Network",
+    "category":"DePIN",
+    "fully_diluted_market_cap":476625356.1999999881,
+    "revenue_30d":1615983.0,
+    "revenue_30d_change":24.38,
+    "pr_ratio_forward_1y":24.5787113375,
+    "slug":"helium-network"
+  },
+  {
+    "protocol_name":"Gearbox",
+    "category":"Lending",
+    "fully_diluted_market_cap":36366641.200000003,
+    "revenue_30d":118668.0,
+    "revenue_30d_change":211.84,
+    "pr_ratio_forward_1y":25.5380846844,
+    "slug":"gearbox"
+  },
+  {
+    "protocol_name":"NodeOps",
+    "category":"DePIN",
+    "fully_diluted_market_cap":63179360.6899999976,
+    "revenue_30d":200059.0,
+    "revenue_30d_change":91.19,
+    "pr_ratio_forward_1y":26.3169701146,
+    "slug":"nodeops"
+  },
+  {
+    "protocol_name":"STON.fi",
+    "category":"Dexs",
+    "fully_diluted_market_cap":62656319.6300000027,
+    "revenue_30d":174708.0,
+    "revenue_30d_change":146.74,
+    "pr_ratio_forward_1y":29.886209957,
+    "slug":"ston.fi"
+  },
+  {
+    "protocol_name":"Dolomite",
+    "category":"Lending",
+    "fully_diluted_market_cap":73409407.5600000024,
+    "revenue_30d":199489.0,
+    "revenue_30d_change":0.35,
+    "pr_ratio_forward_1y":30.6656037676,
+    "slug":"dolomite"
+  },
+  {
+    "protocol_name":"Usual",
+    "category":"RWA",
+    "fully_diluted_market_cap":121244918.0,
+    "revenue_30d":304254.0,
+    "revenue_30d_change":null,
+    "pr_ratio_forward_1y":33.2082508913,
+    "slug":"usual"
+  },
+  {
+    "protocol_name":"Renzo",
+    "category":"Liquid Restaking",
+    "fully_diluted_market_cap":97002453.7800000012,
+    "revenue_30d":238373.0,
+    "revenue_30d_change":-2.82,
+    "pr_ratio_forward_1y":33.9112979029,
+    "slug":"renzo"
+  },
+  {
+    "protocol_name":"Storm Trade",
+    "category":"Derivatives",
+    "fully_diluted_market_cap":10603381.8399999999,
+    "revenue_30d":25700.0,
+    "revenue_30d_change":3.58,
+    "pr_ratio_forward_1y":34.3819125811,
+    "slug":"storm-trade"
+  },
+  {
+    "protocol_name":"CLever",
+    "category":"Yield",
+    "fully_diluted_market_cap":14188559.2100000009,
+    "revenue_30d":29949.0,
+    "revenue_30d_change":-7.25,
+    "pr_ratio_forward_1y":39.4797800984,
+    "slug":"clever"
+  },
+  {
+    "protocol_name":"YieldNest",
+    "category":"Onchain Capital Allocator",
+    "fully_diluted_market_cap":1480862.3500000001,
+    "revenue_30d":3087.0,
+    "revenue_30d_change":755.12,
+    "pr_ratio_forward_1y":39.9757680056,
+    "slug":"yieldnest"
+  },
+  {
+    "protocol_name":"boop.fun",
+    "category":"Launchpad",
+    "fully_diluted_market_cap":19723389.5300000012,
+    "revenue_30d":40828.0,
+    "revenue_30d_change":-79.89,
+    "pr_ratio_forward_1y":40.2570734341,
+    "slug":"boop.fun"
+  },
+  {
+    "protocol_name":"NetSwap",
+    "category":"Dexs",
+    "fully_diluted_market_cap":2197221.5099999998,
+    "revenue_30d":4542.0,
+    "revenue_30d_change":-31.44,
+    "pr_ratio_forward_1y":40.3130322545,
+    "slug":"netswap"
+  },
+  {
+    "protocol_name":"SOFA.org",
+    "category":"Options",
+    "fully_diluted_market_cap":8665383.1099999994,
+    "revenue_30d":16860.0,
+    "revenue_30d_change":9.96,
+    "pr_ratio_forward_1y":42.8300865461,
+    "slug":"sofa.org"
+  },
+  {
+    "protocol_name":"Alkimi",
     "category":"Services",
-    "fully_diluted_market_cap":372702540.7799999714,
-    "revenue_30d":155161.0,
-    "revenue_30d_change":-17.72,
-    "pr_ratio_forward_1y":200.1697917969,
-    "slug":"safe"
+    "fully_diluted_market_cap":39789068.3900000006,
+    "revenue_30d":75050.0,
+    "revenue_30d_change":33.71,
+    "pr_ratio_forward_1y":44.1806222407,
+    "slug":"alkimi"
+  },
+  {
+    "protocol_name":"Stader",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":47819651.799999997,
+    "revenue_30d":87885.0,
+    "revenue_30d_change":17.01,
+    "pr_ratio_forward_1y":45.3430162523,
+    "slug":"stader"
+  },
+  {
+    "protocol_name":"Hydration DEX",
+    "category":"Dexs",
+    "fully_diluted_market_cap":39699785.4699999988,
+    "revenue_30d":69610.0,
+    "revenue_30d_change":226.33,
+    "pr_ratio_forward_1y":47.5264395322,
+    "slug":"hydration-dex"
+  },
+  {
+    "protocol_name":"Javsphere",
+    "category":"Derivatives",
+    "fully_diluted_market_cap":3791825.5,
+    "revenue_30d":6376.0,
+    "revenue_30d_change":-75.84,
+    "pr_ratio_forward_1y":49.5585725115,
+    "slug":"javsphere"
+  },
+  {
+    "protocol_name":"Definitive",
+    "category":"DEX Aggregator",
+    "fully_diluted_market_cap":246895083.1899999976,
+    "revenue_30d":381688.0,
+    "revenue_30d_change":-13.09,
+    "pr_ratio_forward_1y":53.9042104175,
+    "slug":"definitive"
+  },
+  {
+    "protocol_name":"Amnis Finance",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":30564957.4899999984,
+    "revenue_30d":45840.0,
+    "revenue_30d_change":7.31,
+    "pr_ratio_forward_1y":55.5645678629,
+    "slug":"amnis-finance"
+  },
+  {
+    "protocol_name":"Sendshot",
+    "category":"Launchpad",
+    "fully_diluted_market_cap":3042392.4100000001,
+    "revenue_30d":4046.0,
+    "revenue_30d_change":-60.59,
+    "pr_ratio_forward_1y":62.6625558164,
+    "slug":"sendshot"
+  },
+  {
+    "protocol_name":"Overtime",
+    "category":"Prediction Market",
+    "fully_diluted_market_cap":18936786.0799999982,
+    "revenue_30d":25161.0,
+    "revenue_30d_change":null,
+    "pr_ratio_forward_1y":62.7187117629,
+    "slug":"overtime"
+  },
+  {
+    "protocol_name":"Ferro",
+    "category":"Dexs",
+    "fully_diluted_market_cap":3494331.02,
+    "revenue_30d":3621.0,
+    "revenue_30d_change":-13.41,
+    "pr_ratio_forward_1y":80.4181860444,
+    "slug":"ferro"
+  },
+  {
+    "protocol_name":"Ethervista",
+    "category":"Dexs",
+    "fully_diluted_market_cap":5150869.5099999998,
+    "revenue_30d":5278.0,
+    "revenue_30d_change":-5.82,
+    "pr_ratio_forward_1y":81.3260943223,
+    "slug":"ethervista"
+  },
+  {
+    "protocol_name":"Verse",
+    "category":"Dexs",
+    "fully_diluted_market_cap":11461878.5500000007,
+    "revenue_30d":11623.0,
+    "revenue_30d_change":286.79,
+    "pr_ratio_forward_1y":82.1781421176,
+    "slug":"verse"
+  },
+  {
+    "protocol_name":"Goldfinch",
+    "category":"RWA Lending",
+    "fully_diluted_market_cap":45048788.25,
+    "revenue_30d":27051.0,
+    "revenue_30d_change":3826.12,
+    "pr_ratio_forward_1y":138.7773349414,
+    "slug":"goldfinch"
+  },
+  {
+    "protocol_name":"ZyFAI",
+    "category":"Yield",
+    "fully_diluted_market_cap":10243131.7300000004,
+    "revenue_30d":5590.0,
+    "revenue_30d_change":116.16,
+    "pr_ratio_forward_1y":152.7002344961,
+    "slug":"zyfai"
+  },
+  {
+    "protocol_name":"DeDust",
+    "category":"Dexs",
+    "fully_diluted_market_cap":22544555.0799999982,
+    "revenue_30d":11576.0,
+    "revenue_30d_change":-40.89,
+    "pr_ratio_forward_1y":162.2937908892,
+    "slug":"dedust"
   },
   {
     "protocol_name":"Aquarius Stellar",
     "category":"Dexs",
-    "fully_diluted_market_cap":90539968.5100000054,
-    "revenue_30d":30279.0,
-    "revenue_30d_change":338.0,
-    "pr_ratio_forward_1y":249.182515137,
+    "fully_diluted_market_cap":71323946.0199999958,
+    "revenue_30d":32654.0,
+    "revenue_30d_change":136.04,
+    "pr_ratio_forward_1y":182.0194208469,
     "slug":"aquarius-stellar"
   },
   {
     "protocol_name":"Axie Infinity",
     "category":"Gaming",
-    "fully_diluted_market_cap":602563414.2000000477,
-    "revenue_30d":196303.0,
-    "revenue_30d_change":-10.5,
-    "pr_ratio_forward_1y":255.7964873181,
+    "fully_diluted_market_cap":408511921.2699999809,
+    "revenue_30d":181015.0,
+    "revenue_30d_change":-18.42,
+    "pr_ratio_forward_1y":188.0654095287,
     "slug":"axie-infinity"
   },
   {
-    "protocol_name":"DeDust",
-    "category":"Dexs",
-    "fully_diluted_market_cap":28996673.2300000004,
-    "revenue_30d":9377.0,
-    "revenue_30d_change":-58.89,
-    "pr_ratio_forward_1y":257.6932319327,
-    "slug":"dedust"
-  },
-  {
-    "protocol_name":"Ferro",
-    "category":"Dexs",
-    "fully_diluted_market_cap":4565174.3700000001,
-    "revenue_30d":1364.0,
-    "revenue_30d_change":-65.31,
-    "pr_ratio_forward_1y":278.908502566,
-    "slug":"ferro"
-  },
-  {
-    "protocol_name":"Jupiter Aggregator",
-    "category":"DEX Aggregator",
-    "fully_diluted_market_cap":3229316304.1199998856,
-    "revenue_30d":878766.0,
-    "revenue_30d_change":-68.42,
-    "pr_ratio_forward_1y":306.2358944361,
-    "slug":"jupiter-aggregator"
-  },
-  {
-    "protocol_name":"AirSwap",
-    "category":"DEX Aggregator",
-    "fully_diluted_market_cap":15402982.5299999993,
-    "revenue_30d":3675.0,
-    "revenue_30d_change":1266.17,
-    "pr_ratio_forward_1y":349.2739802721,
-    "slug":"airswap"
-  },
-  {
-    "protocol_name":"Liquid Collective",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":1618018099.0199999809,
-    "revenue_30d":373734.0,
-    "revenue_30d_change":-2.81,
-    "pr_ratio_forward_1y":360.7775626114,
-    "slug":"liquid-collective"
-  },
-  {
-    "protocol_name":"Trust Wallet",
-    "category":"Wallets",
-    "fully_diluted_market_cap":1448253644.0699999332,
-    "revenue_30d":332735.0,
-    "revenue_30d_change":7.18,
-    "pr_ratio_forward_1y":362.7144835154,
-    "slug":"trust-wallet"
+    "protocol_name":"Safe",
+    "category":"Services",
+    "fully_diluted_market_cap":259623770.5600000024,
+    "revenue_30d":110913.0,
+    "revenue_30d_change":-49.76,
+    "pr_ratio_forward_1y":195.0656299382,
+    "slug":"safe"
   },
   {
     "protocol_name":"THENA V1",
     "category":"Dexs",
-    "fully_diluted_market_cap":147005776.2599999905,
-    "revenue_30d":25601.0,
-    "revenue_30d_change":76.53,
-    "pr_ratio_forward_1y":478.5157359088,
+    "fully_diluted_market_cap":85271258.4599999934,
+    "revenue_30d":30073.0,
+    "revenue_30d_change":152.67,
+    "pr_ratio_forward_1y":236.2896353872,
     "slug":"thena-v1"
+  },
+  {
+    "protocol_name":"AirSwap",
+    "category":"DEX Aggregator",
+    "fully_diluted_market_cap":11252714.0899999999,
+    "revenue_30d":3671.0,
+    "revenue_30d_change":1682.04,
+    "pr_ratio_forward_1y":255.4416164987,
+    "slug":"airswap"
+  },
+  {
+    "protocol_name":"Jupiter Aggregator",
+    "category":"DEX Aggregator",
+    "fully_diluted_market_cap":2322966592.1399998665,
+    "revenue_30d":733011.0,
+    "revenue_30d_change":-65.64,
+    "pr_ratio_forward_1y":264.0895557434,
+    "slug":"jupiter-aggregator"
+  },
+  {
+    "protocol_name":"Liquid Collective",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":1341871242.6600000858,
+    "revenue_30d":385132.0,
+    "revenue_30d_change":-2.49,
+    "pr_ratio_forward_1y":290.3487727714,
+    "slug":"liquid-collective"
+  },
+  {
+    "protocol_name":"Aspecta BuildKey",
+    "category":"SoFi",
+    "fully_diluted_market_cap":85769469.7399999946,
+    "revenue_30d":21707.0,
+    "revenue_30d_change":-50.55,
+    "pr_ratio_forward_1y":329.2696278466,
+    "slug":"aspecta-buildkey"
+  },
+  {
+    "protocol_name":"Trust Wallet",
+    "category":"Wallets",
+    "fully_diluted_market_cap":1278379855.4900000095,
+    "revenue_30d":300465.0,
+    "revenue_30d_change":-1.9,
+    "pr_ratio_forward_1y":354.5559536857,
+    "slug":"trust-wallet"
+  },
+  {
+    "protocol_name":"ThalaSwap",
+    "category":"Dexs",
+    "fully_diluted_market_cap":5437876.4199999999,
+    "revenue_30d":1053.0,
+    "revenue_30d_change":14.58,
+    "pr_ratio_forward_1y":430.3479281418,
+    "slug":"thalaswap"
   },
   {
     "protocol_name":"HOPR",
     "category":"Privacy",
-    "fully_diluted_market_cap":48973215.8100000024,
-    "revenue_30d":7501.0,
-    "revenue_30d_change":-11.22,
-    "pr_ratio_forward_1y":544.0742990935,
+    "fully_diluted_market_cap":40472923.3599999994,
+    "revenue_30d":6808.0,
+    "revenue_30d_change":-17.86,
+    "pr_ratio_forward_1y":495.4088738739,
     "slug":"hopr"
   },
   {
     "protocol_name":"JustLend",
     "category":"Lending",
-    "fully_diluted_market_cap":326280737.5099999905,
-    "revenue_30d":43149.0,
-    "revenue_30d_change":-7.38,
-    "pr_ratio_forward_1y":630.1434902122,
+    "fully_diluted_market_cap":300796824.0699999928,
+    "revenue_30d":41366.0,
+    "revenue_30d_change":-11.07,
+    "pr_ratio_forward_1y":605.9663009678,
     "slug":"justlend"
-  },
-  {
-    "protocol_name":"Alchemix",
-    "category":"Synthetics",
-    "fully_diluted_market_cap":23161084.9699999988,
-    "revenue_30d":2985.0,
-    "revenue_30d_change":22.39,
-    "pr_ratio_forward_1y":646.5964536572,
-    "slug":"alchemix"
-  },
-  {
-    "protocol_name":"ThalaSwap",
-    "category":"Dexs",
-    "fully_diluted_market_cap":7881928.6100000003,
-    "revenue_30d":810.0,
-    "revenue_30d_change":-14.74,
-    "pr_ratio_forward_1y":810.898005144,
-    "slug":"thalaswap"
   },
   {
     "protocol_name":"PayCash",
     "category":"Dexs",
-    "fully_diluted_market_cap":683521755.9800000191,
-    "revenue_30d":68354.0,
-    "revenue_30d_change":848.04,
-    "pr_ratio_forward_1y":833.3110912553,
+    "fully_diluted_market_cap":710624231.4299999475,
+    "revenue_30d":69443.0,
+    "revenue_30d_change":763.07,
+    "pr_ratio_forward_1y":852.7668152658,
     "slug":"paycash"
   },
   {
     "protocol_name":"SMARDEX AMM",
     "category":"Dexs",
-    "fully_diluted_market_cap":41318620.9900000021,
-    "revenue_30d":2146.0,
-    "revenue_30d_change":-16.37,
-    "pr_ratio_forward_1y":1604.4820204256,
+    "fully_diluted_market_cap":35112791.6000000015,
+    "revenue_30d":2836.0,
+    "revenue_30d_change":27.58,
+    "pr_ratio_forward_1y":1031.7580982605,
     "slug":"smardex-amm"
   },
   {
-    "protocol_name":"Usual",
-    "category":"RWA",
-    "fully_diluted_market_cap":217798973.7299999893,
-    "revenue_30d":9246.0,
-    "revenue_30d_change":null,
-    "pr_ratio_forward_1y":1963.001782122,
-    "slug":"usual"
+    "protocol_name":"Alchemix",
+    "category":"Synthetics",
+    "fully_diluted_market_cap":19029390.8200000003,
+    "revenue_30d":1487.0,
+    "revenue_30d_change":-59.83,
+    "pr_ratio_forward_1y":1066.4307789733,
+    "slug":"alchemix"
   },
   {
     "protocol_name":"ENS",
     "category":"Domains",
-    "fully_diluted_market_cap":2156911504.5799999237,
-    "revenue_30d":76012.0,
-    "revenue_30d_change":-58.42,
-    "pr_ratio_forward_1y":2364.6611769414,
+    "fully_diluted_market_cap":1477427981.1800000668,
+    "revenue_30d":81040.0,
+    "revenue_30d_change":-46.34,
+    "pr_ratio_forward_1y":1519.2373942703,
     "slug":"ens"
   },
   {
     "protocol_name":"MojitoSwap",
     "category":"Dexs",
-    "fully_diluted_market_cap":5777339.5899999999,
-    "revenue_30d":127.0,
-    "revenue_30d_change":-52.08,
-    "pr_ratio_forward_1y":3790.9052427822,
+    "fully_diluted_market_cap":5363089.9900000002,
+    "revenue_30d":151.0,
+    "revenue_30d_change":-25.98,
+    "pr_ratio_forward_1y":2959.762687638,
     "slug":"mojitoswap"
-  },
-  {
-    "protocol_name":"Wompie",
-    "category":"Yield",
-    "fully_diluted_market_cap":24119594.3399999999,
-    "revenue_30d":523.0,
-    "revenue_30d_change":-34.46,
-    "pr_ratio_forward_1y":3843.1476003824,
-    "slug":"wompie"
   },
   {
     "protocol_name":"Reserve Protocol",
     "category":"Indexes",
-    "fully_diluted_market_cap":657190208.1100000143,
+    "fully_diluted_market_cap":467400889.2400000095,
     "revenue_30d":11704.0,
-    "revenue_30d_change":-18.95,
-    "pr_ratio_forward_1y":4679.2421971833,
+    "revenue_30d_change":224.21,
+    "pr_ratio_forward_1y":3327.9284093757,
     "slug":"reserve-protocol"
+  },
+  {
+    "protocol_name":"Wompie",
+    "category":"Yield",
+    "fully_diluted_market_cap":23637269.7300000004,
+    "revenue_30d":428.0,
+    "revenue_30d_change":2.64,
+    "pr_ratio_forward_1y":4602.2721436916,
+    "slug":"wompie"
   },
   {
     "protocol_name":"Aave V2",
     "category":"Lending",
-    "fully_diluted_market_cap":4565127333.6599998474,
-    "revenue_30d":60090.0,
-    "revenue_30d_change":-4.17,
-    "pr_ratio_forward_1y":6330.9581927941,
+    "fully_diluted_market_cap":3640287309.6799998283,
+    "revenue_30d":64058.0,
+    "revenue_30d_change":4.0,
+    "pr_ratio_forward_1y":4735.6657374046,
     "slug":"aave-v2"
   },
   {
     "protocol_name":"BIM",
     "category":"Yield Aggregator",
-    "fully_diluted_market_cap":84350668.4099999964,
-    "revenue_30d":777.0,
-    "revenue_30d_change":3.88,
-    "pr_ratio_forward_1y":9046.6182335907,
+    "fully_diluted_market_cap":69435345.6899999976,
+    "revenue_30d":783.0,
+    "revenue_30d_change":21.58,
+    "pr_ratio_forward_1y":7389.8835344828,
     "slug":"bim"
   },
   {
     "protocol_name":"Walrus Protocol",
     "category":"Developer Tools",
-    "fully_diluted_market_cap":2045150582.4100000858,
-    "revenue_30d":10778.0,
-    "revenue_30d_change":-19.73,
-    "pr_ratio_forward_1y":15812.6939321612,
+    "fully_diluted_market_cap":1078994267.1900000572,
+    "revenue_30d":10925.0,
+    "revenue_30d_change":-22.7,
+    "pr_ratio_forward_1y":8230.3147764302,
     "slug":"walrus-protocol"
-  },
-  {
-    "protocol_name":"Friend3",
-    "category":"SoFi",
-    "fully_diluted_market_cap":1862834.22,
-    "revenue_30d":5.0,
-    "revenue_30d_change":-90.74,
-    "pr_ratio_forward_1y":31047.237,
-    "slug":"friend3"
   },
   {
     "protocol_name":"MYX Finance",
     "category":"Derivatives",
-    "fully_diluted_market_cap":5739705721.7299995422,
-    "revenue_30d":9900.0,
-    "revenue_30d_change":250.94,
-    "pr_ratio_forward_1y":48314.0212266835,
+    "fully_diluted_market_cap":3335502605.9600000381,
+    "revenue_30d":11088.0,
+    "revenue_30d_change":225.45,
+    "pr_ratio_forward_1y":25068.41184133,
     "slug":"myx-finance"
+  },
+  {
+    "protocol_name":"Friend3",
+    "category":"SoFi",
+    "fully_diluted_market_cap":1643337.04,
+    "revenue_30d":4.0,
+    "revenue_30d_change":-92.86,
+    "pr_ratio_forward_1y":34236.1883333333,
+    "slug":"friend3"
   },
   {
     "protocol_name":"The Graph",
     "category":"Developer Tools",
-    "fully_diluted_market_cap":963062903.8099999428,
-    "revenue_30d":641.0,
-    "revenue_30d_change":-53.75,
-    "pr_ratio_forward_1y":125203.1856227249,
+    "fully_diluted_market_cap":704282799.1900000572,
+    "revenue_30d":635.0,
+    "revenue_30d_change":130.07,
+    "pr_ratio_forward_1y":92425.5641981627,
     "slug":"the-graph"
-  },
-  {
-    "protocol_name":"Goldfinch",
-    "category":"RWA Lending",
-    "fully_diluted_market_cap":59997376.4099999964,
-    "revenue_30d":32.0,
-    "revenue_30d_change":-95.35,
-    "pr_ratio_forward_1y":156243.167734375,
-    "slug":"goldfinch"
   }
 ]
