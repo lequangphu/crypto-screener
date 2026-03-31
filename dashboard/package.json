@@ -8,15 +8,20 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
     "copy-data": "cp ../data/exports/fees_analysis.json ./public/ && cp ../data/exports/revenue_analysis.json ./public/",
     "etl-and-copy": "cd .. && uv run analyze_protocols.py && cd dashboard && npm run copy-data"
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "recharts": "^3.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
@@ -24,6 +29,10 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "vite": "^6.3.5"
+    "jsdom": "^29.0.1",
+    "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.2.0",
+    "vitest": "^4.1.2",
+    "workbox-window": "^7.4.0"
   }
 }
