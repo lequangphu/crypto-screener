@@ -1,9 +1,8 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 
 export function TooltipPortal({ anchorRef, children, visible }) {
   const [coords, setCoords] = useState({ top: 0, left: 0 });
-  const tooltipRef = useRef();
 
   useEffect(() => {
     if (anchorRef.current && visible) {
@@ -19,7 +18,6 @@ export function TooltipPortal({ anchorRef, children, visible }) {
 
   return createPortal(
     <div
-      ref={tooltipRef}
       role="tooltip"
       style={{
         position: 'absolute',
