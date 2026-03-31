@@ -1,3 +1,4 @@
+/* Base styles */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,78 +6,175 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* App header with stats */
+.app-header {
+  margin-bottom: 1.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.app-header h1 {
+  margin-bottom: 0.75rem;
+}
+
+.header-stats {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stat-pill {
+  background: #f0f0f0;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.update-badge {
+  background: #1fc2a0;
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Loading state */
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  color: #666;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e0e0e0;
+  border-top-color: #1fc2a0;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
   to {
     transform: rotate(360deg);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Error state */
+.error-state {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 8px;
+  margin: 1rem 0;
 }
 
-.card {
-  padding: 2em;
+.error-title {
+  color: #ff4d4f;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
-.tabs {
+.error-message {
+  color: #666;
+  font-size: 0.875rem;
   margin-bottom: 1rem;
 }
 
+.retry-button {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.retry-button:hover {
+  opacity: 0.9;
+}
+
+/* Tabs */
+.tabs {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
 .tabs button {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   border: 1px solid #ccc;
   background-color: #f0f0f0;
   cursor: pointer;
   color: #000;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.tabs button:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.tabs button:last-child {
+  border-radius: 0 6px 6px 0;
 }
 
 .tabs button.active {
   background-color: #fff;
-  border-bottom-color: transparent;
-}
-
-.usd-label {
-  font-size: 0.7em;
-  color: #888;
-  letter-spacing: 0.03em;
-  margin-left: 0.1em;
-}
-
-.percent-change {
-  font-size: 1em;
-}
-
-.neg-change {
-  color: #ff4d4f;
-}
-
-.pos-change {
+  border-bottom-color: #ccc;
   color: #1fc2a0;
 }
 
+.tabs button:not(.active):hover {
+  background-color: #e8e8e8;
+}
+
+/* Table base styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+table tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table th,
+table td {
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+}
+
+table th {
+  background: #fafafa;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+table td {
+  background: transparent;
+}
+
+table tbody tr:hover {
+  background: #f5f5f5;
+}
+
+/* Header styles */
 .header-main-label {
   display: block;
   font-weight: 600;
@@ -103,14 +201,7 @@ th.has-sublabel {
   vertical-align: middle;
 }
 
-table tr {
-  border-bottom: 1px solid #333;
-}
-
-table td, table th {
-  background: transparent;
-}
-
+/* Tooltip */
 .header-tooltip {
   display: inline-block;
   position: relative;
@@ -132,8 +223,208 @@ table td, table th {
   /* For future overrides if needed */
 }
 
-@media (max-width: 600px) {
-  .header-sub-label {
-    display: block !important;
+/* Cell styles */
+.usd-label {
+  font-size: 0.7em;
+  color: #888;
+  letter-spacing: 0.03em;
+  margin-left: 0.1em;
+}
+
+.percent-change {
+  font-size: 1em;
+}
+
+.neg-change {
+  color: #ff4d4f;
+}
+
+.pos-change {
+  color: #1fc2a0;
+}
+
+/* Filter inputs */
+input[type="text"] {
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #1fc2a0;
+}
+
+/* Sparkline cell */
+.sparkline-cell {
+  display: inline-block;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Responsive table - mobile scroll with sticky first column */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem 0.5rem;
+  }
+
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-stats {
+    gap: 0.5rem;
+  }
+
+  .stat-pill,
+  .update-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* Make table horizontally scrollable */
+  table {
+    font-size: 0.8rem;
+    min-width: 700px;
+  }
+
+  table th,
+  table td {
+    padding: 0.5rem 0.35rem;
+  }
+
+  /* First column sticky for mobile */
+  table td:first-child,
+  table th:first-child {
+    position: sticky;
+    left: 0;
+    background: white;
+    z-index: 5;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+  }
+
+  table th:first-child {
+    background: #fafafa;
+    z-index: 15;
+  }
+
+  /* Smaller filter inputs */
+  input[type="text"] {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    width: 60px !important;
+  }
+
+  /* Hide some columns on very small screens */
+  @media (max-width: 480px) {
+    table th:nth-child(2),
+    table td:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+/* Touch-friendly targets on mobile */
+@media (max-width: 768px) {
+  .tabs button {
+    padding: 0.875rem 1.25rem;
+    min-height: 44px;
+  }
+
+  input[type="text"] {
+    min-height: 36px;
+  }
+
+  .header-tooltip {
+    min-width: 24px;
+    min-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
+  table th {
+    background: #1a1a1a;
+  }
+
+  table tr {
+    border-bottom-color: #333;
+  }
+
+  table tbody tr:hover {
+    background: #252525;
+  }
+
+  .stat-pill {
+    background: #2a2a2a;
+    color: #ccc;
+  }
+
+  input[type="text"] {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #fff;
+  }
+
+  input[type="text"]:focus {
+    border-color: #1fc2a0;
+  }
+
+  .tabs button {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #fff;
+  }
+
+  .tabs button.active {
+    background-color: #1a1a1a;
+    border-color: #444;
+  }
+
+  .loading-state {
+    color: #aaa;
+  }
+
+  .spinner {
+    border-color: #333;
+    border-top-color: #1fc2a0;
+  }
+
+  .error-state {
+    background: #2d1f1f;
+    border-color: #553333;
+  }
+
+  /* Sticky first column in dark mode */
+  @media (max-width: 768px) {
+    table td:first-child {
+      background: #1a1a1a;
+    }
+
+    table th:first-child {
+      background: #1a1a1a;
+    }
+  }
+}
+
+/* Print styles */
+@media print {
+  .tabs,
+  input[type="text"],
+  .header-tooltip,
+  .header-stats {
+    display: none !important;
+  }
+
+  table {
+    font-size: 0.75rem;
   }
 }
