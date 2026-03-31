@@ -43,8 +43,12 @@ export function Table({ columns, data, sparklines = {} }) {
       const aVal = a[sortConfig.key];
       const bVal = b[sortConfig.key];
       if (aVal === bVal) return 0;
-      if (aVal === null || aVal === undefined) return 1;
-      if (bVal === null || bVal === undefined) return -1;
+      // Handle null, undefined, and NaN values consistently
+      const aInvalid = aVal === null || aVal === undefined || (typeof aVal === 'number' && isNaN(aVal));
+      const bInvalid = bVal === null || bVal === undefined || (typeof bVal === 'number' && isNaN(bVal));
+      if (aInvalid && bInvalid) return 0;
+      if (aInvalid) return 1;
+      if (bInvalid) return -1;
       const col = columns.find(c => c.key === sortConfig.key);
       if (col && ["usd", "number", "percent", "ratio"].includes(col.type)) {
         return sortConfig.direction === 'asc' ? Number(aVal) - Number(bVal) : Number(bVal) - Number(aVal);
@@ -184,8 +188,8 @@ export function Table({ columns, data, sparklines = {} }) {
             </tr>
           </thead>
           <tbody>
-            {sortedData.map((row, i) => (
-              <tr key={i}>
+            {sortedData.map((row) => (
+              <tr key={row.slug || row.protocol_name || JSON.stringify(row)}>
                 {columns.map((col) => (
                   <td
                     key={col.key}
