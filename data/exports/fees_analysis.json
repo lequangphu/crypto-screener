@@ -2,1117 +2,1090 @@
   {
     "protocol_name":"Indigo",
     "category":"CDP",
-    "fully_diluted_market_cap":4025157.3300000001,
-    "fees_30d":745009.0,
-    "fees_30d_change":2697.63,
-    "pf_ratio_forward_1y":0.450235873,
+    "fully_diluted_market_cap":3242336.3100000001,
+    "fees_30d":640910.0,
+    "fees_30d_change":473.35,
+    "pf_ratio_forward_1y":0.4215797733,
     "slug":"indigo"
-  },
-  {
-    "protocol_name":"Bankr",
-    "category":"Interface",
-    "fully_diluted_market_cap":48222331.4799999967,
-    "fees_30d":8424321.0,
-    "fees_30d_change":376.77,
-    "pf_ratio_forward_1y":0.4770150168,
-    "slug":"bankr"
   },
   {
     "protocol_name":"Lido",
     "category":"Liquid Staking",
-    "fully_diluted_market_cap":263300351.7199999988,
-    "fees_30d":38176141.0,
-    "fees_30d_change":-20.64,
-    "pf_ratio_forward_1y":0.5747489244,
+    "fully_diluted_market_cap":245618771.3400000036,
+    "fees_30d":34480846.0,
+    "fees_30d_change":-20.91,
+    "pf_ratio_forward_1y":0.5936116227,
     "slug":"lido"
   },
   {
-    "protocol_name":"Aark Digital",
-    "category":"Derivatives",
-    "fully_diluted_market_cap":1179529.6000000001,
-    "fees_30d":139235.0,
-    "fees_30d_change":9.06,
-    "pf_ratio_forward_1y":0.7059585114,
-    "slug":"aark-digital"
+    "protocol_name":"Quickswap Dex",
+    "category":"Dexs",
+    "fully_diluted_market_cap":7798249.3399999999,
+    "fees_30d":758112.0,
+    "fees_30d_change":-42.2,
+    "pf_ratio_forward_1y":0.8572006665,
+    "slug":"quickswap-dex"
+  },
+  {
+    "protocol_name":"Bankr",
+    "category":"Interface",
+    "fully_diluted_market_cap":37611401.6099999994,
+    "fees_30d":3134449.0,
+    "fees_30d_change":-55.28,
+    "pf_ratio_forward_1y":0.9999471893,
+    "slug":"bankr"
   },
   {
     "protocol_name":"Kinetic",
     "category":"Lending",
     "fully_diluted_market_cap":1157548.1599999999,
-    "fees_30d":98378.0,
-    "fees_30d_change":-8.29,
-    "pf_ratio_forward_1y":0.9805276247,
+    "fees_30d":91240.0,
+    "fees_30d_change":-16.7,
+    "pf_ratio_forward_1y":1.0572374689,
     "slug":"kinetic"
   },
   {
     "protocol_name":"Rocket Pool",
     "category":"Liquid Staking",
-    "fully_diluted_market_cap":31103951.7699999996,
-    "fees_30d":2409782.0,
-    "fees_30d_change":25.46,
-    "pf_ratio_forward_1y":1.0756143007,
+    "fully_diluted_market_cap":32639909.5399999991,
+    "fees_30d":2312431.0,
+    "fees_30d_change":571.09,
+    "pf_ratio_forward_1y":1.1762480531,
     "slug":"rocket-pool"
-  },
-  {
-    "protocol_name":"Quickswap Dex",
-    "category":"Dexs",
-    "fully_diluted_market_cap":7859191.46,
-    "fees_30d":531237.0,
-    "fees_30d_change":-74.95,
-    "pf_ratio_forward_1y":1.2328445151,
-    "slug":"quickswap-dex"
   },
   {
     "protocol_name":"mETH Protocol",
     "category":"Liquid Staking",
-    "fully_diluted_market_cap":13438633.3399999999,
-    "fees_30d":878022.0,
-    "fees_30d_change":-22.23,
-    "pf_ratio_forward_1y":1.2754647511,
+    "fully_diluted_market_cap":13306143.4000000004,
+    "fees_30d":770224.0,
+    "fees_30d_change":-21.99,
+    "pf_ratio_forward_1y":1.4396400052,
     "slug":"meth-protocol"
-  },
-  {
-    "protocol_name":"Limitless Exchange",
-    "category":"Prediction Market",
-    "fully_diluted_market_cap":86078163.6599999964,
-    "fees_30d":4991435.0,
-    "fees_30d_change":101.21,
-    "pf_ratio_forward_1y":1.4370978095,
-    "slug":"limitless-exchange"
   },
   {
     "protocol_name":"Dolomite",
     "category":"Lending",
-    "fully_diluted_market_cap":25168566.1099999994,
-    "fees_30d":1179099.0,
-    "fees_30d_change":-21.99,
-    "pf_ratio_forward_1y":1.7787993283,
+    "fully_diluted_market_cap":23101868.370000001,
+    "fees_30d":1194125.0,
+    "fees_30d_change":-0.26,
+    "pf_ratio_forward_1y":1.6121894253,
     "slug":"dolomite"
   },
   {
-    "protocol_name":"DeDust",
-    "category":"Dexs",
-    "fully_diluted_market_cap":2386440.77,
-    "fees_30d":111610.0,
-    "fees_30d_change":-55.47,
-    "pf_ratio_forward_1y":1.7818301601,
-    "slug":"dedust"
+    "protocol_name":"Limitless Exchange",
+    "category":"Prediction Market",
+    "fully_diluted_market_cap":79096088.0100000054,
+    "fees_30d":3654849.0,
+    "fees_30d_change":-2.24,
+    "pf_ratio_forward_1y":1.8034508861,
+    "slug":"limitless-exchange"
   },
   {
     "protocol_name":"Tectonic",
     "category":"Lending",
-    "fully_diluted_market_cap":7227020.4299999997,
-    "fees_30d":294253.0,
-    "fees_30d_change":-0.96,
-    "pf_ratio_forward_1y":2.0467138908,
+    "fully_diluted_market_cap":6726451.0499999998,
+    "fees_30d":291312.0,
+    "fees_30d_change":-1.91,
+    "pf_ratio_forward_1y":1.9241829636,
     "slug":"tectonic"
-  },
-  {
-    "protocol_name":"Stride",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":1597785.1499999999,
-    "fees_30d":63716.0,
-    "fees_30d_change":-37.25,
-    "pf_ratio_forward_1y":2.0897225579,
-    "slug":"stride"
-  },
-  {
-    "protocol_name":"Obol",
-    "category":"Staking Pool",
-    "fully_diluted_market_cap":1752796.9399999999,
-    "fees_30d":66154.0,
-    "fees_30d_change":-29.6,
-    "pf_ratio_forward_1y":2.2079755066,
-    "slug":"obol"
   },
   {
     "protocol_name":"Gains Network",
     "category":"Derivatives",
-    "fully_diluted_market_cap":13821537.8800000008,
-    "fees_30d":484172.0,
-    "fees_30d_change":20.75,
-    "pf_ratio_forward_1y":2.3788959777,
+    "fully_diluted_market_cap":12087610.9800000004,
+    "fees_30d":510939.0,
+    "fees_30d_change":42.76,
+    "pf_ratio_forward_1y":1.9714700091,
     "slug":"gains-network"
+  },
+  {
+    "protocol_name":"DeDust",
+    "category":"Dexs",
+    "fully_diluted_market_cap":2507965.6699999999,
+    "fees_30d":96064.0,
+    "fees_30d_change":-68.42,
+    "pf_ratio_forward_1y":2.1756031309,
+    "slug":"dedust"
   },
   {
     "protocol_name":"AUTOfinance",
     "category":"Yield",
-    "fully_diluted_market_cap":4204846.2300000004,
-    "fees_30d":128688.0,
-    "fees_30d_change":-33.36,
-    "pf_ratio_forward_1y":2.7228945395,
+    "fully_diluted_market_cap":3912649.8999999999,
+    "fees_30d":130712.0,
+    "fees_30d_change":-12.47,
+    "pf_ratio_forward_1y":2.4944470158,
     "slug":"autofinance"
+  },
+  {
+    "protocol_name":"Collector Crypt",
+    "category":"Physical TCG",
+    "fully_diluted_market_cap":470343265.3500000238,
+    "fees_30d":15663465.0,
+    "fees_30d_change":82.93,
+    "pf_ratio_forward_1y":2.5023372614,
+    "slug":"collector-crypt"
+  },
+  {
+    "protocol_name":"Overtime",
+    "category":"Prediction Market",
+    "fully_diluted_market_cap":9106623.4499999993,
+    "fees_30d":267713.0,
+    "fees_30d_change":189.23,
+    "pf_ratio_forward_1y":2.834697185,
+    "slug":"overtime"
   },
   {
     "protocol_name":"Beefy",
     "category":"Yield Aggregator",
-    "fully_diluted_market_cap":2703809.52,
-    "fees_30d":82307.0,
-    "fees_30d_change":11.29,
-    "pf_ratio_forward_1y":2.7375248764,
+    "fully_diluted_market_cap":2964441.6099999999,
+    "fees_30d":85712.0,
+    "fees_30d_change":22.46,
+    "pf_ratio_forward_1y":2.8821728677,
     "slug":"beefy"
+  },
+  {
+    "protocol_name":"Liqwid",
+    "category":"Lending",
+    "fully_diluted_market_cap":3434952.8799999999,
+    "fees_30d":98540.0,
+    "fees_30d_change":24.0,
+    "pf_ratio_forward_1y":2.9048718625,
+    "slug":"liqwid"
+  },
+  {
+    "protocol_name":"Obol",
+    "category":"Staking Pool",
+    "fully_diluted_market_cap":1753268.6299999999,
+    "fees_30d":46947.0,
+    "fees_30d_change":-41.74,
+    "pf_ratio_forward_1y":3.1121417591,
+    "slug":"obol"
+  },
+  {
+    "protocol_name":"Stader",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":14241636.6799999997,
+    "fees_30d":371860.0,
+    "fees_30d_change":-25.02,
+    "pf_ratio_forward_1y":3.1915319117,
+    "slug":"stader"
   },
   {
     "protocol_name":"THORSwap",
     "category":"DEX Aggregator",
-    "fully_diluted_market_cap":10207994.3300000001,
-    "fees_30d":306142.0,
-    "fees_30d_change":-25.53,
-    "pf_ratio_forward_1y":2.7786654368,
+    "fully_diluted_market_cap":8797108.1400000006,
+    "fees_30d":220417.0,
+    "fees_30d_change":-38.7,
+    "pf_ratio_forward_1y":3.3259337755,
     "slug":"thorswap"
+  },
+  {
+    "protocol_name":"Streamflow",
+    "category":"Payments",
+    "fully_diluted_market_cap":7211179.1900000004,
+    "fees_30d":178339.0,
+    "fees_30d_change":68.75,
+    "pf_ratio_forward_1y":3.3696028304,
+    "slug":"streamflow"
+  },
+  {
+    "protocol_name":"Alkimi",
+    "category":"Services",
+    "fully_diluted_market_cap":1081264.9199999999,
+    "fees_30d":26080.0,
+    "fees_30d_change":-26.13,
+    "pf_ratio_forward_1y":3.4549620399,
+    "slug":"alkimi"
   },
   {
     "protocol_name":"Inverse Finance FiRM",
     "category":"CDP",
-    "fully_diluted_market_cap":7414468.2999999998,
-    "fees_30d":194473.0,
-    "fees_30d_change":-8.26,
-    "pf_ratio_forward_1y":3.1771626824,
+    "fully_diluted_market_cap":7322267.7199999997,
+    "fees_30d":169480.0,
+    "fees_30d_change":-19.33,
+    "pf_ratio_forward_1y":3.6003597868,
     "slug":"inverse-finance-firm"
   },
   {
     "protocol_name":"Ekubo",
     "category":"Dexs",
-    "fully_diluted_market_cap":4963121.5499999998,
-    "fees_30d":129455.0,
-    "fees_30d_change":-24.16,
-    "pf_ratio_forward_1y":3.1948821019,
+    "fully_diluted_market_cap":4797882.2000000002,
+    "fees_30d":110891.0,
+    "fees_30d_change":-30.16,
+    "pf_ratio_forward_1y":3.605554253,
     "slug":"ekubo"
   },
   {
-    "protocol_name":"Stader",
+    "protocol_name":"Stride",
     "category":"Liquid Staking",
-    "fully_diluted_market_cap":17165138.9100000001,
-    "fees_30d":424381.0,
-    "fees_30d_change":-28.33,
-    "pf_ratio_forward_1y":3.3706227246,
-    "slug":"stader"
-  },
-  {
-    "protocol_name":"Streamflow",
-    "category":"Payments",
-    "fully_diluted_market_cap":7142457.25,
-    "fees_30d":156178.0,
-    "fees_30d_change":37.7,
-    "pf_ratio_forward_1y":3.8110666729,
-    "slug":"streamflow"
-  },
-  {
-    "protocol_name":"Benqi Lending",
-    "category":"Lending",
-    "fully_diluted_market_cap":9902721.1899999995,
-    "fees_30d":212052.0,
-    "fees_30d_change":-35.67,
-    "pf_ratio_forward_1y":3.8916245347,
-    "slug":"benqi-lending"
-  },
-  {
-    "protocol_name":"Bifrost Liquid Staking",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":1762749.5900000001,
-    "fees_30d":34770.0,
-    "fees_30d_change":-44.32,
-    "pf_ratio_forward_1y":4.2247857109,
-    "slug":"bifrost-liquid-staking"
-  },
-  {
-    "protocol_name":"Alkimi",
-    "category":"Services",
-    "fully_diluted_market_cap":1696033.29,
-    "fees_30d":32199.0,
-    "fees_30d_change":69.43,
-    "pf_ratio_forward_1y":4.3894564272,
-    "slug":"alkimi"
-  },
-  {
-    "protocol_name":"Overtime",
-    "category":"Prediction Market",
-    "fully_diluted_market_cap":8435032.7400000002,
-    "fees_30d":157779.0,
-    "fees_30d_change":53.52,
-    "pf_ratio_forward_1y":4.4550884148,
-    "slug":"overtime"
+    "fully_diluted_market_cap":1171229.1100000001,
+    "fees_30d":26438.0,
+    "fees_30d_change":-71.92,
+    "pf_ratio_forward_1y":3.6917477053,
+    "slug":"stride"
   },
   {
     "protocol_name":"Aethir",
     "category":"Developer Tools",
-    "fully_diluted_market_cap":192514104.1100000143,
-    "fees_30d":3365462.0,
-    "fees_30d_change":-28.48,
-    "pf_ratio_forward_1y":4.7669062997,
+    "fully_diluted_market_cap":176090966.4799999893,
+    "fees_30d":3673317.0,
+    "fees_30d_change":-15.05,
+    "pf_ratio_forward_1y":3.9948219026,
     "slug":"aethir"
   },
   {
-    "protocol_name":"ORE Protocol",
-    "category":"Gamified Mining",
-    "fully_diluted_market_cap":212645299.8100000024,
-    "fees_30d":3492819.0,
-    "fees_30d_change":50.52,
-    "pf_ratio_forward_1y":5.0733924806,
-    "slug":"ore-protocol"
-  },
-  {
-    "protocol_name":"Collector Crypt",
-    "category":"Physical TCG",
-    "fully_diluted_market_cap":536324905.1999999881,
-    "fees_30d":8689410.0,
-    "fees_30d_change":6.34,
-    "pf_ratio_forward_1y":5.1434725833,
-    "slug":"collector-crypt"
-  },
-  {
-    "protocol_name":"CoWSwap",
-    "category":"DEX Aggregator",
-    "fully_diluted_market_cap":149015183.8300000131,
-    "fees_30d":1983242.0,
-    "fees_30d_change":9.7,
-    "pf_ratio_forward_1y":6.2614305192,
-    "slug":"cowswap"
-  },
-  {
-    "protocol_name":"Renzo",
-    "category":"Liquid Restaking",
-    "fully_diluted_market_cap":31633565.4200000018,
-    "fees_30d":382493.0,
-    "fees_30d_change":-46.65,
-    "pf_ratio_forward_1y":6.8919704456,
-    "slug":"renzo"
-  },
-  {
-    "protocol_name":"SideShift",
-    "category":"Cross Chain Bridge",
-    "fully_diluted_market_cap":15251281.6899999995,
-    "fees_30d":167355.0,
-    "fees_30d_change":-45.15,
-    "pf_ratio_forward_1y":7.5942764831,
-    "slug":"sideshift"
-  },
-  {
-    "protocol_name":"Veno Finance",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":8827380.0199999996,
-    "fees_30d":95035.0,
-    "fees_30d_change":-15.1,
-    "pf_ratio_forward_1y":7.7404640571,
-    "slug":"veno-finance"
-  },
-  {
-    "protocol_name":"Goldfinch",
-    "category":"RWA Lending",
-    "fully_diluted_market_cap":9199589.7100000009,
-    "fees_30d":97396.0,
-    "fees_30d_change":6350.07,
-    "pf_ratio_forward_1y":7.8712932342,
-    "slug":"goldfinch"
-  },
-  {
-    "protocol_name":"STON.fi",
-    "category":"Dexs",
-    "fully_diluted_market_cap":57609495.1599999964,
-    "fees_30d":563952.0,
-    "fees_30d_change":-49.59,
-    "pf_ratio_forward_1y":8.5127657377,
-    "slug":"ston.fi"
-  },
-  {
-    "protocol_name":"Storm Trade",
-    "category":"Derivatives",
-    "fully_diluted_market_cap":5872372.54,
-    "fees_30d":57115.0,
-    "fees_30d_change":94.96,
-    "pf_ratio_forward_1y":8.5680535469,
-    "slug":"storm-trade"
-  },
-  {
-    "protocol_name":"Graphite Protocol",
-    "category":"Launchpad",
-    "fully_diluted_market_cap":7427680.79,
-    "fees_30d":71743.0,
-    "fees_30d_change":-57.62,
-    "pf_ratio_forward_1y":8.6276486788,
-    "slug":"graphite-protocol"
-  },
-  {
-    "protocol_name":"Usual USD0",
-    "category":"RWA",
-    "fully_diluted_market_cap":30663593.2699999996,
-    "fees_30d":288827.0,
-    "fees_30d_change":-6.78,
-    "pf_ratio_forward_1y":8.8471626239,
-    "slug":"usual-usd0"
-  },
-  {
-    "protocol_name":"Index Coop",
-    "category":"Indexes",
-    "fully_diluted_market_cap":2504515.1699999999,
-    "fees_30d":19560.0,
-    "fees_30d_change":1.04,
-    "pf_ratio_forward_1y":10.6702248211,
-    "slug":"index-coop"
-  },
-  {
-    "protocol_name":"Stake DAO",
-    "category":"Yield",
-    "fully_diluted_market_cap":10654424.4100000001,
-    "fees_30d":80150.0,
-    "fees_30d_change":8.6,
-    "pf_ratio_forward_1y":11.0775882824,
-    "slug":"stake-dao"
-  },
-  {
-    "protocol_name":"THORWallet",
-    "category":"DEX Aggregator",
-    "fully_diluted_market_cap":9158038.9900000002,
-    "fees_30d":67365.0,
-    "fees_30d_change":51.17,
-    "pf_ratio_forward_1y":11.3288787328,
-    "slug":"thorwallet"
-  },
-  {
-    "protocol_name":"DEXTools",
-    "category":"Coins Tracker",
-    "fully_diluted_market_cap":22640256.5899999999,
-    "fees_30d":152424.0,
-    "fees_30d_change":-2.65,
-    "pf_ratio_forward_1y":12.3778935677,
-    "slug":"dextools"
-  },
-  {
-    "protocol_name":"Avantis",
-    "category":"Derivatives",
-    "fully_diluted_market_cap":109905002.6800000072,
-    "fees_30d":664401.0,
-    "fees_30d_change":-25.63,
-    "pf_ratio_forward_1y":13.7849735677,
-    "slug":"avantis"
-  },
-  {
-    "protocol_name":"Metaplex",
-    "category":"Launchpad",
-    "fully_diluted_market_cap":18845100.9699999988,
-    "fees_30d":109537.0,
-    "fees_30d_change":-9.13,
-    "pf_ratio_forward_1y":14.3369371156,
-    "slug":"metaplex"
-  },
-  {
-    "protocol_name":"Convex Finance",
-    "category":"Yield",
-    "fully_diluted_market_cap":132119397.6200000048,
-    "fees_30d":723855.0,
-    "fees_30d_change":-39.17,
-    "pf_ratio_forward_1y":15.2101592193,
-    "slug":"convex-finance"
-  },
-  {
-    "protocol_name":"Tornado Cash",
-    "category":"Privacy",
-    "fully_diluted_market_cap":53785438.0,
-    "fees_30d":285765.0,
-    "fees_30d_change":17.87,
-    "pf_ratio_forward_1y":15.6846353939,
-    "slug":"tornado-cash"
-  },
-  {
-    "protocol_name":"deBridge",
-    "category":"Bridge",
-    "fully_diluted_market_cap":159289569.0699999928,
-    "fees_30d":757300.0,
-    "fees_30d_change":49.41,
-    "pf_ratio_forward_1y":17.5282328745,
-    "slug":"debridge"
-  },
-  {
-    "protocol_name":"ODOS",
-    "category":"DEX Aggregator",
-    "fully_diluted_market_cap":7483654.8600000003,
-    "fees_30d":34318.0,
-    "fees_30d_change":0.01,
-    "pf_ratio_forward_1y":18.1723266216,
-    "slug":"odos"
-  },
-  {
-    "protocol_name":"Amnis Finance",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":2118103.8199999998,
-    "fees_30d":9181.0,
-    "fees_30d_change":-59.21,
-    "pf_ratio_forward_1y":19.2254276949,
-    "slug":"amnis-finance"
-  },
-  {
-    "protocol_name":"Geodnet",
-    "category":"Oracle",
-    "fully_diluted_market_cap":211292499.25,
-    "fees_30d":849831.0,
-    "fees_30d_change":-2.42,
-    "pf_ratio_forward_1y":20.7190703456,
-    "slug":"geodnet"
-  },
-  {
-    "protocol_name":"Osmosis DEX",
-    "category":"Dexs",
-    "fully_diluted_market_cap":45824609.9099999964,
-    "fees_30d":183090.0,
-    "fees_30d_change":-7.61,
-    "pf_ratio_forward_1y":20.8570511361,
-    "slug":"osmosis-dex"
+    "protocol_name":"Benqi Lending",
+    "category":"Lending",
+    "fully_diluted_market_cap":7825727.8399999999,
+    "fees_30d":156711.0,
+    "fees_30d_change":-40.89,
+    "pf_ratio_forward_1y":4.1614435915,
+    "slug":"benqi-lending"
   },
   {
     "protocol_name":"Tree News",
     "category":"SoFi",
-    "fully_diluted_market_cap":19590359.2800000012,
-    "fees_30d":75574.0,
-    "fees_30d_change":-35.85,
-    "pf_ratio_forward_1y":21.6017405457,
+    "fully_diluted_market_cap":5171578.1200000001,
+    "fees_30d":77032.0,
+    "fees_30d_change":-25.62,
+    "pf_ratio_forward_1y":5.59462098,
     "slug":"tree-news"
+  },
+  {
+    "protocol_name":"Storm Trade",
+    "category":"Derivatives",
+    "fully_diluted_market_cap":5990387.2699999996,
+    "fees_30d":85871.0,
+    "fees_30d_change":104.6,
+    "pf_ratio_forward_1y":5.8133588658,
+    "slug":"storm-trade"
+  },
+  {
+    "protocol_name":"USD AI",
+    "category":"RWA Lending",
+    "fully_diluted_market_cap":304619191.8899999857,
+    "fees_30d":4353082.0,
+    "fees_30d_change":76.01,
+    "pf_ratio_forward_1y":5.8314850622,
+    "slug":"usd-ai"
+  },
+  {
+    "protocol_name":"CoWSwap",
+    "category":"DEX Aggregator",
+    "fully_diluted_market_cap":147006353.3700000048,
+    "fees_30d":2092330.0,
+    "fees_30d_change":82.85,
+    "pf_ratio_forward_1y":5.8549700322,
+    "slug":"cowswap"
+  },
+  {
+    "protocol_name":"ORE Protocol",
+    "category":"Gamified Mining",
+    "fully_diluted_market_cap":225877429.9099999964,
+    "fees_30d":3045153.0,
+    "fees_30d_change":-1.0,
+    "pf_ratio_forward_1y":6.1813377387,
+    "slug":"ore-protocol"
+  },
+  {
+    "protocol_name":"Veno Finance",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":7522641.0800000001,
+    "fees_30d":87749.0,
+    "fees_30d_change":-17.12,
+    "pf_ratio_forward_1y":7.1440900371,
+    "slug":"veno-finance"
+  },
+  {
+    "protocol_name":"Usual USD0",
+    "category":"RWA",
+    "fully_diluted_market_cap":26394246.6099999994,
+    "fees_30d":283557.0,
+    "fees_30d_change":-6.51,
+    "pf_ratio_forward_1y":7.7568903283,
+    "slug":"usual-usd0"
+  },
+  {
+    "protocol_name":"Renzo",
+    "category":"Liquid Restaking",
+    "fully_diluted_market_cap":29677152.0399999991,
+    "fees_30d":308039.0,
+    "fees_30d_change":-42.53,
+    "pf_ratio_forward_1y":8.0285158806,
+    "slug":"renzo"
+  },
+  {
+    "protocol_name":"STON.fi",
+    "category":"Dexs",
+    "fully_diluted_market_cap":51305402.7800000012,
+    "fees_30d":442147.0,
+    "fees_30d_change":-63.79,
+    "pf_ratio_forward_1y":9.669748368,
+    "slug":"ston.fi"
+  },
+  {
+    "protocol_name":"Stake DAO",
+    "category":"Yield",
+    "fully_diluted_market_cap":8490656.3699999992,
+    "fees_30d":72173.0,
+    "fees_30d_change":-4.72,
+    "pf_ratio_forward_1y":9.8035927217,
+    "slug":"stake-dao"
+  },
+  {
+    "protocol_name":"Bifrost Liquid Staking",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":1456179.21,
+    "fees_30d":12328.0,
+    "fees_30d_change":-79.53,
+    "pf_ratio_forward_1y":9.8433052807,
+    "slug":"bifrost-liquid-staking"
+  },
+  {
+    "protocol_name":"Index Coop",
+    "category":"Indexes",
+    "fully_diluted_market_cap":2426606.9500000002,
+    "fees_30d":18570.0,
+    "fees_30d_change":-1.19,
+    "pf_ratio_forward_1y":10.8894585801,
+    "slug":"index-coop"
+  },
+  {
+    "protocol_name":"ODOS",
+    "category":"DEX Aggregator",
+    "fully_diluted_market_cap":6658950.0700000003,
+    "fees_30d":48006.0,
+    "fees_30d_change":135.61,
+    "pf_ratio_forward_1y":11.5592323008,
+    "slug":"odos"
+  },
+  {
+    "protocol_name":"Convex Finance",
+    "category":"Yield",
+    "fully_diluted_market_cap":109487129.9099999964,
+    "fees_30d":708737.0,
+    "fees_30d_change":-35.94,
+    "pf_ratio_forward_1y":12.8735024311,
+    "slug":"convex-finance"
+  },
+  {
+    "protocol_name":"Avantis",
+    "category":"Derivatives",
+    "fully_diluted_market_cap":95874221.6299999952,
+    "fees_30d":585374.0,
+    "fees_30d_change":-19.63,
+    "pf_ratio_forward_1y":13.6485707755,
+    "slug":"avantis"
+  },
+  {
+    "protocol_name":"Tornado Cash",
+    "category":"Privacy",
+    "fully_diluted_market_cap":50532281.549999997,
+    "fees_30d":307575.0,
+    "fees_30d_change":22.63,
+    "pf_ratio_forward_1y":13.6910459644,
+    "slug":"tornado-cash"
+  },
+  {
+    "protocol_name":"Metaplex",
+    "category":"Launchpad",
+    "fully_diluted_market_cap":19117270.0300000012,
+    "fees_30d":109559.0,
+    "fees_30d_change":-11.15,
+    "pf_ratio_forward_1y":14.5410768247,
+    "slug":"metaplex"
+  },
+  {
+    "protocol_name":"Aquarius Stellar",
+    "category":"Dexs",
+    "fully_diluted_market_cap":34159440.1199999973,
+    "fees_30d":193655.0,
+    "fees_30d_change":190.93,
+    "pf_ratio_forward_1y":14.6994397769,
+    "slug":"aquarius-stellar"
+  },
+  {
+    "protocol_name":"DEXTools",
+    "category":"Coins Tracker",
+    "fully_diluted_market_cap":21937547.5500000007,
+    "fees_30d":117258.0,
+    "fees_30d_change":-26.24,
+    "pf_ratio_forward_1y":15.5906544756,
+    "slug":"dextools"
+  },
+  {
+    "protocol_name":"Graphite Protocol",
+    "category":"Launchpad",
+    "fully_diluted_market_cap":10874891.7400000002,
+    "fees_30d":58096.0,
+    "fees_30d_change":-55.23,
+    "pf_ratio_forward_1y":15.5990253775,
+    "slug":"graphite-protocol"
+  },
+  {
+    "protocol_name":"THORWallet",
+    "category":"DEX Aggregator",
+    "fully_diluted_market_cap":7154756.71,
+    "fees_30d":37740.0,
+    "fees_30d_change":-43.67,
+    "pf_ratio_forward_1y":15.7983499161,
+    "slug":"thorwallet"
+  },
+  {
+    "protocol_name":"deBridge",
+    "category":"Bridge",
+    "fully_diluted_market_cap":155639231.7199999988,
+    "fees_30d":703055.0,
+    "fees_30d_change":19.45,
+    "pf_ratio_forward_1y":18.4479677645,
+    "slug":"debridge"
+  },
+  {
+    "protocol_name":"Osmosis DEX",
+    "category":"Dexs",
+    "fully_diluted_market_cap":35982929.6499999985,
+    "fees_30d":153889.0,
+    "fees_30d_change":-39.37,
+    "pf_ratio_forward_1y":19.4853268969,
+    "slug":"osmosis-dex"
+  },
+  {
+    "protocol_name":"Geodnet",
+    "category":"Oracle",
+    "fully_diluted_market_cap":217546957.9399999976,
+    "fees_30d":845627.0,
+    "fees_30d_change":0.26,
+    "pf_ratio_forward_1y":21.4384275356,
+    "slug":"geodnet"
+  },
+  {
+    "protocol_name":"Api3",
+    "category":"Risk Curators",
+    "fully_diluted_market_cap":38983291.5799999982,
+    "fees_30d":146817.0,
+    "fees_30d_change":33.41,
+    "pf_ratio_forward_1y":22.1269173983,
+    "slug":"api3"
+  },
+  {
+    "protocol_name":"Amnis Finance",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":2129458.1899999999,
+    "fees_30d":7802.0,
+    "fees_30d_change":25.19,
+    "pf_ratio_forward_1y":22.7447896907,
+    "slug":"amnis-finance"
+  },
+  {
+    "protocol_name":"SideShift",
+    "category":"Cross Chain Bridge",
+    "fully_diluted_market_cap":15369599.2799999993,
+    "fees_30d":54072.0,
+    "fees_30d_change":-80.57,
+    "pf_ratio_forward_1y":23.6869348276,
+    "slug":"sideshift"
+  },
+  {
+    "protocol_name":"Solana Name Service",
+    "category":"Domains",
+    "fully_diluted_market_cap":7755331.1900000004,
+    "fees_30d":23683.0,
+    "fees_30d_change":-21.7,
+    "pf_ratio_forward_1y":27.2886711636,
+    "slug":"solana-name-service"
+  },
+  {
+    "protocol_name":"SSV Network",
+    "category":"Staking Pool",
+    "fully_diluted_market_cap":34715957.1300000027,
+    "fees_30d":104449.0,
+    "fees_30d_change":9.04,
+    "pf_ratio_forward_1y":27.6976938745,
+    "slug":"ssv-network"
+  },
+  {
+    "protocol_name":"Frankencoin",
+    "category":"CDP",
+    "fully_diluted_market_cap":42034874.6599999964,
+    "fees_30d":123729.0,
+    "fees_30d_change":211.86,
+    "pf_ratio_forward_1y":28.3111172132,
+    "slug":"frankencoin"
+  },
+  {
+    "protocol_name":"Pendle",
+    "category":"Yield",
+    "fully_diluted_market_cap":346835421.3999999762,
+    "fees_30d":959226.0,
+    "fees_30d_change":-12.83,
+    "pf_ratio_forward_1y":30.1315349911,
+    "slug":"pendle"
   },
   {
     "protocol_name":"Definitive",
     "category":"DEX Aggregator",
-    "fully_diluted_market_cap":66754992.8800000027,
-    "fees_30d":244635.0,
-    "fees_30d_change":22.38,
-    "pf_ratio_forward_1y":22.7396573398,
+    "fully_diluted_market_cap":93579277.8700000048,
+    "fees_30d":196566.0,
+    "fees_30d_change":-12.59,
+    "pf_ratio_forward_1y":39.6725433485,
     "slug":"definitive"
   },
   {
     "protocol_name":"Verse",
     "category":"Dexs",
-    "fully_diluted_market_cap":5023197.4100000001,
-    "fees_30d":15403.0,
-    "fees_30d_change":1452.72,
-    "pf_ratio_forward_1y":27.1765100413,
+    "fully_diluted_market_cap":3829323.1099999999,
+    "fees_30d":7724.0,
+    "fees_30d_change":-11.64,
+    "pf_ratio_forward_1y":41.3141195192,
     "slug":"verse"
-  },
-  {
-    "protocol_name":"Aquarius Stellar",
-    "category":"Dexs",
-    "fully_diluted_market_cap":36872357.1499999985,
-    "fees_30d":108610.0,
-    "fees_30d_change":264.57,
-    "pf_ratio_forward_1y":28.2911005356,
-    "slug":"aquarius-stellar"
-  },
-  {
-    "protocol_name":"JustLend",
-    "category":"Lending",
-    "fully_diluted_market_cap":645123206.3500000238,
-    "fees_30d":1826430.0,
-    "fees_30d_change":242.08,
-    "pf_ratio_forward_1y":29.4346168185,
-    "slug":"justlend"
-  },
-  {
-    "protocol_name":"Gearbox",
-    "category":"Lending",
-    "fully_diluted_market_cap":3819011.27,
-    "fees_30d":10514.0,
-    "fees_30d_change":-80.83,
-    "pf_ratio_forward_1y":30.2692542483,
-    "slug":"gearbox"
-  },
-  {
-    "protocol_name":"Vader AI",
-    "category":"AI Agents",
-    "fully_diluted_market_cap":2001376.23,
-    "fees_30d":4966.0,
-    "fees_30d_change":-64.53,
-    "pf_ratio_forward_1y":33.5846460934,
-    "slug":"vader-ai"
-  },
-  {
-    "protocol_name":"Solana Name Service",
-    "category":"Domains",
-    "fully_diluted_market_cap":8469860.8599999994,
-    "fees_30d":20982.0,
-    "fees_30d_change":-38.04,
-    "pf_ratio_forward_1y":33.6393927335,
-    "slug":"solana-name-service"
-  },
-  {
-    "protocol_name":"Pendle",
-    "category":"Yield",
-    "fully_diluted_market_cap":372542470.0500000119,
-    "fees_30d":914957.0,
-    "fees_30d_change":-51.05,
-    "pf_ratio_forward_1y":33.930781269,
-    "slug":"pendle"
-  },
-  {
-    "protocol_name":"EigenCloud",
-    "category":"Restaking",
-    "fully_diluted_market_cap":363968000.0799999833,
-    "fees_30d":790586.0,
-    "fees_30d_change":-16.56,
-    "pf_ratio_forward_1y":38.36479102,
-    "slug":"eigencloud"
-  },
-  {
-    "protocol_name":"Api3",
-    "category":"Risk Curators",
-    "fully_diluted_market_cap":43966575.3599999994,
-    "fees_30d":93977.0,
-    "fees_30d_change":-37.45,
-    "pf_ratio_forward_1y":38.9869997978,
-    "slug":"api3"
   },
   {
     "protocol_name":"Hydration DEX",
     "category":"Dexs",
-    "fully_diluted_market_cap":24693506.9899999984,
-    "fees_30d":52639.0,
-    "fees_30d_change":-3.52,
-    "pf_ratio_forward_1y":39.0925406859,
+    "fully_diluted_market_cap":24544651.6000000015,
+    "fees_30d":47210.0,
+    "fees_30d_change":12.76,
+    "pf_ratio_forward_1y":43.3253046671,
     "slug":"hydration-dex"
-  },
-  {
-    "protocol_name":"Enzyme Finance",
-    "category":"Indexes",
-    "fully_diluted_market_cap":5121294.7599999998,
-    "fees_30d":10844.0,
-    "fees_30d_change":32.83,
-    "pf_ratio_forward_1y":39.3558247264,
-    "slug":"enzyme-finance"
   },
   {
     "protocol_name":"SOFA.org",
     "category":"Options",
-    "fully_diluted_market_cap":3909451.3500000001,
-    "fees_30d":7749.0,
-    "fees_30d_change":18.16,
-    "pf_ratio_forward_1y":42.0425361337,
+    "fully_diluted_market_cap":3702194.7200000002,
+    "fees_30d":6931.0,
+    "fees_30d_change":3.56,
+    "pf_ratio_forward_1y":44.5125128649,
     "slug":"sofa.org"
-  },
-  {
-    "protocol_name":"Penpie",
-    "category":"Yield",
-    "fully_diluted_market_cap":1689770.1899999999,
-    "fees_30d":2977.0,
-    "fees_30d_change":-80.06,
-    "pf_ratio_forward_1y":47.3006995297,
-    "slug":"penpie"
-  },
-  {
-    "protocol_name":"Ankr",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":39580098.1799999997,
-    "fees_30d":69609.0,
-    "fees_30d_change":-10.26,
-    "pf_ratio_forward_1y":47.3838370757,
-    "slug":"ankr"
-  },
-  {
-    "protocol_name":"Jupiter Aggregator",
-    "category":"DEX Aggregator",
-    "fully_diluted_market_cap":1175146471.6400001049,
-    "fees_30d":2036869.0,
-    "fees_30d_change":-5.17,
-    "pf_ratio_forward_1y":48.0781398493,
-    "slug":"jupiter-aggregator"
-  },
-  {
-    "protocol_name":"stUSDT",
-    "category":"RWA",
-    "fully_diluted_market_cap":59773249.6799999997,
-    "fees_30d":91939.0,
-    "fees_30d_change":-5.39,
-    "pf_ratio_forward_1y":54.1783589119,
-    "slug":"stusdt"
   },
   {
     "protocol_name":"Infrared Finance",
     "category":"Liquid Staking",
-    "fully_diluted_market_cap":17210011.9400000013,
-    "fees_30d":26329.0,
-    "fees_30d_change":270.26,
-    "pf_ratio_forward_1y":54.4710266879,
+    "fully_diluted_market_cap":14307968.4600000009,
+    "fees_30d":25296.0,
+    "fees_30d_change":347.4,
+    "pf_ratio_forward_1y":47.1351480471,
     "slug":"infrared-finance"
   },
   {
-    "protocol_name":"Across",
-    "category":"Cross Chain Bridge",
-    "fully_diluted_market_cap":42712653.7899999991,
-    "fees_30d":64915.0,
-    "fees_30d_change":4.14,
-    "pf_ratio_forward_1y":54.8315153021,
-    "slug":"across"
+    "protocol_name":"Ankr",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":35039255.2800000012,
+    "fees_30d":60884.0,
+    "fees_30d_change":-24.85,
+    "pf_ratio_forward_1y":47.9590358715,
+    "slug":"ankr"
+  },
+  {
+    "protocol_name":"Gearbox",
+    "category":"Lending",
+    "fully_diluted_market_cap":4304535.71,
+    "fees_30d":7231.0,
+    "fees_30d_change":-68.87,
+    "pf_ratio_forward_1y":49.6074276264,
+    "slug":"gearbox"
+  },
+  {
+    "protocol_name":"stUSDT",
+    "category":"RWA",
+    "fully_diluted_market_cap":59768797.5200000033,
+    "fees_30d":98875.0,
+    "fees_30d_change":-1.76,
+    "pf_ratio_forward_1y":50.3740392078,
+    "slug":"stusdt"
+  },
+  {
+    "protocol_name":"Vader AI",
+    "category":"AI Agents",
+    "fully_diluted_market_cap":1587048.5600000001,
+    "fees_30d":2601.0,
+    "fees_30d_change":-75.01,
+    "pf_ratio_forward_1y":50.8473843394,
+    "slug":"vader-ai"
+  },
+  {
+    "protocol_name":"EigenCloud",
+    "category":"Restaking",
+    "fully_diluted_market_cap":436618051.6800000072,
+    "fees_30d":702732.0,
+    "fees_30d_change":-41.05,
+    "pf_ratio_forward_1y":51.7762641234,
+    "slug":"eigencloud"
   },
   {
     "protocol_name":"ZyFAI",
     "category":"AI Agents",
-    "fully_diluted_market_cap":2330777.0699999998,
-    "fees_30d":3015.0,
-    "fees_30d_change":-53.28,
-    "pf_ratio_forward_1y":64.421699005,
+    "fully_diluted_market_cap":2174219.3700000001,
+    "fees_30d":3192.0,
+    "fees_30d_change":-42.58,
+    "pf_ratio_forward_1y":56.7622015977,
     "slug":"zyfai"
   },
   {
-    "protocol_name":"Hegic",
-    "category":"Options",
-    "fully_diluted_market_cap":37257026.1099999994,
-    "fees_30d":46468.0,
-    "fees_30d_change":-41.92,
-    "pf_ratio_forward_1y":66.8148441042,
-    "slug":"hegic"
+    "protocol_name":"Enzyme Finance",
+    "category":"Indexes",
+    "fully_diluted_market_cap":4046717.3500000001,
+    "fees_30d":5844.0,
+    "fees_30d_change":-45.45,
+    "pf_ratio_forward_1y":57.7047306354,
+    "slug":"enzyme-finance"
   },
   {
-    "protocol_name":"Almanak",
-    "category":"Onchain Capital Allocator",
-    "fully_diluted_market_cap":1404171.54,
-    "fees_30d":1645.0,
-    "fees_30d_change":-63.94,
-    "pf_ratio_forward_1y":71.1333100304,
-    "slug":"almanak"
+    "protocol_name":"Penpie",
+    "category":"Yield",
+    "fully_diluted_market_cap":1640440.9399999999,
+    "fees_30d":2263.0,
+    "fees_30d_change":-47.88,
+    "pf_ratio_forward_1y":60.408047577,
+    "slug":"penpie"
   },
   {
-    "protocol_name":"HumidiFi",
-    "category":"Dexs",
-    "fully_diluted_market_cap":56988105.4099999964,
-    "fees_30d":64871.0,
-    "fees_30d_change":-234.1,
-    "pf_ratio_forward_1y":73.2069612641,
-    "slug":"humidifi"
+    "protocol_name":"Jupiter Aggregator",
+    "category":"DEX Aggregator",
+    "fully_diluted_market_cap":1477369722.9900000095,
+    "fees_30d":2024625.0,
+    "fees_30d_change":-3.51,
+    "pf_ratio_forward_1y":60.808368751,
+    "slug":"jupiter-aggregator"
   },
   {
     "protocol_name":"SushiSwap",
     "category":"Dexs",
-    "fully_diluted_market_cap":50930802.3400000036,
-    "fees_30d":57256.0,
-    "fees_30d_change":-8.53,
-    "pf_ratio_forward_1y":74.1273146628,
+    "fully_diluted_market_cap":44081817.2899999991,
+    "fees_30d":58614.0,
+    "fees_30d_change":-3.23,
+    "pf_ratio_forward_1y":62.6724805365,
     "slug":"sushiswap"
   },
   {
-    "protocol_name":"Banana Gun",
-    "category":"Telegram Bot",
-    "fully_diluted_market_cap":29511039.2100000009,
-    "fees_30d":32672.0,
-    "fees_30d_change":-83.86,
-    "pf_ratio_forward_1y":75.2709741522,
-    "slug":"banana-gun"
+    "protocol_name":"Across",
+    "category":"Cross Chain Bridge",
+    "fully_diluted_market_cap":42125231.9399999976,
+    "fees_30d":46506.0,
+    "fees_30d_change":-34.17,
+    "pf_ratio_forward_1y":75.4835073969,
+    "slug":"across"
   },
   {
     "protocol_name":"Reserve Protocol",
     "category":"Indexes",
-    "fully_diluted_market_cap":138842475.8700000048,
-    "fees_30d":149625.0,
-    "fees_30d_change":-48.75,
-    "pf_ratio_forward_1y":77.3280288889,
+    "fully_diluted_market_cap":118988824.6299999952,
+    "fees_30d":120255.0,
+    "fees_30d_change":-49.55,
+    "pf_ratio_forward_1y":82.4559094078,
     "slug":"reserve-protocol"
-  },
-  {
-    "protocol_name":"Frankencoin",
-    "category":"CDP",
-    "fully_diluted_market_cap":38954285.9299999997,
-    "fees_30d":39697.0,
-    "fees_30d_change":-27.65,
-    "pf_ratio_forward_1y":81.7742019338,
-    "slug":"frankencoin"
-  },
-  {
-    "protocol_name":"Momentum",
-    "category":"Dexs",
-    "fully_diluted_market_cap":127111532.2399999946,
-    "fees_30d":114391.0,
-    "fees_30d_change":-6.14,
-    "pf_ratio_forward_1y":92.6001843385,
-    "slug":"momentum"
-  },
-  {
-    "protocol_name":"Layer3",
-    "category":"Foundation",
-    "fully_diluted_market_cap":22728889.0599999987,
-    "fees_30d":17921.0,
-    "fees_30d_change":-27.97,
-    "pf_ratio_forward_1y":105.6902007886,
-    "slug":"layer3"
-  },
-  {
-    "protocol_name":"FluidTokens",
-    "category":"Lending",
-    "fully_diluted_market_cap":4309812.96,
-    "fees_30d":3184.0,
-    "fees_30d_change":-64.12,
-    "pf_ratio_forward_1y":112.7987060302,
-    "slug":"fluidtokens"
   },
   {
     "protocol_name":"Treehouse Protocol",
     "category":"DOR",
-    "fully_diluted_market_cap":46207864.6700000018,
-    "fees_30d":32397.0,
-    "fees_30d_change":-88.94,
-    "pf_ratio_forward_1y":118.8583939614,
+    "fully_diluted_market_cap":42096241.5399999991,
+    "fees_30d":41629.0,
+    "fees_30d_change":-18.38,
+    "pf_ratio_forward_1y":84.2686619504,
     "slug":"treehouse-protocol"
   },
   {
-    "protocol_name":"Virtuals Protocol",
-    "category":"AI Agents",
-    "fully_diluted_market_cap":632770156.2599999905,
-    "fees_30d":432441.0,
-    "fees_30d_change":27.23,
-    "pf_ratio_forward_1y":121.9376663059,
-    "slug":"virtuals-protocol"
+    "protocol_name":"Thorchain DEX",
+    "category":"Dexs",
+    "fully_diluted_market_cap":139242313.3700000048,
+    "fees_30d":136282.0,
+    "fees_30d_change":-78.27,
+    "pf_ratio_forward_1y":85.143497411,
+    "slug":"thorchain-dex"
   },
   {
-    "protocol_name":"Rarible",
-    "category":"Services",
-    "fully_diluted_market_cap":2439453.9500000002,
-    "fees_30d":1383.0,
-    "fees_30d_change":-5.79,
-    "pf_ratio_forward_1y":146.9904766209,
-    "slug":"rarible"
+    "protocol_name":"Banana Gun",
+    "category":"Telegram Bot",
+    "fully_diluted_market_cap":26512392.4100000001,
+    "fees_30d":25508.0,
+    "fees_30d_change":-66.96,
+    "pf_ratio_forward_1y":86.6146320435,
+    "slug":"banana-gun"
   },
   {
-    "protocol_name":"Illuvium",
-    "category":"Gaming",
-    "fully_diluted_market_cap":30717832.4600000009,
-    "fees_30d":17070.0,
-    "fees_30d_change":-46.45,
-    "pf_ratio_forward_1y":149.9601272212,
-    "slug":"illuvium"
+    "protocol_name":"Hegic",
+    "category":"Options",
+    "fully_diluted_market_cap":35430154.2299999967,
+    "fees_30d":30791.0,
+    "fees_30d_change":-59.52,
+    "pf_ratio_forward_1y":95.8888263616,
+    "slug":"hegic"
   },
   {
-    "protocol_name":"NodeOps",
-    "category":"DePIN",
-    "fully_diluted_market_cap":9736848.8200000003,
-    "fees_30d":5259.0,
-    "fees_30d_change":-30.76,
-    "pf_ratio_forward_1y":154.2886610255,
-    "slug":"nodeops"
+    "protocol_name":"Layer3",
+    "category":"Foundation",
+    "fully_diluted_market_cap":20795165.2600000016,
+    "fees_30d":17266.0,
+    "fees_30d_change":-18.56,
+    "pf_ratio_forward_1y":100.3666418588,
+    "slug":"layer3"
   },
   {
-    "protocol_name":"Axie Infinity",
-    "category":"Gaming",
-    "fully_diluted_market_cap":260223262.6800000072,
-    "fees_30d":137769.0,
-    "fees_30d_change":-8.2,
-    "pf_ratio_forward_1y":157.4031305301,
-    "slug":"axie-infinity"
+    "protocol_name":"Frax FPI",
+    "category":"Algo-Stables",
+    "fully_diluted_market_cap":8291167.04,
+    "fees_30d":6533.0,
+    "fees_30d_change":null,
+    "pf_ratio_forward_1y":105.760077555,
+    "slug":"frax-fpi"
   },
   {
     "protocol_name":"PayCash",
     "category":"Dexs",
-    "fully_diluted_market_cap":1154085444.3099999428,
-    "fees_30d":608141.0,
-    "fees_30d_change":13.63,
-    "pf_ratio_forward_1y":158.1438959482,
+    "fully_diluted_market_cap":760472784.8300000429,
+    "fees_30d":541221.0,
+    "fees_30d_change":-11.18,
+    "pf_ratio_forward_1y":117.0921528713,
     "slug":"paycash"
   },
   {
-    "protocol_name":"Scopuly",
-    "category":"Dexs",
-    "fully_diluted_market_cap":22993889.9100000001,
-    "fees_30d":11678.0,
-    "fees_30d_change":808.09,
-    "pf_ratio_forward_1y":164.082676186,
-    "slug":"scopuly"
+    "protocol_name":"FluidTokens",
+    "category":"Lending",
+    "fully_diluted_market_cap":3696727.8599999999,
+    "fees_30d":2623.0,
+    "fees_30d_change":-37.35,
+    "pf_ratio_forward_1y":117.4459226077,
+    "slug":"fluidtokens"
   },
   {
-    "protocol_name":"Ready Cards",
-    "category":"Physical TCG",
-    "fully_diluted_market_cap":13908137.7899999991,
-    "fees_30d":6917.0,
-    "fees_30d_change":-50.12,
-    "pf_ratio_forward_1y":167.5598500072,
-    "slug":"ready-cards"
+    "protocol_name":"NodeOps",
+    "category":"DePIN",
+    "fully_diluted_market_cap":7079123.71,
+    "fees_30d":4829.0,
+    "fees_30d_change":-33.81,
+    "pf_ratio_forward_1y":122.1633828605,
+    "slug":"nodeops"
   },
   {
     "protocol_name":"Bitway Earn",
     "category":"Basis Trading",
-    "fully_diluted_market_cap":981378695.4800000191,
-    "fees_30d":464405.0,
-    "fees_30d_change":80.56,
-    "pf_ratio_forward_1y":176.0996499966,
+    "fully_diluted_market_cap":724396742.5,
+    "fees_30d":485179.0,
+    "fees_30d_change":26.48,
+    "pf_ratio_forward_1y":124.4208739627,
     "slug":"bitway-earn"
+  },
+  {
+    "protocol_name":"Scopuly",
+    "category":"Dexs",
+    "fully_diluted_market_cap":21558281.6400000006,
+    "fees_30d":13596.0,
+    "fees_30d_change":279.56,
+    "pf_ratio_forward_1y":132.1361775522,
+    "slug":"scopuly"
+  },
+  {
+    "protocol_name":"Illuvium",
+    "category":"Gaming",
+    "fully_diluted_market_cap":26479764.4299999997,
+    "fees_30d":16067.0,
+    "fees_30d_change":5.03,
+    "pf_ratio_forward_1y":137.3403271198,
+    "slug":"illuvium"
+  },
+  {
+    "protocol_name":"Axie Infinity",
+    "category":"Gaming",
+    "fully_diluted_market_cap":261039968.8899999857,
+    "fees_30d":149575.0,
+    "fees_30d_change":-3.64,
+    "pf_ratio_forward_1y":145.4342687002,
+    "slug":"axie-infinity"
+  },
+  {
+    "protocol_name":"Virtuals Protocol",
+    "category":"AI Agents",
+    "fully_diluted_market_cap":529047667.0,
+    "fees_30d":296161.0,
+    "fees_30d_change":-34.15,
+    "pf_ratio_forward_1y":148.8626307425,
+    "slug":"virtuals-protocol"
+  },
+  {
+    "protocol_name":"Momentum",
+    "category":"Dexs",
+    "fully_diluted_market_cap":201193143.0,
+    "fees_30d":102998.0,
+    "fees_30d_change":-14.66,
+    "pf_ratio_forward_1y":162.7807845783,
+    "slug":"momentum"
+  },
+  {
+    "protocol_name":"Rarible",
+    "category":"Services",
+    "fully_diluted_market_cap":2522817.2400000002,
+    "fees_30d":1246.0,
+    "fees_30d_change":16.23,
+    "pf_ratio_forward_1y":168.7277447833,
+    "slug":"rarible"
+  },
+  {
+    "protocol_name":"Ready Cards",
+    "category":"Physical TCG",
+    "fully_diluted_market_cap":8787198.1899999995,
+    "fees_30d":4076.0,
+    "fees_30d_change":-45.55,
+    "pf_ratio_forward_1y":179.6532178198,
+    "slug":"ready-cards"
   },
   {
     "protocol_name":"Olympus DAO",
     "category":"Reserve Currency",
-    "fully_diluted_market_cap":343333585.2799999714,
-    "fees_30d":138361.0,
-    "fees_30d_change":-4.77,
-    "pf_ratio_forward_1y":206.7861037913,
+    "fully_diluted_market_cap":331023945.7099999785,
+    "fees_30d":132934.0,
+    "fees_30d_change":-12.47,
+    "pf_ratio_forward_1y":207.5114629001,
     "slug":"olympus-dao"
   },
   {
     "protocol_name":"MorpheusAI",
     "category":"AI Agents",
-    "fully_diluted_market_cap":93748549.5799999982,
-    "fees_30d":34121.0,
-    "fees_30d_change":1.35,
-    "pf_ratio_forward_1y":228.9610249309,
+    "fully_diluted_market_cap":82745220.6200000048,
+    "fees_30d":29761.0,
+    "fees_30d_change":-14.03,
+    "pf_ratio_forward_1y":231.6936612233,
     "slug":"morpheusai"
-  },
-  {
-    "protocol_name":"Capx AI",
-    "category":"AI Agents",
-    "fully_diluted_market_cap":154074602.6599999964,
-    "fees_30d":48967.0,
-    "fees_30d_change":-38.76,
-    "pf_ratio_forward_1y":262.2082263906,
-    "slug":"capx-ai"
   },
   {
     "protocol_name":"ENS",
     "category":"Domains",
-    "fully_diluted_market_cap":490029325.9499999881,
-    "fees_30d":128643.0,
-    "fees_30d_change":-31.51,
-    "pf_ratio_forward_1y":317.434894728,
+    "fully_diluted_market_cap":412528588.1899999976,
+    "fees_30d":132346.0,
+    "fees_30d_change":-29.98,
+    "pf_ratio_forward_1y":259.7538448398,
     "slug":"ens"
   },
   {
     "protocol_name":"OpenLedger",
     "category":"Decentralized AI",
-    "fully_diluted_market_cap":243684401.5900000036,
-    "fees_30d":52718.0,
-    "fees_30d_change":4.84,
-    "pf_ratio_forward_1y":385.2011355862,
+    "fully_diluted_market_cap":161702316.4300000072,
+    "fees_30d":47639.0,
+    "fees_30d_change":-13.3,
+    "pf_ratio_forward_1y":282.8605351883,
     "slug":"openledger"
   },
   {
-    "protocol_name":"Venice",
-    "category":"Farm",
-    "fully_diluted_market_cap":1281374668.4500000477,
-    "fees_30d":251782.0,
-    "fees_30d_change":25.31,
-    "pf_ratio_forward_1y":424.1018912028,
-    "slug":"venice"
+    "protocol_name":"Capx AI",
+    "category":"AI Agents",
+    "fully_diluted_market_cap":152884116.7599999905,
+    "fees_30d":44550.0,
+    "fees_30d_change":-26.27,
+    "pf_ratio_forward_1y":285.9785199401,
+    "slug":"capx-ai"
   },
   {
-    "protocol_name":"sDAI",
-    "category":"Yield",
-    "fully_diluted_market_cap":1291869890.2999999523,
-    "fees_30d":241118.0,
-    "fees_30d_change":-14.59,
-    "pf_ratio_forward_1y":446.4860532671,
-    "slug":"sdai"
-  },
-  {
-    "protocol_name":"Ethervista",
-    "category":"Dexs",
-    "fully_diluted_market_cap":1181400.02,
-    "fees_30d":212.0,
-    "fees_30d_change":-77.71,
-    "pf_ratio_forward_1y":464.3868003145,
-    "slug":"ethervista"
-  },
-  {
-    "protocol_name":"Aave V2",
-    "category":"Lending",
-    "fully_diluted_market_cap":1062740754.6799999475,
-    "fees_30d":185121.0,
-    "fees_30d_change":-8.62,
-    "pf_ratio_forward_1y":478.3991527523,
-    "slug":"aave-v2"
-  },
-  {
-    "protocol_name":"Space and Time",
-    "category":"Developer Tools",
-    "fully_diluted_market_cap":42028301.1899999976,
-    "fees_30d":7150.0,
-    "fees_30d_change":-50.98,
-    "pf_ratio_forward_1y":489.8403402098,
-    "slug":"space-and-time"
-  },
-  {
-    "protocol_name":"Safe",
-    "category":"Services",
-    "fully_diluted_market_cap":92140990.9800000042,
-    "fees_30d":15571.0,
-    "fees_30d_change":-77.99,
-    "pf_ratio_forward_1y":493.1228511335,
-    "slug":"safe"
-  },
-  {
-    "protocol_name":"The Graph",
-    "category":"Developer Tools",
-    "fully_diluted_market_cap":229228626.9600000083,
-    "fees_30d":34751.0,
-    "fees_30d_change":-0.67,
-    "pf_ratio_forward_1y":549.6931190469,
-    "slug":"the-graph"
-  },
-  {
-    "protocol_name":"Kleros",
-    "category":"Services",
-    "fully_diluted_market_cap":7702350.7699999996,
-    "fees_30d":1134.0,
-    "fees_30d_change":-45.9,
-    "pf_ratio_forward_1y":566.0163705173,
-    "slug":"kleros"
-  },
-  {
-    "protocol_name":"Portal",
-    "category":"Bridge",
-    "fully_diluted_market_cap":96482689.400000006,
-    "fees_30d":13231.0,
-    "fees_30d_change":-20.17,
-    "pf_ratio_forward_1y":607.680758572,
-    "slug":"portal"
-  },
-  {
-    "protocol_name":"HOPR",
-    "category":"Privacy",
-    "fully_diluted_market_cap":18523973.870000001,
-    "fees_30d":2529.0,
-    "fees_30d_change":0.08,
-    "pf_ratio_forward_1y":610.3853258864,
-    "slug":"hopr"
+    "protocol_name":"Goldfinch",
+    "category":"RWA Lending",
+    "fully_diluted_market_cap":5872507.04,
+    "fees_30d":1671.0,
+    "fees_30d_change":-98.27,
+    "pf_ratio_forward_1y":292.8639058448,
+    "slug":"goldfinch"
   },
   {
     "protocol_name":"Edel",
     "category":"Lending",
-    "fully_diluted_market_cap":12809779.3499999996,
-    "fees_30d":1486.0,
-    "fees_30d_change":2221.88,
-    "pf_ratio_forward_1y":718.3590932032,
+    "fully_diluted_market_cap":11832106.6199999992,
+    "fees_30d":3025.0,
+    "fees_30d_change":639.61,
+    "pf_ratio_forward_1y":325.9533504132,
     "slug":"edel"
   },
   {
-    "protocol_name":"Synapse",
-    "category":"Cross Chain Bridge",
-    "fully_diluted_market_cap":11536952.8399999999,
-    "fees_30d":1110.0,
-    "fees_30d_change":-0.45,
-    "pf_ratio_forward_1y":866.1376006006,
-    "slug":"synapse"
+    "protocol_name":"Venice",
+    "category":"Farm",
+    "fully_diluted_market_cap":1063183673.4199999571,
+    "fees_30d":242123.0,
+    "fees_30d_change":5.24,
+    "pf_ratio_forward_1y":365.9240941656,
+    "slug":"venice"
+  },
+  {
+    "protocol_name":"Space and Time",
+    "category":"Developer Tools",
+    "fully_diluted_market_cap":34247147.4099999964,
+    "fees_30d":5859.0,
+    "fees_30d_change":-50.21,
+    "pf_ratio_forward_1y":487.101715452,
+    "slug":"space-and-time"
+  },
+  {
+    "protocol_name":"sDAI",
+    "category":"Yield",
+    "fully_diluted_market_cap":1412845971.2599999905,
+    "fees_30d":241435.0,
+    "fees_30d_change":-7.28,
+    "pf_ratio_forward_1y":487.6557428362,
+    "slug":"sdai"
+  },
+  {
+    "protocol_name":"Portal",
+    "category":"Bridge",
+    "fully_diluted_market_cap":97209092.299999997,
+    "fees_30d":15314.0,
+    "fees_30d_change":8.84,
+    "pf_ratio_forward_1y":528.9772555614,
+    "slug":"portal"
+  },
+  {
+    "protocol_name":"The Graph",
+    "category":"Developer Tools",
+    "fully_diluted_market_cap":204245189.4099999964,
+    "fees_30d":29031.0,
+    "fees_30d_change":-33.21,
+    "pf_ratio_forward_1y":586.2847456455,
+    "slug":"the-graph"
+  },
+  {
+    "protocol_name":"HOPR",
+    "category":"Privacy",
+    "fully_diluted_market_cap":15493971.9499999993,
+    "fees_30d":1887.0,
+    "fees_30d_change":-33.18,
+    "pf_ratio_forward_1y":684.2418278573,
+    "slug":"hopr"
+  },
+  {
+    "protocol_name":"Aave V2",
+    "category":"Lending",
+    "fully_diluted_market_cap":1512738806.1099998951,
+    "fees_30d":177993.0,
+    "fees_30d_change":-9.92,
+    "pf_ratio_forward_1y":708.2389036413,
+    "slug":"aave-v2"
   },
   {
     "protocol_name":"THENA V1",
     "category":"Dexs",
-    "fully_diluted_market_cap":22029548.4899999984,
-    "fees_30d":1648.0,
-    "fees_30d_change":36.31,
-    "pf_ratio_forward_1y":1113.9537060073,
+    "fully_diluted_market_cap":18223356.8000000007,
+    "fees_30d":894.0,
+    "fees_30d_change":-44.75,
+    "pf_ratio_forward_1y":1698.672334079,
     "slug":"thena-v1"
-  },
-  {
-    "protocol_name":"Thorchain DEX",
-    "category":"Dexs",
-    "fully_diluted_market_cap":133064484.900000006,
-    "fees_30d":6750.0,
-    "fees_30d_change":-99.74,
-    "pf_ratio_forward_1y":1642.7714185185,
-    "slug":"thorchain-dex"
-  },
-  {
-    "protocol_name":"Wompie",
-    "category":"Yield",
-    "fully_diluted_market_cap":1993487.01,
-    "fees_30d":90.0,
-    "fees_30d_change":-57.75,
-    "pf_ratio_forward_1y":1845.8213055556,
-    "slug":"wompie"
-  },
-  {
-    "protocol_name":"Rain",
-    "category":"Prediction Market",
-    "fully_diluted_market_cap":14698203546.3299999237,
-    "fees_30d":595668.0,
-    "fees_30d_change":59566700.0,
-    "pf_ratio_forward_1y":2056.263380822,
-    "slug":"rain"
-  },
-  {
-    "protocol_name":"SMARDEX AMM",
-    "category":"Dexs",
-    "fully_diluted_market_cap":8304564.7999999998,
-    "fees_30d":290.0,
-    "fees_30d_change":-11.59,
-    "pf_ratio_forward_1y":2386.3691954023,
-    "slug":"smardex-amm"
-  },
-  {
-    "protocol_name":"aPriori",
-    "category":"Liquid Staking",
-    "fully_diluted_market_cap":185081263.3300000131,
-    "fees_30d":6434.0,
-    "fees_30d_change":-25.13,
-    "pf_ratio_forward_1y":2397.1772786499,
-    "slug":"apriori"
-  },
-  {
-    "protocol_name":"LAB Terminal",
-    "category":"Trading App",
-    "fully_diluted_market_cap":10103844760.4200000763,
-    "fees_30d":168123.0,
-    "fees_30d_change":51.4,
-    "pf_ratio_forward_1y":5008.1610687909,
-    "slug":"lab-terminal"
-  },
-  {
-    "protocol_name":"Walrus Protocol",
-    "category":"Developer Tools",
-    "fully_diluted_market_cap":170511683.9499999881,
-    "fees_30d":2482.0,
-    "fees_30d_change":44.64,
-    "pf_ratio_forward_1y":5724.9423834945,
-    "slug":"walrus-protocol"
-  },
-  {
-    "protocol_name":"Heaven",
-    "category":"Dexs",
-    "fully_diluted_market_cap":112845271.0100000054,
-    "fees_30d":1446.0,
-    "fees_30d_change":-53.99,
-    "pf_ratio_forward_1y":6503.3005423006,
-    "slug":"heaven"
   },
   {
     "protocol_name":"MojitoSwap",
     "category":"Dexs",
-    "fully_diluted_market_cap":24811206.2300000004,
-    "fees_30d":216.0,
-    "fees_30d_change":730.77,
-    "pf_ratio_forward_1y":9572.2246257716,
+    "fully_diluted_market_cap":9584046.7799999993,
+    "fees_30d":434.0,
+    "fees_30d_change":843.48,
+    "pf_ratio_forward_1y":1840.2547580645,
     "slug":"mojitoswap"
   },
   {
-    "protocol_name":"SSV Network",
-    "category":"Staking Pool",
-    "fully_diluted_market_cap":39895729.7100000009,
-    "fees_30d":266.0,
-    "fees_30d_change":-99.25,
-    "pf_ratio_forward_1y":12498.6621898496,
-    "slug":"ssv-network"
+    "protocol_name":"Rain",
+    "category":"Prediction Market",
+    "fully_diluted_market_cap":17879323028.9300003052,
+    "fees_30d":640054.0,
+    "fees_30d_change":301.1,
+    "pf_ratio_forward_1y":2327.840441188,
+    "slug":"rain"
+  },
+  {
+    "protocol_name":"Kleros",
+    "category":"Services",
+    "fully_diluted_market_cap":7642601.6900000004,
+    "fees_30d":238.0,
+    "fees_30d_change":-83.36,
+    "pf_ratio_forward_1y":2675.9809838936,
+    "slug":"kleros"
+  },
+  {
+    "protocol_name":"SMARDEX AMM",
+    "category":"Dexs",
+    "fully_diluted_market_cap":7488176.5899999999,
+    "fees_30d":225.0,
+    "fees_30d_change":-31.19,
+    "pf_ratio_forward_1y":2773.398737037,
+    "slug":"smardex-amm"
+  },
+  {
+    "protocol_name":"Sui Foundation",
+    "category":"Canonical Bridge",
+    "fully_diluted_market_cap":6810377559.8299999237,
+    "fees_30d":196735.0,
+    "fees_30d_change":1.16,
+    "pf_ratio_forward_1y":2884.7508746241,
+    "slug":"sui-foundation"
+  },
+  {
+    "protocol_name":"aPriori",
+    "category":"Liquid Staking",
+    "fully_diluted_market_cap":192844347.3899999857,
+    "fees_30d":5562.0,
+    "fees_30d_change":-29.22,
+    "pf_ratio_forward_1y":2889.3136070658,
+    "slug":"apriori"
+  },
+  {
+    "protocol_name":"Wompie",
+    "category":"Yield",
+    "fully_diluted_market_cap":1819495.3300000001,
+    "fees_30d":32.0,
+    "fees_30d_change":-84.62,
+    "pf_ratio_forward_1y":4738.2690885417,
+    "slug":"wompie"
+  },
+  {
+    "protocol_name":"Walrus Protocol",
+    "category":"Developer Tools",
+    "fully_diluted_market_cap":161808692.4399999976,
+    "fees_30d":2821.0,
+    "fees_30d_change":33.82,
+    "pf_ratio_forward_1y":4779.8857509158,
+    "slug":"walrus-protocol"
+  },
+  {
+    "protocol_name":"Synapse",
+    "category":"Cross Chain Bridge",
+    "fully_diluted_market_cap":81720639.8400000036,
+    "fees_30d":1327.0,
+    "fees_30d_change":100.76,
+    "pf_ratio_forward_1y":5131.9165938206,
+    "slug":"synapse"
+  },
+  {
+    "protocol_name":"LAB Terminal",
+    "category":"Trading App",
+    "fully_diluted_market_cap":17265007173.8300018311,
+    "fees_30d":162565.0,
+    "fees_30d_change":5.76,
+    "pf_ratio_forward_1y":8850.3097088498,
+    "slug":"lab-terminal"
+  },
+  {
+    "protocol_name":"Heaven",
+    "category":"Dexs",
+    "fully_diluted_market_cap":117314791.4599999934,
+    "fees_30d":399.0,
+    "fees_30d_change":-87.09,
+    "pf_ratio_forward_1y":24501.836144528,
+    "slug":"heaven"
   },
   {
     "protocol_name":"KyotoSwap",
     "category":"Dexs",
-    "fully_diluted_market_cap":10515380.1199999992,
-    "fees_30d":23.0,
-    "fees_30d_change":-54.0,
-    "pf_ratio_forward_1y":38099.2033333333,
+    "fully_diluted_market_cap":9400643.9199999999,
+    "fees_30d":21.0,
+    "fees_30d_change":-25.0,
+    "pf_ratio_forward_1y":37304.1425396825,
     "slug":"kyotoswap"
-  },
-  {
-    "protocol_name":"MYX Finance",
-    "category":"Derivatives",
-    "fully_diluted_market_cap":179014437.5800000131,
-    "fees_30d":283.0,
-    "fees_30d_change":-47.1,
-    "pf_ratio_forward_1y":52713.3208421673,
-    "slug":"myx-finance"
   },
   {
     "protocol_name":"Velo Finance",
     "category":"Dexs",
-    "fully_diluted_market_cap":81757816.8900000006,
-    "fees_30d":119.0,
-    "fees_30d_change":75.0,
-    "pf_ratio_forward_1y":57253.3731722689,
+    "fully_diluted_market_cap":76227007.0300000012,
+    "fees_30d":107.0,
+    "fees_30d_change":15.05,
+    "pf_ratio_forward_1y":59366.8279049844,
     "slug":"velo-finance"
   },
   {
     "protocol_name":"Aspecta BuildKey",
     "category":"SoFi",
-    "fully_diluted_market_cap":25695781.3500000015,
+    "fully_diluted_market_cap":24670470.0300000012,
     "fees_30d":1.0,
-    "fees_30d_change":-99.98,
-    "pf_ratio_forward_1y":2141315.1125000003,
+    "fees_30d_change":-99.97,
+    "pf_ratio_forward_1y":2055872.5025000002,
     "slug":"aspecta-buildkey"
   }
 ]
